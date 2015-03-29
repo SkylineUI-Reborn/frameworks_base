@@ -5389,6 +5389,12 @@ public final class Settings {
                 "high_touch_sensitivity_enable";
 
         /**
+         * Allow disable of screenshot shutter sound
+         * @hide
+         */
+        public static final String SCREENSHOT_SHUTTER_SOUND = "screenshot_shutter_sound";
+
+        /**
          * Color temperature of the display during the day
          * @hide
          */
