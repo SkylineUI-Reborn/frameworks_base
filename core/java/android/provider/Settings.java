@@ -5447,6 +5447,12 @@ public final class Settings {
          */
         public static final String DOUBLE_TAP_SLEEP_GESTURE = "double_tap_sleep_gesture";
 
+        /**
+         * Allow disable of screenshot shutter sound
+         * @hide
+         */
+        public static final String SCREENSHOT_SHUTTER_SOUND = "screenshot_shutter_sound";
+
 	/**
          * Whether the torch launch gesture to double tap or long press the power button when the
          * screen is off should be enabled. *
