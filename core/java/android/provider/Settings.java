@@ -5241,6 +5241,14 @@ public final class Settings {
                 "button_backlight_only_when_pressed";
 
         /**
+         * Whether to play notification sound and vibration if screen is ON
+         * 0 - never
+         * 1 - always
+         * @hide
+         */
+        public static final String NOTIFICATION_SOUND_VIB_SCREEN_ON = "notification_sound_vib_screen_on";
+
+        /**
          * Force show navigation bar setting.
          * @hide
          */
