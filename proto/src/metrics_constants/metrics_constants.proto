@@ -7447,5 +7447,8 @@ message MetricsEvent {
 
     // CUSTOM Metrics
     CUSTOM = 2772;
+
+    // SkylineUI Metrics
+    SKYLINEUI = 1752;
   }
 }
