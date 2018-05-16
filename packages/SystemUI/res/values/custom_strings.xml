@@ -57,6 +57,13 @@
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB tethering</string>
 
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Reading mode</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Reading mode on.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Reading mode off.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Reading mode turned on.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Reading mode turned off.</string>
+
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
     <string name="screenshot_delete_label">Delete</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
