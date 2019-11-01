@@ -61,12 +61,14 @@ import android.app.WallpaperManager;
 import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
+import android.database.ContentObserver;
 import android.graphics.Point;
 import android.hardware.devicestate.DeviceStateManager;
 import android.hardware.fingerprint.FingerprintManager;
@@ -977,6 +979,9 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
         mCommandQueueCallbacks.onSystemBarAttributesChanged(mDisplayId, result.mAppearance,
                 result.mAppearanceRegions, result.mNavbarColorManagedByIme, result.mBehavior,
                 result.mRequestedVisibilities, result.mPackageName, result.mLetterboxDetails);
+
+        mCustomSettingsObserver.observe();
+        mCustomSettingsObserver.update();
 
         // StatusBarManagerService has a back up of IME token and it's restored here.
         mCommandQueueCallbacks.setImeWindowStatus(mDisplayId, result.mImeToken,
@@ -1995,6 +2000,36 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
     public void setBarStateForTest(int state) {
         mState = state;
     }
+
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            ContentResolver resolver = mContext.getContentResolver();
+            /*resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.XXX),
+                    false, this, UserHandle.USER_ALL);*/
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            /*if (uri.equals(Settings.System.getUriFor(
+                    Settings.System.XXX))) {
+                doXXX();
+            }*/
+        }
+
+        public void update() {
+            //doXXX();
+        }
+    }
+
+    /*private void doXXX() {
+    }*/
 
     static class AnimateExpandSettingsPanelMessage {
         final String mSubpanel;
