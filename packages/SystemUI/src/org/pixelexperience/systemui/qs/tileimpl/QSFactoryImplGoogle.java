@@ -64,6 +64,7 @@ import com.android.systemui.qs.tiles.HeadsUpTile;
 import com.android.systemui.qs.tiles.SyncTile;
 import com.android.systemui.qs.tiles.UsbTetherTile;
 import com.android.systemui.qs.tiles.AutoBrightnessTile;
+import com.android.systemui.qs.tiles.DataSwitchTile;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
@@ -117,7 +118,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<LiveDisplayTile> liveDisplayTileProvider,
             Provider<ReadingModeTile> readingModeTileProvider,
             Provider<AntiFlickerTile> antiFlickerTileProvider,
-            Provider<AutoBrightnessTile> mautoBrightnessTileProvider) {
+            Provider<AutoBrightnessTile> mautoBrightnessTileProvider,
+            Provider<DataSwitchTile> dataSwitchTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
                 wifiTileProvider,
@@ -157,7 +159,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 liveDisplayTileProvider,
                 readingModeTileProvider,
                 antiFlickerTileProvider,
-                mautoBrightnessTileProvider);
+                mautoBrightnessTileProvider,
+                dataSwitchTileProvider);
         mReverseChargingTileProvider = reverseChargingTileProvider;
         mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
     }
