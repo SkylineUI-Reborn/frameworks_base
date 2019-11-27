@@ -5606,6 +5606,11 @@ public final class Settings {
         public static final String COMBINED_STATUS_BAR_SIGNAL_ICONS = "combined_status_bar_signal_icons";
 
         /**
+         * @hide
+         */
+        public static final String USE_OLD_MOBILETYPE = "use_old_mobiletype";
+
+        /**
          * Three Finger Gesture from Oppo
          * @hide
          */

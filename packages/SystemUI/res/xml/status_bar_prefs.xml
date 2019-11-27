@@ -92,6 +92,11 @@
         android:title="@string/combined_status_bar_signal_icons_title"
         android:defaultValue="false"/>
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="use_old_mobiletype"
+        android:title="@string/use_old_mobiletype_title"
+        android:defaultValue="false" />   
+    
     <com.android.systemui.tuner.BatteryPreference
         android:title="@string/battery"
         android:summary="%s"

@@ -91,4 +91,7 @@
 
     <!-- Show vibrate icon in status bar -->
     <string name="status_bar_vibrate">Vibrate</string>
+
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Small mobile type icon</string>
 </resources>
