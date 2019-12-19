@@ -4937,6 +4937,12 @@ public final class Settings {
         public static final String POCKET_JUDGE = "pocket_judge";
 
         /**
+         * Whether to tint the QS tiles with accent color
+         * @hide
+         */
+        public static final String QS_TILE_ACCENT_TINT = "qs_tile_accent_tint";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
