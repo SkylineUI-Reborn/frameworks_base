@@ -5062,6 +5062,12 @@ public final class Settings {
 
 
         /**
+         * Whether to use new QS panel bg tint or not
+         * @hide
+         */
+        public static final String QS_PANEL_BG_USE_NEW_TINT = "qs_panel_bg_use_new_tint";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -5205,6 +5211,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(VIBRATE_ON_DISCONNECT);
             PRIVATE_SETTINGS.add(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK);
             PRIVATE_SETTINGS.add(SYSTEMUI_PLUGIN_VOLUME);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_NEW_TINT);
         }
 
         /**
