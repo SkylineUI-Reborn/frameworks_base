@@ -4993,6 +4993,12 @@ public final class Settings {
         public static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
 
         /**
+          * Whether to change the transparency of the qs header
+          * @hide
+          */
+         public static final String QS_HEADER_BG_ALPHA = "qs_header_bg_alpha";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -5129,6 +5135,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_DATE_FORMAT);
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_DATE_POSITION);
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
+            PRIVATE_SETTINGS.add(QS_HEADER_BG_ALPHA);
         }
 
         /**

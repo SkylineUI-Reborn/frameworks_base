@@ -87,5 +87,6 @@ public class SystemSettings {
         Settings.System.DOUBLE_TAP_SLEEP_GESTURE,
         Settings.System.DOUBLE_TAP_SLEEP_LOCKSCREEN,
         Settings.System.QS_MEDIA_PLAYER,
+        Settings.System.QS_HEADER_BG_ALPHA,
     };
 }
