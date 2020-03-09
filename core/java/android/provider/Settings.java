@@ -5467,6 +5467,12 @@ public final class Settings {
         public static final String DISPLAY_PICTURE_ADJUSTMENT =
                 "display_picture_adjustment";
 
+	/**
+         * boolean value. toggles compact layout in navigation bar
+         * @hide
+         */
+        public static final String NAV_BAR_COMPACT_LAYOUT = "navigation_bar_compact_layout";
+
         /**
          * Did we tell about how they can stop breaking their eyes?
          * @hide
@@ -5747,6 +5753,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(VIBRATE_ON_CALLWAITING);
             PRIVATE_SETTINGS.add(VIBRATE_ON_DISCONNECT);
             PRIVATE_SETTINGS.add(FORCE_FULLSCREEN_CUTOUT_APPS);
+            PRIVATE_SETTINGS.add(NAV_BAR_COMPACT_LAYOUT);
         }
 
         /**
