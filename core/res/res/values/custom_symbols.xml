@@ -69,8 +69,11 @@
 
     <!-- Device has OnePlus haptic motor -->
     <java-symbol type="bool" name="config_hasOnePlusHapticMotor" />
-
  
     <!-- NightLight FOD -->
     <java-symbol type="bool" name="disable_fod_night_light"/>
+
+    <!-- Enable face auth only when swiping security view -->
+    <java-symbol type="bool" name="config_faceAuthOnlyOnSecurityView" />
+
 </resources>
