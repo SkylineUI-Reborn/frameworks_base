@@ -167,4 +167,8 @@
      
      <!-- Pocket Lock -->
      <bool name="config_pocketModeSupported">true</bool>
+
+    <!-- Enable face auth when swiping security view -->
+    <bool name="config_faceAuthOnSecurityView">false</bool>
+
 </resources>
