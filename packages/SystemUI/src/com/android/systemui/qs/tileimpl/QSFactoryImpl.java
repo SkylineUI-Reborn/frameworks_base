@@ -53,6 +53,7 @@ import com.android.systemui.qs.tiles.MicrophoneToggleTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
 import com.android.systemui.qs.tiles.OneHandedModeTile;
+import com.android.systemui.qs.tiles.PowerShareTile;
 import com.android.systemui.qs.tiles.QRCodeScannerTile;
 import com.android.systemui.qs.tiles.QuickAccessWalletTile;
 import com.android.systemui.qs.tiles.ReduceBrightColorsTile;
@@ -109,6 +110,7 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<DreamTile> mDreamTileProvider;
     private final Provider<AmbientDisplayTile> mAmbientDisplayTileProvider;
     private final Provider<AODTile> mAODTileProvider;
+    private final Provider<PowerShareTile> mPowerShareTileProvider;
     private final Provider<CaffeineTile> mCaffeineTileProvider;
     private final Provider<DataSwitchTile> mDataSwitchTileProvider;
     private final Provider<HeadsUpTile> mHeadsUpTileProvider;
@@ -155,6 +157,7 @@ public class QSFactoryImpl implements QSFactory {
             Provider<DreamTile> dreamTileProvider,
             Provider<AmbientDisplayTile> ambientDisplayTileProvider,
             Provider<AODTile> aodTileProvider,
+            Provider<PowerShareTile> powerShareTileProvider,
             Provider<CaffeineTile> caffeineTileProvider,
             Provider<DataSwitchTile> dataSwitchTileProvider,
             Provider<HeadsUpTile> headsUpTileProvider,
@@ -196,6 +199,7 @@ public class QSFactoryImpl implements QSFactory {
         mDreamTileProvider = dreamTileProvider;
         mAmbientDisplayTileProvider = ambientDisplayTileProvider;
         mAODTileProvider = aodTileProvider;
+        mPowerShareTileProvider = powerShareTileProvider;
         mCaffeineTileProvider = caffeineTileProvider;
         mDataSwitchTileProvider = dataSwitchTileProvider;
         mHeadsUpTileProvider = headsUpTileProvider;
@@ -282,6 +286,8 @@ public class QSFactoryImpl implements QSFactory {
                 return mAmbientDisplayTileProvider.get();
             case "aod":
                 return mAODTileProvider.get();
+            case "powershare":
+                return mPowerShareTileProvider.get();
             case "caffeine":
                 return mCaffeineTileProvider.get();
             case "dataswitch":
@@ -295,7 +301,6 @@ public class QSFactoryImpl implements QSFactory {
             case "vpn":
                 return mVpnTileProvider.get();
         }
-
         // Custom tiles
         if (tileSpec.startsWith(CustomTile.PREFIX)) {
             return CustomTile.create(
