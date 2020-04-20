@@ -180,6 +180,7 @@ android_library {
         "bcsmartspace-google",
         "faceunlock_framework",
         "custom-preference",
+        "vendor.lineage.powershare-V1.0-java",
     ],
     manifest: "AndroidManifest.xml",
 
@@ -274,6 +275,7 @@ android_library {
         "LowLightDreamLib",
         "motion_tool_lib",
         "androidx.core_core-animation-testing-nodeps",
+        "vendor.lineage.powershare-V1.0-java",
     ],
 }
 
