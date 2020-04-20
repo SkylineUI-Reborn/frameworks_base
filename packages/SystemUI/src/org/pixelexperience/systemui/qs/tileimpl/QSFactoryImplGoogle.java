@@ -39,6 +39,7 @@ import com.android.systemui.qs.tiles.LocationTile;
 import com.android.systemui.qs.tiles.MicrophoneToggleTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
+import com.android.systemui.qs.tiles.PowerShareTile;
 import com.android.systemui.qs.tiles.QuickAccessWalletTile;
 import com.android.systemui.qs.tiles.ReduceBrightColorsTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
@@ -98,7 +99,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<QuickAccessWalletTile> quickAccessWalletTileProvider,
             Provider<OverlayToggleTile> overlayToggleTileProvider,
             Provider<ReverseChargingTile> reverseChargingTileProvider,
-	    Provider<HeadsUpTile> headsupTileProvider) {
+	    Provider<HeadsUpTile> headsupTileProvider,
+            Provider<PowerShareTile> powerShareTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
                 wifiTileProvider,
@@ -128,7 +130,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 deviceControlsTileProvider,
                 alarmTileProvider,
                 quickAccessWalletTileProvider,
-		headsupTileProvider);
+		headsupTileProvider,
+                powerShareTileProvider);
         this.mReverseChargingTileProvider = reverseChargingTileProvider;
         this.mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
         this.mOverlayToggleTileProvider = overlayToggleTileProvider;

@@ -44,6 +44,7 @@ import com.android.systemui.qs.tiles.LocationTile;
 import com.android.systemui.qs.tiles.MicrophoneToggleTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
+import com.android.systemui.qs.tiles.PowerShareTile;
 import com.android.systemui.qs.tiles.QuickAccessWalletTile;
 import com.android.systemui.qs.tiles.ReduceBrightColorsTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
@@ -92,6 +93,7 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<AlarmTile> mAlarmTileProvider;
     private final Provider<QuickAccessWalletTile> mQuickAccessWalletTileProvider;
     private final Provider<HeadsUpTile> mHeadsUpTileProvider;
+    private final Provider<PowerShareTile> mPowerShareTileProvider;
 
     private final Lazy<QSHost> mQsHostLazy;
     private final Provider<CustomTile.Builder> mCustomTileBuilderProvider;
@@ -127,7 +129,8 @@ public class QSFactoryImpl implements QSFactory {
             Provider<DeviceControlsTile> deviceControlsTileProvider,
             Provider<AlarmTile> alarmTileProvider,
             Provider<QuickAccessWalletTile> quickAccessWalletTileProvider,
-            Provider<HeadsUpTile> headsupTileProvider) {
+            Provider<HeadsUpTile> headsupTileProvider,
+            Provider<PowerShareTile> powerShareTileProvider) {
         mQsHostLazy = qsHostLazy;
         mCustomTileBuilderProvider = customTileBuilderProvider;
 
@@ -159,6 +162,7 @@ public class QSFactoryImpl implements QSFactory {
         mAlarmTileProvider = alarmTileProvider;
         mQuickAccessWalletTileProvider = quickAccessWalletTileProvider;
         mHeadsUpTileProvider = headsupTileProvider;
+        mPowerShareTileProvider = powerShareTileProvider;
     }
 
     public QSTile createTile(String tileSpec) {
@@ -225,10 +229,12 @@ public class QSFactoryImpl implements QSFactory {
                 return mAlarmTileProvider.get();
             case "wallet":
                 return mQuickAccessWalletTileProvider.get();
+            // Additional tiles.
             case "heads_up":
                 return mHeadsUpTileProvider.get();
+            case "powershare":
+                return mPowerShareTileProvider.get();
         }
-
         // Custom tiles
         if (tileSpec.startsWith(CustomTile.PREFIX)) {
             return CustomTile.create(
