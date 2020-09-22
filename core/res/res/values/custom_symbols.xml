@@ -12,6 +12,9 @@
     <!-- In-display Fingerprint -->
     <java-symbol type="bool" name="config_supportsInDisplayFingerprint" />
 
+    <!-- Doze for FODScreen off -->
+    <java-symbol type="bool" name="config_fodScreenOffDoze" />
+
     <!-- Vendor signatures -->
     <java-symbol type="array" name="config_vendorPlatformSignatures" />
 

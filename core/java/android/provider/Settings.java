@@ -4789,6 +4789,12 @@ public final class Settings {
          */
         public static final String FOD_GESTURE = "fod_gesture";
 
+        /**
+         * Screen off fod
+         * @hide
+         */
+        public static final String FOD_GESTURE_WAKE = "fod_gesture_wake";
+
 	/**
          *  Enable statusbar double tap gesture on to put device to sleep
          * @hide

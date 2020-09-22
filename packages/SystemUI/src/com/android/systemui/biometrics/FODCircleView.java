@@ -57,7 +57,11 @@ import java.util.TimerTask;
 
 public class FODCircleView extends ImageView implements TunerService.Tunable {
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
-    private static final String FOD_GESTURE = "system:" + Settings.System.FOD_GESTURE;    private final int mPositionX;
+    private static final String FOD_GESTURE = "system:" + Settings.System.FOD_GESTURE;    
+    public static final String FOD_GESTURE_WAKE =
+            "system:" + Settings.System.FOD_GESTURE_WAKE;
+
+    private final int mPositionX;
     private final int mPositionY;
     private final int mSize;
     private final int mDreamingMaxOffset;
@@ -79,6 +83,7 @@ public class FODCircleView extends ImageView implements TunerService.Tunable {
     private boolean mIsCircleShowing;
 
     private boolean mDozeEnabled;
+    private boolean mIsWakeEnabledByDefault;
     private boolean mFodGestureEnable;
     private boolean mPressPending;
     private boolean mScreenTurnedOn;
@@ -258,7 +263,9 @@ public class FODCircleView extends ImageView implements TunerService.Tunable {
         mUpdateMonitor = Dependency.get(KeyguardUpdateMonitor.class);
         mUpdateMonitor.registerCallback(mMonitorCallback);
         mFODAnimation = new FODAnimation(context, mPositionX, mPositionY);
-        Dependency.get(TunerService.class).addTunable(this, FOD_GESTURE,
+        mIsWakeEnabledByDefault = res.getBoolean(com.android.internal.R.
+             bool.config_fodScreenOffDoze);
+        Dependency.get(TunerService.class).addTunable(this, FOD_GESTURE,FOD_GESTURE_WAKE,
                 Settings.Secure.DOZE_ENABLED);
     }
 
@@ -266,8 +273,8 @@ public class FODCircleView extends ImageView implements TunerService.Tunable {
     public void onTuningChanged(String key, String newValue) {
         if (key.equals(FOD_GESTURE)) {
             mFodGestureEnable = TunerService.parseIntegerSwitch(newValue, false);
-        } else {
-            mDozeEnabled = TunerService.parseIntegerSwitch(newValue, true);
+        } else if (key.equals(FOD_GESTURE_WAKE)) {
+            mDozeEnabled = TunerService.parseIntegerSwitch(newValue, mIsWakeEnabledByDefault);
         }
     }
 
