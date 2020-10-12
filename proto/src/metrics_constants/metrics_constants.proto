@@ -7439,5 +7439,9 @@ message MetricsEvent {
     // CustomSettings constant
     CUSTOM_SETTINGS = 1999;
 
+    // QS Tiles
+    CUSTOM_TILE = 9998;
+    CUSTOM = 9999;
+
   }
 }
