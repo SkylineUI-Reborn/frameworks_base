@@ -7438,7 +7438,10 @@ message MetricsEvent {
 
     // CustomSettings constant
     CUSTOM_SETTINGS = 1999;
-
+    
+    // Pixelish metrics
+    PIXELISH = 2772;
+    
     // QS Tiles
     CUSTOM_TILE = 9998;
     CUSTOM = 9999;
