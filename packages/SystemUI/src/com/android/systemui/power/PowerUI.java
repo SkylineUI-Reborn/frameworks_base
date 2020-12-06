@@ -436,9 +436,9 @@ public class PowerUI extends SystemUI implements CommandQueue.Callbacks {
     boolean shouldShowHybridWarning(BatteryStateSnapshot snapshot) {
         if (snapshot.getPlugged()
                 || snapshot.getBatteryStatus() == BatteryManager.BATTERY_STATUS_UNKNOWN) {
-            Slog.d(TAG, "can't show warning due to - plugged: " + snapshot.getPlugged()
+            /**Slog.d(TAG, "can't show warning due to - plugged: " + snapshot.getPlugged()
                     + " status unknown: "
-                    + (snapshot.getBatteryStatus() == BatteryManager.BATTERY_STATUS_UNKNOWN));
+                    + (snapshot.getBatteryStatus() == BatteryManager.BATTERY_STATUS_UNKNOWN));**/
             return false;
         }
 
