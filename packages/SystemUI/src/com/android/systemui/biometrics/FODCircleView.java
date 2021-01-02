@@ -25,7 +25,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
-import android.hardware.biometrics.BiometricSourceType;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.RemoteException;
@@ -44,8 +43,6 @@ import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.KeyguardUpdateMonitorCallback;
 import com.android.systemui.Dependency;
 import com.android.systemui.R;
-import com.android.systemui.statusbar.policy.ConfigurationController;
-import com.android.systemui.statusbar.policy.ConfigurationController.ConfigurationListener;
 
 import vendor.lineage.biometrics.fingerprint.inscreen.V1_0.IFingerprintInscreen;
 import vendor.lineage.biometrics.fingerprint.inscreen.V1_0.IFingerprintInscreenCallback;
@@ -54,8 +51,7 @@ import java.util.NoSuchElementException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class FODCircleView extends ImageView implements ConfigurationListener {
-    private static final int FADE_ANIM_DURATION = 250;
+public class FODCircleView extends ImageView {
     private final int mPositionX;
     private final int mPositionY;
     private final int mSize;
@@ -73,12 +69,9 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
     private int mDreamingOffsetX;
     private int mDreamingOffsetY;
 
-    private boolean mFading;
     private boolean mIsBouncer;
-    private boolean mIsBiometricRunning;
-    private boolean mIsCircleShowing;
     private boolean mIsDreaming;
-    private boolean mIsKeyguard;
+    private boolean mIsCircleShowing;
 
     private Handler mHandler;
 
@@ -105,50 +98,15 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
 
     private KeyguardUpdateMonitorCallback mMonitorCallback = new KeyguardUpdateMonitorCallback() {
         @Override
-        public void onBiometricAuthenticated(int userId, BiometricSourceType biometricSourceType,
-                boolean isStrongBiometric) {
-            // We assume that if biometricSourceType matches Fingerprint it will be
-            // handled here, so we hide only when other biometric types authenticate
-            if (biometricSourceType != BiometricSourceType.FINGERPRINT) {
-                hide();
-            }
-        }
-
-        @Override
-        public void onBiometricRunningStateChanged(boolean running,
-                BiometricSourceType biometricSourceType) {
-            if (biometricSourceType == BiometricSourceType.FINGERPRINT) {
-                mIsBiometricRunning = running;
-            }
-        }
-
-        @Override
         public void onDreamingStateChanged(boolean dreaming) {
             mIsDreaming = dreaming;
             updateAlpha();
-
-            if (mIsKeyguard && mUpdateMonitor.isFingerprintDetectionRunning()) {
-                show();
-                updateAlpha();
-            } else {
-                hide();
-            }
 
             if (dreaming) {
                 mBurnInProtectionTimer = new Timer();
                 mBurnInProtectionTimer.schedule(new BurnInProtectionTask(), 0, 60 * 1000);
             } else if (mBurnInProtectionTimer != null) {
                 mBurnInProtectionTimer.cancel();
-            }
-        }
-
-        @Override
-        public void onKeyguardVisibilityChanged(boolean showing) {
-            mIsKeyguard = showing;
-            if (!showing) {
-                hide();
-            } else {
-                updateAlpha();
             }
         }
 
@@ -172,22 +130,12 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
         }
 
         @Override
-        public void onStartedWakingUp() {
-            if (mUpdateMonitor.isFingerprintDetectionRunning()) {
-                show();
-            }
-        }
-
-        @Override
         public void onScreenTurnedOn() {
             if (mUpdateMonitor.isFingerprintDetectionRunning()) {
                 show();
             }
         }
     };
-
-    private boolean mCutoutMasked;
-    private int mStatusbarHeight;
 
     public FODCircleView(Context context) {
         super(context);
@@ -260,9 +208,6 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
 
         mUpdateMonitor = Dependency.get(KeyguardUpdateMonitor.class);
         mUpdateMonitor.registerCallback(mMonitorCallback);
-    
-        updateCutoutFlags();
-        Dependency.get(ConfigurationController.class).addCallback(this);
     }
 
     @Override
@@ -316,7 +261,6 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
     }
 
     public void dispatchPress() {
-        if (mFading) return;
         IFingerprintInscreen daemon = getFingerprintInScreenDaemon();
         try {
             daemon.onPress();
@@ -353,7 +297,6 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
     }
 
     public void showCircle() {
-        if (mFading) return;
         mIsCircleShowing = true;
 
         setKeepScreenOn(true);
@@ -388,35 +331,14 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
             return;
         }
 
-        if (mIsKeyguard && mUpdateMonitor.getUserCanSkipBouncer(mUpdateMonitor.getCurrentUser())) {
-            // Ignore show calls if user can skip bouncer
-            return;
-        }
-
-        if (mIsKeyguard && !mIsBiometricRunning) {
-            return;
-        }
-
         updatePosition();
 
-        setVisibility(View.VISIBLE);
-        animate().withStartAction(() -> mFading = true)
-                .alpha(mIsDreaming ? 0.5f : 1.0f)
-                .setDuration(FADE_ANIM_DURATION)
-                .withEndAction(() -> mFading = false)
-                .start();
         dispatchShow();
+        setVisibility(View.VISIBLE);
     }
 
     public void hide() {
-        animate().withStartAction(() -> mFading = true)
-                .alpha(0)
-                .setDuration(FADE_ANIM_DURATION)
-                .withEndAction(() -> {
-                    setVisibility(View.GONE);
-                    mFading = false;
-                })
-                .start();
+        setVisibility(View.GONE);
         hideCircle();
         dispatchHide();
     }
@@ -432,23 +354,22 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
         defaultDisplay.getRealSize(size);
 
         int rotation = defaultDisplay.getRotation();
-        int cutoutMaskedExtra = mCutoutMasked ? mStatusbarHeight : 0;
         int x, y;
         switch (rotation) {
             case Surface.ROTATION_0:
                 x = mPositionX;
-                y = mPositionY - cutoutMaskedExtra;
+                y = mPositionY;
                 break;
             case Surface.ROTATION_90:
                 x = mPositionY;
-                y = mPositionX - cutoutMaskedExtra;
+                y = mPositionX;
                 break;
             case Surface.ROTATION_180:
                 x = mPositionX;
-                y = size.y - mPositionY - mSize - cutoutMaskedExtra;
+                y = size.y - mPositionY - mSize;
                 break;
             case Surface.ROTATION_270:
-                x = size.x - mPositionY - mSize - mNavigationBarSize - cutoutMaskedExtra;
+                x = size.x - mPositionY - mSize - mNavigationBarSize;
                 y = mPositionX;
                 break;
             default:
@@ -540,20 +461,4 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
             mHandler.post(() -> updatePosition());
         }
     };
-
-    @Override
-    public void onOverlayChanged() {
-        updateCutoutFlags();
-    }
-
-    private void updateCutoutFlags() {
-        mStatusbarHeight = getContext().getResources().getDimensionPixelSize(
-                com.android.internal.R.dimen.status_bar_height_portrait);
-        boolean cutoutMasked = getContext().getResources().getBoolean(
-                com.android.internal.R.bool.config_maskMainBuiltInDisplayCutout);
-        if (mCutoutMasked != cutoutMasked){
-            mCutoutMasked = cutoutMasked;
-            updatePosition();
-        }
-    }
 }

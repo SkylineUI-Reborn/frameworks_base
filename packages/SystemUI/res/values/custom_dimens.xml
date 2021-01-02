@@ -17,9 +17,6 @@
 -->
 <resources>
 
-    <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">@dimen/keyguard_indication_margin_bottom</dimen>
-
     <!-- Pixel navbar -->
     <dimen name="opa_diamond_translation">16dp</dimen>
     <dimen name="opa_disabled_home_diameter">@dimen/navigation_icon_size</dimen>
