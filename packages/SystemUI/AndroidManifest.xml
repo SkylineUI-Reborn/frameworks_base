@@ -285,11 +285,6 @@
     <protected-broadcast android:name="com.google.android.systemui.smartspace.EXPIRE_EVENT"/>
     <protected-broadcast android:name="com.google.android.systemui.smartspace.CLICK_EVENT"/>
 
-    <!-- Live wallpapers -->
-    <protected-broadcast android:name="com.breel.wallpapers.NOTIFICATION_RECEIVED"/>
-    <permission android:name="com.breel.wallpapers.notifications"/>
-    <uses-permission android:name="com.breel.wallpapers.notifications"/>
-
     <!-- DataSwitch tile -->
     <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
 
@@ -339,7 +334,8 @@
              TODO: Should have an android:permission attribute -->
         <service android:name=".screenshot.TakeScreenshotService"
             android:process=":screenshot"
-            android:exported="false" />
+            android:exported="true"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
 
         <!-- Called from PhoneWindowManager -->
         <receiver android:name=".screenshot.ScreenshotServiceErrorReceiver"
