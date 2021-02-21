@@ -4913,7 +4913,9 @@ public final class Settings {
          */
         public static final String HIGH_TOUCH_SENSITIVITY_ENABLE =
                 "high_touch_sensitivity_enable";
-         * Screen off fod
+
+        /**
+        * Screen off fod
          * @hide
          */
         public static final String FOD_GESTURE = "fod_gesture";
@@ -5074,7 +5076,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(CAMERA_LAUNCH);
             PRIVATE_SETTINGS.add(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK);
             PRIVATE_SETTINGS.add(HIGH_TOUCH_SENSITIVITY_ENABLE);
-            PRIVATE_SETTINGS.add(FOD_GESTURE);
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
         }
 

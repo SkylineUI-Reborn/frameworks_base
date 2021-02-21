@@ -68,7 +68,7 @@ public class SyncTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.DERP;
+        return MetricsEvent.PIXEL;
     }
 
     @Override

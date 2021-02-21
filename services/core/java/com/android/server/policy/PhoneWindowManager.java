@@ -4198,8 +4198,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     + " policyFlags=" + Integer.toHexString(policyFlags));
         }
 
-        if (!fromNavbar && !virtualKey && shouldDisableKey(keyCode)){
-            return 0;
         // Pre-basic policy based on interactive and pocket lock state.
         if (mIsDeviceInPocket && (!interactive || mPocketLockShowing)) {
             if (keyCode != KeyEvent.KEYCODE_POWER &&
@@ -4215,6 +4213,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 keyCode != KeyEvent.KEYCODE_VOLUME_MUTE) {
                 return 0;
             }
+        }
+
+        if (!fromNavbar && !virtualKey && shouldDisableKey(keyCode)){
+            return 0;
         }
 
         // Basic policy based on interactive state.
