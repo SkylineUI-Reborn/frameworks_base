@@ -210,8 +210,6 @@ public class GlobalSettingsValidators {
         VALIDATORS.put(Global.POWER_BUTTON_LONG_PRESS_DURATION_MS, NONE_NEGATIVE_LONG_VALIDATOR);
         VALIDATORS.put(Global.STYLUS_EVER_USED, BOOLEAN_VALIDATOR);
         VALIDATORS.put(Global.MUTE_ALARM_STREAM_WITH_RINGER_MODE, BOOLEAN_VALIDATOR);
-        VALIDATORS.put(
-                Global.MUTE_ALARM_STREAM_WITH_RINGER_MODE_USER_PREFERENCE, BOOLEAN_VALIDATOR);
 
         VALIDATORS.put(Global.Wearable.HAS_PAY_TOKENS, BOOLEAN_VALIDATOR);
         VALIDATORS.put(Global.Wearable.GMS_CHECKIN_TIMEOUT_MIN, ANY_INTEGER_VALIDATOR);
@@ -453,5 +451,20 @@ public class GlobalSettingsValidators {
         VALIDATORS.put(
                 Global.Wearable.CONSISTENT_NOTIFICATION_BLOCKING_ENABLED, ANY_INTEGER_VALIDATOR);
         VALIDATORS.put(Global.FORCE_ENABLE_PSS_PROFILING, BOOLEAN_VALIDATOR);
+        VALIDATORS.put(Global.WIFI_OFF_TIMEOUT,
+                new DiscreteValueValidator(new String[] {
+                        "0",
+                        "15000",
+                        "30000",
+                        "60000",
+                        "120000",
+                        "300000",
+                        "600000",
+                        "1800000",
+                        "3600000",
+                        "7200000",
+                        "14400000",
+                        "28800000"
+                }));
     }
 }
