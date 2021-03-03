@@ -113,7 +113,7 @@ public class QSFactoryImpl implements QSFactory {
             Provider<ScreenRecordTile> screenRecordTileProvider,
             Provider<PowerShareTile> powerShareTileProvider,
             Provider<AODTile> aodTileProvider,
-            Provider<SyncTile> syncTileProvider),
+            Provider<SyncTile> syncTileProvider,
             Provider<CaffeineTile> caffeineTileProvider) {
         mQsHostLazy = qsHostLazy;
         mWifiTileProvider = wifiTileProvider;
