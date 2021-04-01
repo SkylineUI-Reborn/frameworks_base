@@ -31,14 +31,30 @@ public class PixelPropsUtils {
     private static final Map<String, Object> propsToChange;
 
     private static final String[] packagesToChange = {
+            "com.google.android.ext.services",
+            "com.google.android.apps.pixelmigrate",
             "com.google.android.apps.safetyhub",
-            "com.google.android.apps.turbo",
-            "com.google.android.apps.wallpaper",
-            "com.google.android.apps.maps",
             "com.google.android.as",
+            "com.google.android.dialer",
+            "com.google.intelligence.sense",
+            "com.android.vending",
+            "com.google.android.apps.gcs",
+            "com.google.android.apps.turbo",
+            "com.google.android.apps.turboadapter",
+            "com.google.android.apps.wellbeing",
+            "com.google.android.configupdater",
             "com.google.android.gms",
             "com.google.android.googlequicksearchbox",
-            "com.google.android.inputmethod.latin"
+            "com.google.android.settings.intelligence",
+            "com.google.android.setupwizard",
+            "com.google.android.apps.nexuslauncher",
+            "com.google.android.gsf",
+            "com.google.android.apps.wallpaper",
+            "com.google.android.onetimeinitializer",
+            "com.google.android.pixel.setupwizard",
+            "com.google.android.apps.messaging",
+            "com.google.android.apps.photos",
+            "com.google.android.apps.maps"
     };
 
     static {
@@ -48,6 +64,7 @@ public class PixelPropsUtils {
         propsToChange.put("DEVICE", "redfin");
         propsToChange.put("PRODUCT", "redfin");
         propsToChange.put("MODEL", "Pixel 5");
+        propsToChange.put("FINGERPRINT", "google/redfin/redfin:11/RQ2A.210305.007/7124944:user/release-keys");
     }
 
     public static void setProps(String packageName) {
@@ -61,8 +78,15 @@ public class PixelPropsUtils {
             for (Map.Entry<String, Object> prop : propsToChange.entrySet()) {
                 String key = prop.getKey();
                 Object value = prop.getValue();
+                if (packageName.equals("com.google.android.gms") && key.equals("MODEL")){
+                    value = value + "\u200b";
+                }
                 setPropValue(key, value);
             }
+        }
+        // Set proper indexing fingerprint
+        if (packageName.equals("com.google.android.settings.intelligence")){
+            setPropValue("FINGERPRINT", Build.DATE);
         }
     }
 
