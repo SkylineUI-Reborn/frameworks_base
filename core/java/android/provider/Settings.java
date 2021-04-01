@@ -4855,11 +4855,6 @@ public final class Settings {
         public static final String QS_TILE_TITLE_VISIBILITY = "qs_tile_title_visibility";
 
         /**
-         * @hide
-         */
-        public static final String SCREENSHOT_SHUTTER_SOUND = "screenshot_shutter_sound";
-
-        /**
          * Setting to determine whether or not to show the battery percentage in the qs status bar header.
          *    0 - Show remaining time
          *    1 - Show percentage
