@@ -3680,6 +3680,12 @@ public final class Settings {
         public static final String FOD_RECOGNIZING_ANIMATION = "fod_anim";
 
         /**
+         * FOD night light
+         * @hide
+         */
+        public static final String FOD_NIGHT_LIGHT = "fod_night_light";
+
+        /**
          * END_BUTTON_BEHAVIOR value for "go home".
          * @hide
          */
