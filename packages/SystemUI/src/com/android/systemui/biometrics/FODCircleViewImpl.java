@@ -18,6 +18,9 @@ package com.android.systemui.biometrics;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.hardware.display.ColorDisplayManager;
+import android.os.Handler;
+import android.os.SystemProperties;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Slog;
@@ -37,6 +40,9 @@ public class FODCircleViewImpl extends SystemUI implements CommandQueue.Callback
 
     private FODCircleView mFodCircleView;
     private final CommandQueue mCommandQueue;
+     private boolean mDisableNightMode;
+    private boolean mNightModeActive;
+    private int mAutoModeState;
     private Handler mHandler;
     private Runnable mHideFodViewRunnable = () -> mFodCircleView.hide();
 
@@ -60,12 +66,16 @@ public class FODCircleViewImpl extends SystemUI implements CommandQueue.Callback
         } catch (RuntimeException e) {
             Slog.e(TAG, "Failed to initialize FODCircleView", e);
         }
+        mDisableNightMode = SystemProperties.getBoolean("persist.fod.night_mode_disabled", true);
     }
 
     @Override
     public void showInDisplayFingerprintView() {
         if (mFodCircleView != null) {
             mHandler.removeCallbacks(mHideFodViewRunnable);
+            if (mDisableNightMode) {
+                disableNightMode();
+            }
             mFodCircleView.show();
         }
     }
@@ -73,8 +83,28 @@ public class FODCircleViewImpl extends SystemUI implements CommandQueue.Callback
     @Override
     public void hideInDisplayFingerprintView() {
         if (mFodCircleView != null) {
+            if (mDisableNightMode) {
+                setNightMode(mNightModeActive, mAutoModeState);
+            }
             mFodCircleView.hide();
             mHandler.postDelayed(mHideFodViewRunnable, 500);
+        }
+    }
+
+    private void disableNightMode() {
+        ColorDisplayManager colorDisplayManager = mContext.getSystemService(ColorDisplayManager.class);
+        mAutoModeState = colorDisplayManager.getNightDisplayAutoMode();
+        mNightModeActive = colorDisplayManager.isNightDisplayActivated();
+        colorDisplayManager.setNightDisplayActivated(false);
+    }
+
+    private void setNightMode(boolean activated, int autoMode) {
+        ColorDisplayManager colorDisplayManager = mContext.getSystemService(ColorDisplayManager.class);
+        colorDisplayManager.setNightDisplayAutoMode(0);
+        if (autoMode == 0) {
+            colorDisplayManager.setNightDisplayActivated(activated);
+        } else if (autoMode == 1 || autoMode == 2) {
+            colorDisplayManager.setNightDisplayAutoMode(autoMode);
         }
     }
 }
