@@ -235,6 +235,7 @@ public class SystemSettingsValidators {
         VALIDATORS.put(System.DISPLAY_CABC, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.DISPLAY_COLOR_ENHANCE, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.DISPLAY_AUTO_CONTRAST, BOOLEAN_VALIDATOR);
+	VALIDATORS.put(System.AUTO_BRIGHTNESS_ONE_SHOT, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.DISPLAY_COLOR_ADJUSTMENT, new Validator() {
             @Override
             public boolean validate(String value) {
