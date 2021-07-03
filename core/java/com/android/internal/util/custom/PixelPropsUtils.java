@@ -55,7 +55,7 @@ public class PixelPropsUtils {
             "com.google.android.apps.messaging",
             "com.google.android.apps.photos",
             "com.google.android.apps.maps",
-            "com.google.android.apps.fitness
+            "com.google.android.apps.fitness"
     };
 
     static {
