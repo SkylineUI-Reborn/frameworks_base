@@ -29,6 +29,7 @@ public class PixelPropsUtils {
     private static final boolean DEBUG = false;
 
     private static final Map<String, Object> propsToChange;
+    private static final Map<String, Object> propsToChangePixelXL;
 
     private static final String[] packagesToChange = {
             "com.google.android.ext.services",
@@ -53,10 +54,13 @@ public class PixelPropsUtils {
             "com.google.android.onetimeinitializer",
             "com.google.android.pixel.setupwizard",
             "com.google.android.apps.messaging",
-            "com.google.android.apps.photos",
             "com.google.android.apps.maps",
             "com.google.android.apps.fitness"
     };
+
+    private static final String[] packagesToChangePixelXL = {
+        "com.google.android.apps.photos"
+};
 
     static {
         propsToChange = new HashMap<>();
@@ -66,6 +70,12 @@ public class PixelPropsUtils {
         propsToChange.put("PRODUCT", "redfin");
         propsToChange.put("MODEL", "Pixel 5");
         propsToChange.put("FINGERPRINT", "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys");
+        propsToChangePixelXL = new HashMap<>();
+        propsToChangePixelXL.put("BRAND", "google");
+        propsToChangePixelXL.put("MANUFACTURER", "Google");
+        propsToChangePixelXL.put("DEVICE", "marlin");
+        propsToChangePixelXL.put("PRODUCT", "marlin");
+        propsToChangePixelXL.put("MODEL", "Pixel XL");
     }
 
     public static void setProps(String packageName) {
@@ -89,6 +99,16 @@ public class PixelPropsUtils {
         if (packageName.equals("com.google.android.settings.intelligence")){
             setPropValue("FINGERPRINT", Build.DATE);
         }
+        if (Arrays.asList(packagesToChangePixelXL).contains(packageName)){
+            if (DEBUG){
+                Log.d(TAG, "Defining props for: " + packageName);
+            }
+            for (Map.Entry<String, Object> prop : propsToChangePixelXL.entrySet()) {
+                String key = prop.getKey();
+                Object value = prop.getValue();
+                setPropValue(key, value);
+            }
+        }        
     }
 
     private static void setPropValue(String key, Object value){
