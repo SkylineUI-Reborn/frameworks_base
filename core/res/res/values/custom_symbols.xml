@@ -79,9 +79,6 @@
     <java-symbol type="string" name="config_pocketBridgeSysfsInpocket" />
     <java-symbol type="bool" name="config_pocketModeSupported" />
 
-    <!-- Enable face auth when swiping security view -->
-    <java-symbol type="bool" name="config_faceAuthOnSecurityView" />
-
     <!-- Device has OnePlus haptic motor -->
     <java-symbol type="bool" name="config_hasOnePlusHapticMotor" />
 
