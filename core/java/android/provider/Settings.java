@@ -4989,12 +4989,6 @@ public final class Settings {
          * @hide
          */
         public static final String STATUSBAR_CLOCK_DATE_POSITION = "statusbar_clock_date_position";
-
-        /**
-         * Whether to show battery percent on ambient bottom
-         * @hide
-         */
-        public static final String AMBIENT_BATTERY_PERCENT = "ambient_battery_percent";
         
         /**
         * Set edge gesture Y dead zone
