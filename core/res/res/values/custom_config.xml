@@ -83,8 +83,6 @@
          timing(the duration which the vibrator is expected to vibrate for). -->
     <bool name="config_hasOnePlusHapticMotor">false</bool>
 
-    <!-- Enable face auth when swiping security view -->
-    <bool name="config_faceAuthOnSecurityView">false</bool>
 
     <!-- NightLight FOD -->
     <bool name="disable_fod_night_light">false</bool>
