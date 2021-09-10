@@ -47,4 +47,9 @@
     <string name="status_bar_roaming">漫游指示器</string>
     <!-- Name of the data saver status bar icon. -->
     <string name="status_bar_data_saver">流量节省程序</string>
+
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">当天</string>
+    <string name="usage_data_default_suffix">数据</string>
+    <string name="usage_wifi_default_suffix">WiFi</string>
 </resources>
