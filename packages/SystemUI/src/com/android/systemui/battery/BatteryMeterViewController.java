@@ -22,6 +22,7 @@ import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Handler;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.ArraySet;
@@ -187,6 +188,13 @@ public class BatteryMeterViewController extends ViewController<BatteryMeterView>
     private final class SettingObserver extends ContentObserver {
         public SettingObserver(Handler handler) {
             super(handler);
+        }
+
+        void observe() {
+            ContentResolver resolver = getContext().getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_SHOW_BATTERY_ESTIMATE),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
