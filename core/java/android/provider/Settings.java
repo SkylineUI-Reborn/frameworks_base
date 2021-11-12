@@ -5600,6 +5600,12 @@ public final class Settings {
         };
 
         /**
+         * Whether to combine wifi and signal icons
+         * @hide
+         */
+        public static final String COMBINED_STATUS_BAR_SIGNAL_ICONS = "combined_status_bar_signal_icons";
+
+        /**
          * Three Finger Gesture from Oppo
          * @hide
          */
@@ -5787,6 +5793,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(FORCE_FULLSCREEN_CUTOUT_APPS);
             PRIVATE_SETTINGS.add(NAV_BAR_COMPACT_LAYOUT);
             PRIVATE_SETTINGS.add(BACK_GESTURE_HAPTIC);
+            PRIVATE_SETTINGS.add(COMBINED_STATUS_BAR_SIGNAL_ICONS);
         }
 
         /**

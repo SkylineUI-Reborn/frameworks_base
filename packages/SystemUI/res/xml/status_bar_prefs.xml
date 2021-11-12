@@ -82,6 +82,11 @@
         android:key="cameratoggle"
         android:title="@string/quick_settings_camera_label" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="combined_status_bar_signal_icons"
+        android:title="@string/combined_status_bar_signal_icons_title"
+        android:defaultValue="false"/>
+
     <com.android.systemui.tuner.BatteryPreference
         android:title="@string/battery"
         android:summary="%s"

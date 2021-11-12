@@ -89,5 +89,6 @@ public class SystemSettings {
         Settings.System.VIBRATE_ON_CALLWAITING,
         Settings.System.VIBRATE_ON_DISCONNECT,
         Settings.System.ENABLE_RIPPLE_EFFECT,
+        Settings.System.COMBINED_STATUS_BAR_SIGNAL_ICONS,
     };
 }
