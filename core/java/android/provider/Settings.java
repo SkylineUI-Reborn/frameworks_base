@@ -5464,6 +5464,13 @@ public final class Settings {
         public static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
         /**
+         * Arcane Idle Manager
+         * @hide
+         */
+        @Readable
+        public static final String ARCANE_IDLE_MANAGER = "arcane_idle_manager";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
