@@ -52,6 +52,8 @@ import com.google.android.systemui.qs.tiles.BatterySaverTileGoogle;
 import com.google.android.systemui.qs.tiles.OverlayToggleTile;
 import com.google.android.systemui.qs.tiles.ReverseChargingTile;
 
+import com.android.systemui.qs.tiles.HeadsUpTile;
+
 import javax.inject.Inject;
 import javax.inject.Provider;
 
@@ -95,7 +97,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<AlarmTile> alarmTileProvider,
             Provider<QuickAccessWalletTile> quickAccessWalletTileProvider,
             Provider<OverlayToggleTile> overlayToggleTileProvider,
-            Provider<ReverseChargingTile> reverseChargingTileProvider) {
+            Provider<ReverseChargingTile> reverseChargingTileProvider,
+	    Provider<HeadsUpTile> headsupTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
                 wifiTileProvider,
@@ -124,7 +127,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 microphoneToggleTileProvider,
                 deviceControlsTileProvider,
                 alarmTileProvider,
-                quickAccessWalletTileProvider);
+                quickAccessWalletTileProvider,
+		headsupTileProvider);
         this.mReverseChargingTileProvider = reverseChargingTileProvider;
         this.mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
         this.mOverlayToggleTileProvider = overlayToggleTileProvider;
