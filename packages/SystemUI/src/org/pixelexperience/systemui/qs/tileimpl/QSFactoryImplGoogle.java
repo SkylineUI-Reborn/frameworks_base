@@ -49,9 +49,9 @@ import com.android.systemui.qs.tiles.UserTile;
 import com.android.systemui.qs.tiles.WifiTile;
 import com.android.systemui.qs.tiles.WorkModeTile;
 import com.android.systemui.util.leak.GarbageMonitor;
-import com.google.android.systemui.qs.tiles.BatterySaverTileGoogle;
-import com.google.android.systemui.qs.tiles.OverlayToggleTile;
-import com.google.android.systemui.qs.tiles.ReverseChargingTile;
+
+import org.pixelexperience.systemui.qs.tiles.BatterySaverTileGoogle;
+import org.pixelexperience.systemui.qs.tiles.ReverseChargingTile;
 
 import com.android.systemui.qs.tiles.HeadsUpTile;
 
@@ -63,7 +63,6 @@ import dagger.Lazy;
 @SysUISingleton
 public class QSFactoryImplGoogle extends QSFactoryImpl {
     private final Provider<BatterySaverTileGoogle> mBatterySaverTileGoogleProvider;
-    private final Provider<OverlayToggleTile> mOverlayToggleTileProvider;
     private final Provider<ReverseChargingTile> mReverseChargingTileProvider;
 
     @Inject
@@ -97,9 +96,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<DeviceControlsTile> deviceControlsTileProvider,
             Provider<AlarmTile> alarmTileProvider,
             Provider<QuickAccessWalletTile> quickAccessWalletTileProvider,
-            Provider<OverlayToggleTile> overlayToggleTileProvider,
             Provider<ReverseChargingTile> reverseChargingTileProvider,
-	    Provider<HeadsUpTile> headsupTileProvider,
+	        Provider<HeadsUpTile> headsupTileProvider,
             Provider<PowerShareTile> powerShareTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
@@ -134,7 +132,6 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 powerShareTileProvider);
         this.mReverseChargingTileProvider = reverseChargingTileProvider;
         this.mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
-        this.mOverlayToggleTileProvider = overlayToggleTileProvider;
     }
 
     @Override
@@ -147,10 +144,10 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
     }
 
     private QSTileImpl createTileInternal(String str) {
-        if (str.equals("ott")) {
-            return this.mOverlayToggleTileProvider.get();
-        } else if (str.equals("reverse")) {
+        if (str.equals("reverse")) {
             return this.mReverseChargingTileProvider.get();
+        } else if (str.equals("battery")) {
+            return this.mBatterySaverTileGoogleProvider.get();
         }
         return null;
     }
