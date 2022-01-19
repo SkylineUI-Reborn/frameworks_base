@@ -16,7 +16,7 @@
     <string name="global_action_reboot">Перезагрузить</string>
     <string name="global_action_reboot_more">Перезагрузка\u2026</string>
     <string name="global_action_reboot_sub">Система</string>
-    <string name="global_action_reboot_recovery">Рекавери</string>
+    <string name="global_action_reboot_recovery">Режим восстановления</string>
     <string name="global_action_reboot_bootloader">Загрузчик</string>
     <string name="global_action_settings">Настройки</string>
 </resources>
