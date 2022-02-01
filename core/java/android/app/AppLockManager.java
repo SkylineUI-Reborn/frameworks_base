@@ -30,7 +30,6 @@ import java.util.List;
 /**
  * @hide
  */
-@SystemApi
 @SystemService(Context.APP_LOCK_SERVICE)
 public final class AppLockManager {
 
@@ -39,6 +38,9 @@ public final class AppLockManager {
 
     /** @hide */
     public static final boolean DEFAULT_BIOMETRICS_ALLOWED = true;
+
+    /** @hide */
+    public static final boolean DEFAULT_PROTECT_APP = false;
 
     /** @hide */
     public static final boolean DEFAULT_REDACT_NOTIFICATION = false;
@@ -74,34 +76,18 @@ public final class AppLockManager {
     }
 
     /**
-     * Add an application to be protected. Package should be an user
-     * installed application or a system app whitelisted in
-     * {@link config_appLockAllowedSystemApps}.
-     * Caller must hold {@link android.permission.MANAGE_APP_LOCK}.
+     * Set whether app should be protected by app lock
+     * in locked state. Caller must hold {@link android.permission.MANAGE_APP_LOCK}.
      *
-     * @param packageName the package name of the app to add.
+     * @param packageName the package name.
+     * @param shouldProtectApp true to hide notification content.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
-    public void addPackage(@NonNull String packageName) {
+    public void setShouldProtectApp(@NonNull String packageName, boolean shouldProtectApp) {
         try {
-            mService.addPackage(packageName, mContext.getUserId());
-        } catch (RemoteException e) {
-            throw e.rethrowFromSystemServer();
-        }
-    }
-
-    /**
-     * Remove an application from the protected packages list.
-     * Caller must hold {@link android.permission.MANAGE_APP_LOCK}.
-     *
-     * @param packageName the package name of the app to remove.
-     */
-    @UserHandleAware
-    @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
-    public void removePackage(@NonNull String packageName) {
-        try {
-            mService.removePackage(packageName, mContext.getUserId());
+            mService.setShouldProtectApp(packageName, shouldProtectApp, mContext.getUserId());
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
         }
@@ -113,6 +99,7 @@ public final class AppLockManager {
      * @param userId the user id given by the caller.
      * @return the timeout in milliseconds if configuration for
      *     current user exists, -1 otherwise.
+     * @hide
      */
     @UserHandleAware
     public long getTimeout() {
@@ -129,6 +116,7 @@ public final class AppLockManager {
      *
      * @param timeout the timeout in milliseconds. Must be >= 5.
      * @param userId the user id given by the caller.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
@@ -164,6 +152,7 @@ public final class AppLockManager {
      *
      * @param packageName the package name.
      * @param shouldRedactNotification true to hide notification content.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
@@ -180,6 +169,7 @@ public final class AppLockManager {
      * Caller must hold {@link android.permission.MANAGE_APP_LOCK}.
      *
      * @param biometricsAllowed whether to use biometrics.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
@@ -194,7 +184,8 @@ public final class AppLockManager {
     /**
      * Check whether biometrics is allowed for unlocking.
      *
-     * @return true if biometrics will be used for unlocking, false otheriwse.
+     * @return true if biometrics will be used for unlocking, false otherwise.
+     * @hide
      */
     @UserHandleAware
     public boolean isBiometricsAllowed() {
@@ -210,6 +201,7 @@ public final class AppLockManager {
      * Caller must hold {@link android.permission.MANAGE_APP_LOCK}.
      *
      * @param packageName the name of the package to unlock.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
@@ -227,6 +219,7 @@ public final class AppLockManager {
      *
      * @param packageName the name of the package to hide or unhide.
      * @param hide whether to hide or not.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
@@ -243,6 +236,7 @@ public final class AppLockManager {
      * Caller must hold {@link android.permission.MANAGE_APP_LOCK}.
      *
      * @return list of package names of the hidden apps.
+     * @hide
      */
     @UserHandleAware
     @RequiresPermission(Manifest.permission.MANAGE_APP_LOCK)
@@ -250,6 +244,36 @@ public final class AppLockManager {
     public List<String> getHiddenPackages() {
         try {
             return mService.getHiddenPackages(mContext.getUserId());
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Check whether package is protected by app lock
+     *
+     * @return true if package is protected by app lock, false otherwise.
+     * @hide
+     */
+    @UserHandleAware
+    public boolean isPackageProtected(@NonNull String packageName) {
+        try {
+            return mService.isPackageProtected(packageName, mContext.getUserId());
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Check whether package is hidden by app lock
+     *
+     * @return true if package is hidden by app lock, false otherwise.
+     * @hide
+     */
+    @UserHandleAware
+    public boolean isPackageHidden(@NonNull String packageName) {
+        try {
+            return mService.isPackageHidden(packageName, mContext.getUserId());
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
         }
