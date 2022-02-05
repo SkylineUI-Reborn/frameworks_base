@@ -23,6 +23,8 @@ import android.graphics.PointF
 import android.hardware.biometrics.BiometricSourceType
 import android.util.Log
 import androidx.annotation.VisibleForTesting
+import android.provider.Settings
+import android.os.UserHandle
 import com.android.keyguard.KeyguardUpdateMonitor
 import com.android.keyguard.KeyguardUpdateMonitorCallback
 import com.android.settingslib.Utils
@@ -120,6 +122,11 @@ class AuthRippleController @Inject constructor(
     fun showRipple(biometricSourceType: BiometricSourceType?) {
         if (!keyguardUpdateMonitor.isKeyguardVisible ||
             keyguardUpdateMonitor.userNeedsStrongAuth()) {
+            return
+        }
+
+        if (biometricSourceType == BiometricSourceType.FINGERPRINT && Settings.System.getIntForUser(sysuiContext.getContentResolver(),
+                Settings.System.SKIP_FP_UNLOCK_ANIMATION, 0, UserHandle.USER_CURRENT) == 1 ) {
             return
         }
 
