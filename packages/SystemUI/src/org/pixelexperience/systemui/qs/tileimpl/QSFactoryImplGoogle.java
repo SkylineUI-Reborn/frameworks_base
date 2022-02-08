@@ -130,8 +130,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 quickAccessWalletTileProvider,
 		headsupTileProvider,
                 powerShareTileProvider);
-        this.mReverseChargingTileProvider = reverseChargingTileProvider;
-        this.mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
+        mReverseChargingTileProvider = reverseChargingTileProvider;
+        mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
     }
 
     @Override
@@ -145,9 +145,9 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
 
     private QSTileImpl createTileInternal(String str) {
         if (str.equals("reverse")) {
-            return this.mReverseChargingTileProvider.get();
+            return mReverseChargingTileProvider.get();
         } else if (str.equals("battery")) {
-            return this.mBatterySaverTileGoogleProvider.get();
+            return mBatterySaverTileGoogleProvider.get();
         }
         return null;
     }
