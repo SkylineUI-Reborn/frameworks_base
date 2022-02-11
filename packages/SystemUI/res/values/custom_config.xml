@@ -70,4 +70,7 @@
           <item>255,33</item>
           -->
     </string-array>
+
+    <!-- If true, recorder will use AVCLevel42 for encoding-->
+    <bool name="config_screenrecord_codec_profile_avc42">false</bool>
 </resources>
