@@ -84,4 +84,7 @@
 
     <!-- Autobrightness tile -->
     <string name="quick_settings_autobrightness_label">Auto brightness</string>
+
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
 </resources>
