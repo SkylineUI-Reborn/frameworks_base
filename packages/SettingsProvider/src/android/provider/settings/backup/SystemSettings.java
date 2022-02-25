@@ -90,5 +90,6 @@ public class SystemSettings {
         Settings.System.VIBRATE_ON_DISCONNECT,
         Settings.System.ENABLE_RIPPLE_EFFECT,
         Settings.System.COMBINED_STATUS_BAR_SIGNAL_ICONS,
+        Settings.System.QS_FOOTER_DATA_USAGE,
     };
 }

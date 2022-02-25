@@ -5640,6 +5640,12 @@ public final class Settings {
          */
         public static final String BACK_GESTURE_HAPTIC = "back_gesture_haptic";
 
+	/**
+         * Whether to show data usage in qs footer
+         * @hide
+         */
+        public static final String QS_FOOTER_DATA_USAGE = "qs_footer_data_usage";
+
         /**
          * These are all public system settings
          *
