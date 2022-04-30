@@ -361,7 +361,6 @@ public class BatteryMeterView extends LinearLayout implements DarkReceiver {
     @Override
     public void onDarkChanged(Rect area, float darkIntensity, int tint) {
         float intensity = DarkIconDispatcher.isInArea(area, this) ? darkIntensity : 0;
-        updateSettings();
         mNonAdaptedSingleToneColor = mDualToneHandler.getSingleColor(intensity);
         mNonAdaptedForegroundColor = mDualToneHandler.getFillColor(intensity);
         mNonAdaptedBackgroundColor = mDualToneHandler.getBackgroundColor(intensity);
