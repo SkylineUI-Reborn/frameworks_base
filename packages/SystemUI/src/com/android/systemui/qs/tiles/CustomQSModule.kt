@@ -38,6 +38,12 @@ interface CustomQSModule {
     @StringKey(AODTile.TILE_SPEC)
     fun bindAODTile(aodTile: AODTile): QSTileImpl<*>
 
+    /** Inject AutoBrightness into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(AutoBrightnessTile.TILE_SPEC)
+    fun bindAutoBrightnessTile(autoBrightnessTile: AutoBrightnessTile): QSTileImpl<*>
+
     /** Inject CaffeineTile into tileMap in QSModule */
     @Binds
     @IntoMap
