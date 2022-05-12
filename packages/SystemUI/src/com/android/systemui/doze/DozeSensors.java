@@ -47,8 +47,8 @@ import com.android.internal.logging.UiEvent;
 import com.android.internal.logging.UiEventLogger;
 import com.android.internal.logging.UiEventLoggerImpl;
 import com.android.keyguard.KeyguardUpdateMonitor;
-import com.android.systemui.biometrics.AuthController;
 import com.android.systemui.R;
+import com.android.systemui.biometrics.AuthController;
 import com.android.systemui.plugins.SensorManagerPlugin;
 import com.android.systemui.statusbar.phone.DozeParameters;
 import com.android.systemui.statusbar.policy.DevicePostureController;
@@ -105,6 +105,7 @@ public class DozeSensors {
     private final boolean mScreenOffUdfpsEnabled;
 
     // Sensors
+    private final boolean mProxSensorSupported;
     @VisibleForTesting
     protected TriggerSensor[] mTriggerSensors;
     private final ProximitySensor mProximitySensor;
@@ -170,6 +171,8 @@ public class DozeSensors {
         mProximitySensor.setTag(TAG);
         mSelectivelyRegisterProxSensors = dozeParameters.getSelectivelyRegisterSensorsUsingProx();
         mListeningProxSensors = !mSelectivelyRegisterProxSensors;
+        mProxSensorSupported = mContext.getResources().getBoolean(
+                R.bool.doze_proximity_sensor_supported);
         mScreenOffUdfpsEnabled =
                 config.screenOffUdfpsEnabled(KeyguardUpdateMonitor.getCurrentUser());
         mDevicePostureController = devicePostureController;
@@ -260,7 +263,8 @@ public class DozeSensors {
                         false /* ignoresSetting */,
                         false /* requiresProx */),
         };
-        if (context.getResources().getBoolean(R.bool.doze_proximity_sensor_supported)) {
+
+        if (mProxSensorSupported) {
             setProxListening(false);  // Don't immediately start listening when we register.
             mProximitySensor.register(
                     proximityEvent -> {
@@ -269,6 +273,7 @@ public class DozeSensors {
                         }
                     });
         }
+
         mDevicePostureController.addCallback(mDevicePostureCallback);
     }
 
@@ -474,6 +479,7 @@ public class DozeSensors {
         for (TriggerSensor s : mTriggerSensors) {
             idpw.println("Sensor: " + s.toString());
         }
+        if (!mProxSensorSupported) return;
         idpw.println("ProxSensor: " + mProximitySensor.toString());
     }
 
@@ -481,7 +487,7 @@ public class DozeSensors {
      * @return true if prox is currently near, false if far or null if unknown.
      */
     public Boolean isProximityCurrentlyNear() {
-        return mProximitySensor.isNear();
+        return mProxSensorSupported ? mProximitySensor.isNear() : null;
     }
 
     @VisibleForTesting
