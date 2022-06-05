@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ekran dostosowany do otoczenia</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ekran dostosowany do otoczenia wyłączony</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ekran dostosowany do otoczenia włączony.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Aktywny wyświetlacz został wyłączony.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Aktywny ekran został włączony.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Redukcja migotania</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Ekran Zawsze Włączony</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD wyłączony\nOszczędzanie baterii</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Automatyczna jasność</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Kofeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kofeina wył.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kofeina wł.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Wyskakujące powiadomienia</string>
+    <string name="accessibility_quick_settings_heads_up_off">Wyłącz wyskakujące powiadomienia.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Wyskakujące powiadomienia wł.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Wyskakujące powiadomienia wył.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Wyskakujące powiadomienia włączone.</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Tryb czytania</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Włącz tryb czytania.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Wyłączono tryb czytania.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Tryb czytania został włączony.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Tryb czytania został wyłączony.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Synchronizuj</string>
+    <string name="accessibility_quick_settings_sync_off">Synchronizacja wyłączona.</string>
+    <string name="accessibility_quick_settings_sync_on">Synchronizacja włączona.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Synchronizacja została wyłączona.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Synchronizacja została włączona.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering przez USB</string>
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Usuń</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Usuń zrzut ekranu</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Uruchom ponownie</string>
+    <string name="global_action_reboot_more">Zaawansowany</string>
+    <string name="global_action_reboot_sub">Systemowy</string>
+    <string name="global_action_reboot_recovery">Tryb recovery</string>
+    <string name="global_action_reboot_bootloader">Tryb Bootloader</string>
+    <string name="global_action_reboot_systemui">SystemUI</string>
+    <string name="global_action_settings">Ustawienia</string>
+    <!-- Status bar network traffic monitor strings -->
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Połączone ikony sygnałów</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+</resources>

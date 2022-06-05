@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display turned off.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display turned on.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Anti flicker</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Auto brightness</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">മുന്നറിയിപ്പ്</string>
+    <string name="accessibility_quick_settings_heads_up_off">മുണറിയിപ് ഓഫ്.</string>
+    <string name="accessibility_quick_settings_heads_up_on">മുണറിയിപ് ഓൺ.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">ഹെഡ്സ് അപ്പ് ഓഫ് ചെയ്തു.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">ഹെഡ്സ് അപ്പ് ഓണ്‍ ചെയ്തു.</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">വായനാ മോഡ്</string>
+    <string name="accessibility_quick_settings_reading_mode_on">വായനാ മോഡ് ഓൺ.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">വായനാ മോഡ് ഓഫ്.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">വായനാ മോഡ് ഓണാക്കി.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">വായനാ മോഡ് ഓഫാക്കി.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">സമന്വയിപ്പിക്കുക</string>
+    <string name="accessibility_quick_settings_sync_off">പൊരുത്തപ്പെടൽ ഓഫ്.</string>
+    <string name="accessibility_quick_settings_sync_on">പൊരുത്തപ്പെടൽ ഓണ്‍.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">പൊരുത്തപ്പെടൽ ഓഫ് ചെയ്തു.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">പൊരുത്തപ്പെടൽ ഓണ്‍ ചെയ്തു.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB ടെതറിംഗ്</string>
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">ഡിലീറ്റ്</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">സ്ക്രീൻഷോട്ട് മായ്ക്കുക</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">പുനരാരംഭിക്കുക</string>
+    <string name="global_action_reboot_more">വിപുലം</string>
+    <string name="global_action_reboot_sub">സിസ്റ്റം</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_bootloader">ബൂട്ട്ലോഡര്‍</string>
+    <string name="global_action_reboot_systemui">സിസ്റ്റം യൂസർ ഇന്റർഫേസ്</string>
+    <string name="global_action_settings">ക്രമീകരണങ്ങള്‍</string>
+    <!-- Status bar network traffic monitor strings -->
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">സംയോജിത സിഗ്നൽ ഐക്കണുകൾ</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">വി പി എൻ</string>
+</resources>

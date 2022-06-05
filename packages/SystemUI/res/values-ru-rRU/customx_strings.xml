@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display выключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display включен.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display выключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display включен.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Предотвращение мерцания</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Always On Display</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD выкл.\n Экономия батареи</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Автоматическая яркость</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин отключен.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
+    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления отключены.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления выключены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Всплывающие уведомления включены.</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Режим чтения</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Режим чтения включен.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Режим чтения отключен.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Режим чтения включен.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Режим чтения выключен.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Синхронизация</string>
+    <string name="accessibility_quick_settings_sync_off">Синхронизация отключена.</string>
+    <string name="accessibility_quick_settings_sync_on">Синхронизация включена.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Синхронизация выключена.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Синхронизация включена.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Режим USB-модема</string>
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Удалить</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Удалить скриншот</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Перезагрузка</string>
+    <string name="global_action_reboot_more">Дополнительно</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Режим восстановления</string>
+    <string name="global_action_reboot_bootloader">Загрузчик</string>
+    <string name="global_action_reboot_systemui">Интерфейс системы</string>
+    <string name="global_action_settings">Настройки</string>
+    <!-- Status bar network traffic monitor strings -->
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Комбинированные значки сигналов</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+</resources>

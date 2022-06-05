@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_fakePackageSignature">Napodobniť podpis balíčku</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_fakePackageSignature">Umožňuje aplikácii vydávať sa sa inú aplikáciu. Škodlivé aplikácie by mohli použiť túto možnosť pre prístup k dátam súkromných aplikácií. Legitímne použitie zahŕňa emulátor, ktorý predstiera, že je to, čo napodobňuje. Udeľujte toto oprávnenie s opatrnosťou!</string>
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_fake_package_signature">Napodobniť podpis balíčku</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_fake_package_signature">povoliť napodobnenie podpisu balíka</string>
+    <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
+    <string name="permgrouprequest_fake_package_signature">Povoliť &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; napodobniť podpis balíka?</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automatický</string>
+    <string name="live_display_auto_summary">Automaticky upraviť teplotu farieb obrazovky po západe a východe slnka</string>
+    <string name="live_display_off">Vypnuté</string>
+    <string name="live_display_off_summary">Zakázať všetky úpravy</string>
+    <string name="live_display_day">Deň</string>
+    <string name="live_display_day_summary">Použiť iba nastavenia pre deň</string>
+    <string name="live_display_night">Noc</string>
+    <string name="live_display_night_summary">Používať iba nastavenia pre noc</string>
+    <string name="live_display_outdoor">Vonku (slnečno)</string>
+    <string name="live_display_outdoor_summary">Používať len nastavenia pre vonkajšie prostredie</string>
+    <string name="live_display_hint">LiveDisplay môže pomôcť znížiť únavu očí a pomôže vám spať v noci. Ťuknite sem a vyskúšajte túto funkciu!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay vyp.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automatický režim.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: denný režim.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: nočný režim.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: režim vonku.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay vypnutý.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay bol zmenený na automatický režim.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay bol zmenený na denný režim.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay bol zmenený na nočný režim.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay bol zmenený na režim vonku.</string>
+    <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">Reštart do zavádzača</string>
+    <string name="reboot_to_bootloader_message">Reštartuje sa do zavádzača\u2026</string>
+    <string name="reboot_to_recovery_title">Reštartovať do Recovery</string>
+    <string name="reboot_to_recovery_message">Reštartuje sa do recovery\u2026</string>
+    <string name="reboot_system_title">Reštartovať systém</string>
+    <string name="reboot_system_message">Reštartuje sa systém\u2026</string>
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">Kopírovať URL adresu záznamu o chybe</string>
+    <string name="url_copy_success">URL úspešne skopírovaná</string>
+    <string name="url_copy_failed">Pri nahrávaní protokolu o zlyhaní na Memochō došlo k chybe</string>
+</resources>

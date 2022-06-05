@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient Display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient Display 꺼짐.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient Display 켜짐.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient Display가 꺼졌습니다.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display가 켜졌습니다.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">플리커링 방지</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Always On Display</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD 꺼짐\n배터리 절약 모드</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">자동 밝기</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine 꺼짐.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine 켜짐.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">화면 상단 알림</string>
+    <string name="accessibility_quick_settings_heads_up_off">화면 상단 알림 꺼짐.</string>
+    <string name="accessibility_quick_settings_heads_up_on">화면 상단 알림 켜짐.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">화면 상단 알림이 꺼졌습니다.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">화면 상단 알림이 켜졌습니다.</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">독서 모드</string>
+    <string name="accessibility_quick_settings_reading_mode_on">독서 모드 켜짐.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">독서 모드 꺼짐.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">독서 모드가 켜졌습니다.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">독서 모드가 꺼졌습니다.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">동기화</string>
+    <string name="accessibility_quick_settings_sync_off">동기화 꺼짐.</string>
+    <string name="accessibility_quick_settings_sync_on">동기화 켜짐.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">동기화가 꺼졌습니다.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">동기화가 켜졌습니다.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 테더링</string>
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">삭제</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">스크린샷 삭제</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">다시 시작</string>
+    <string name="global_action_reboot_more">고급</string>
+    <string name="global_action_reboot_sub">시스템</string>
+    <string name="global_action_reboot_recovery">리커버리</string>
+    <string name="global_action_reboot_bootloader">부트로더</string>
+    <string name="global_action_reboot_systemui">SystemUI</string>
+    <string name="global_action_settings">설정</string>
+    <!-- Status bar network traffic monitor strings -->
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">결합된 신호 아이콘</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+</resources>

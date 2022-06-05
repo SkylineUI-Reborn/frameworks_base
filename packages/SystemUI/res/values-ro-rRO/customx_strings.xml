@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Afișaj ambiental</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Afișaj ambiental oprit.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Afișaj ambiental pornit.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Afișaj ambiental dezactivat.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Afișaj ambiental activat.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Anti-pâlpâire</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Afișaj ambiental</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD oprit\nEconomisire baterie</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Luminozitate automată</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cofeină</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cofeină oprită.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cofeină pornită.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Atenționare</string>
+    <string name="accessibility_quick_settings_heads_up_off">Atenționări dezactivate.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Atenționări activate.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Atenționările au fost oprite.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Atenționările au fost activate.</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Mod lectură</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Mod lectură activat.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Mod lectură dezactivat.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Modul lectură a fost activat.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Modul lectură a fost dezactivat.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sincronizare</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronizare oprită.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronizare pornită.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sincronizarea este dezactivată.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sincronizarea este activată.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering prin USB</string>
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Ștergere</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Ștergere captură ecran</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Repornire</string>
+    <string name="global_action_reboot_more">Avansat</string>
+    <string name="global_action_reboot_sub">Sistem</string>
+    <string name="global_action_reboot_recovery">Recuperare</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_systemui">Interfață sistem</string>
+    <string name="global_action_settings">Setări</string>
+    <!-- Status bar network traffic monitor strings -->
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Pictograme de semnal combinate</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+</resources>

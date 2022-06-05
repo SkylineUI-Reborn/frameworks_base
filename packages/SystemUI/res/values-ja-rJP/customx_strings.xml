@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">アンビエント表示</string>
+    <string name="accessibility_quick_settings_ambient_display_off">アンビエント表示 OFF</string>
+    <string name="accessibility_quick_settings_ambient_display_on">アンビエント表示 ON</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">アンビエント表示 OFF</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">アンビエント表示を ON にしました</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">アンチフリッカー</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">常時オン</string>
+    <string name="quick_settings_aod_off_powersave_label">バッテリーセーバー\nがオフになりました</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">自動明るさ調整</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">カフェイン</string>
+    <string name="accessibility_quick_settings_caffeine_off">カフェイン OFF</string>
+    <string name="accessibility_quick_settings_caffeine_on">カフェイン ON</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">ヘッドアップ</string>
+    <string name="accessibility_quick_settings_heads_up_off">ヘッドアップはOFFです。</string>
+    <string name="accessibility_quick_settings_heads_up_on">ポップアップ通知 ON</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Heads Up を OFF にしました</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Heads Up を ON にしました</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">読書モード</string>
+    <string name="accessibility_quick_settings_reading_mode_on">読書モード ON</string>
+    <string name="accessibility_quick_settings_reading_mode_off">読書モード OFF</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">読書モードを ON にしました</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">読書モードを OFF にしました</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">同期</string>
+    <string name="accessibility_quick_settings_sync_off">同期 OFF</string>
+    <string name="accessibility_quick_settings_sync_on">同期はONです。</string>
+    <string name="accessibility_quick_settings_sync_changed_off">同期を OFF にしました</string>
+    <string name="accessibility_quick_settings_sync_changed_on">同期を ON にしました</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB テザリング</string>
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">削除</string>
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">スクリーンショットを削除</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">やり直す</string>
+    <string name="global_action_reboot_more">高度な</string>
+    <string name="global_action_reboot_sub">システム</string>
+    <string name="global_action_reboot_recovery">回復</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_systemui">システム UI</string>
+    <string name="global_action_settings">値の受け渡し</string>
+    <!-- Status bar network traffic monitor strings -->
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">結合電波アイコン</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+</resources>
