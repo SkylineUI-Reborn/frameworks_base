@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permlab_fakePackageSignature">Spoof package signature</string>
+    <string name="permlab_fakePackageSignature">Gefälschte Paketsignatur</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permdesc_fakePackageSignature">Allows the app to pretend to be a different app. Malicious applications might be able to use this to access private application data. Legitimate uses include an emulator pretending to be what it emulates. Grant this permission with caution only!</string>
+    <string name="permdesc_fakePackageSignature">Ermöglicht es der Anwendung, sich als eine andere Anwendung auszugeben. Bösartige Anwendungen könnten dies nutzen, um auf private Anwendungsdaten zuzugreifen. Zu den legitimen Anwendungen gehört ein Emulator, der vorgibt, das zu sein, was er emuliert. Erteilen Sie diese Erlaubnis nur mit Vorsicht!</string>
     <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permgrouplab_fake_package_signature">Spoof package signature</string>
+    <string name="permgrouplab_fake_package_signature">Paketsignatur fälschen</string>
     <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permgroupdesc_fake_package_signature">allow to spoof package signature</string>
+    <string name="permgroupdesc_fake_package_signature">Fälschung der Paketsignatur zulassen</string>
     <!-- Message shown to the user when the apps requests permission from this group. If ever possible this should stay below 80 characters (assuming the parameters takes 20 characters). Don't abbreviate until the message reaches 120 characters though. [CHAR LIMIT=120] -->
-    <string name="permgrouprequest_fake_package_signature">Allow
-        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; to spoof package signature?</string>
+    <string name="permgrouprequest_fake_package_signature">Erlauben Sie
+        &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; die Paketsignatur zu fälschen?</string>
     <!-- LiveDisplay strings -->
-    <string name="live_display_auto">Automatic</string>
-    <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
-    <string name="live_display_off">Off</string>
-    <string name="live_display_off_summary">Disable all adjustments</string>
-    <string name="live_display_day">Day</string>
-    <string name="live_display_day_summary">Use day settings only</string>
-    <string name="live_display_night">Night</string>
-    <string name="live_display_night_summary">Use night settings only</string>
-    <string name="live_display_outdoor">Outdoor (bright sun)</string>
-    <string name="live_display_outdoor_summary">Use outdoor settings only</string>
-    <string name="live_display_hint">LiveDisplay can help reduce eyestrain and help you sleep at night. Click here to try it out!</string>
-    <string name="accessibility_quick_settings_live_display_off">LiveDisplay off.</string>
-    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto mode.</string>
-    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: day mode.</string>
-    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: night mode.</string>
-    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: outdoor mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay turned off.</string>
-    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay changed to auto mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay changed to day mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay changed to night mode.</string>
-    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay changed to outdoor mode.</string>
+    <string name="live_display_auto">Automatisch</string>
+    <string name="live_display_auto_summary">Automatische Anpassung der Farbtemperatur des Bildschirms nach Sonnenuntergang und Sonnenaufgang</string>
+    <string name="live_display_off">Aus</string>
+    <string name="live_display_off_summary">Alle Einstellungen deaktivieren</string>
+    <string name="live_display_day">Tag</string>
+    <string name="live_display_day_summary">Nur Tageseinstellungen verwenden</string>
+    <string name="live_display_night">Nacht</string>
+    <string name="live_display_night_summary">Nur Nachteinstellungen verwenden</string>
+    <string name="live_display_outdoor">Im Freien (helle Sonne)</string>
+    <string name="live_display_outdoor_summary">Verwenden Sie nur Außeneinstellungen</string>
+    <string name="live_display_hint">LiveDisplay kann dazu beitragen, dass Ihre Augen weniger ermüden und Sie nachts besser schlafen können. Klicken Sie hier, um es auszuprobieren!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay aus.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: Auto-Modus.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: Tag Modus.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: Nachtmodus.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: \"Im Freien\"-Modus.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay ausgeschaltet.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay auf Auto-Modus geändert.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay auf Tag-Modus geändert.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">Live-Anzeige auf Nacht-Modus geändert.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay auf Außenmodus umgestellt.</string>
     <!-- Global actions -->
-    <string name="reboot_to_bootloader_title">Reboot bootloader</string>
-    <string name="reboot_to_bootloader_message">Rebooting to bootloader\u2026</string>
-    <string name="reboot_to_recovery_title">Reboot recovery</string>
-    <string name="reboot_to_recovery_message">Rebooting to recovery\u2026</string>
-    <string name="reboot_system_title">Restart system</string>
-    <string name="reboot_system_message">Restarting system\u2026</string>
+    <string name="reboot_to_bootloader_title">Neustart ins Bootloader</string>
+    <string name="reboot_to_bootloader_message">Neustart ins Bootloader\u2026</string>
+    <string name="reboot_to_recovery_title">Neustart ins Recovery</string>
+    <string name="reboot_to_recovery_message">Neustart ins Recovery\u2026</string>
+    <string name="reboot_system_title">System neustarten</string>
+    <string name="reboot_system_message">System wird neugestartet\u2026</string>
     <!-- Button that copies the url to the log of a crashed application -->
-    <string name="aerr_copy">Copy crash log URL</string>
-    <string name="url_copy_success">URL copied successfully</string>
-    <string name="url_copy_failed">An error occured while uploading the log to Memochō</string>
+    <string name="aerr_copy">URL des Absturzberichts kopieren</string>
+    <string name="url_copy_success">URL erfolgreich kopiert</string>
+    <string name="url_copy_failed">Beim Hochladen des Protokolls auf Memochō ist ein Fehler aufgetreten</string>
 </resources>

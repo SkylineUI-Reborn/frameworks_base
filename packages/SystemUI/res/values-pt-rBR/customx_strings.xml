@@ -55,4 +55,12 @@
     <string name="combined_status_bar_signal_icons_title">Ícones de sinal combinados</string>
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Trocar cartão de dados</string>
+    <string name="qs_data_switch_toast_0">Atualmente, nenhum cartão SIM está inserido</string>
+    <string name="qs_data_switch_toast_1">Atualmente apenas um cartão SIM está inserido</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Usando o SIM 1 para dados móveis.</string>
+    <string name="qs_data_switch_changed_2">Usando o SIM 2 para dados móveis.</string>
 </resources>

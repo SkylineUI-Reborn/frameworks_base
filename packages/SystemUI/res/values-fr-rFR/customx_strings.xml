@@ -2,11 +2,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Ambient display QS tile -->
-    <string name="quick_settings_ambient_display_label">Luminosité adaptative</string>
-    <string name="accessibility_quick_settings_ambient_display_off">Désactiver la luminosité adaptative.</string>
-    <string name="accessibility_quick_settings_ambient_display_on">Activer la luminosité adaptative.</string>
-    <string name="accessibility_quick_settings_ambient_display_changed_off">Luminosité adaptative désactivée.</string>
-    <string name="accessibility_quick_settings_ambient_display_changed_on">Luminosité adaptative activée.</string>
+    <string name="quick_settings_ambient_display_label">Affichage en mode veille</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Désactiver l\'affichage en mode veille.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Activer l\'affichage en mode veille.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Affichage en mode Veille désactivé.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Affichage en mode Veille activé.</string>
     <!-- Anti flicker QS tile -->
     <string name="quick_settings_anti_flicker">Anti-scintillement</string>
     <!-- AOD QS tile -->
@@ -55,4 +55,12 @@
     <string name="combined_status_bar_signal_icons_title">Icônes de signal combinés</string>
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Switch data card</string>
+    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
+    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
 </resources>

@@ -36,12 +36,12 @@
     <!-- Global actions -->
     <string name="reboot_to_bootloader_title">Перезавантажитись у завантажувач</string>
     <string name="reboot_to_bootloader_message">Перезавантаження у завантажувач\u2026</string>
-    <string name="reboot_to_recovery_title">Reboot recovery</string>
-    <string name="reboot_to_recovery_message">Rebooting to recovery\u2026</string>
-    <string name="reboot_system_title">Restart system</string>
-    <string name="reboot_system_message">Restarting system\u2026</string>
+    <string name="reboot_to_recovery_title">Перезавантаження в рекавері</string>
+    <string name="reboot_to_recovery_message">Перевантаження у рекавері\u2026</string>
+    <string name="reboot_system_title">Перезапустити систему</string>
+    <string name="reboot_system_message">Перезавантаження системи\u2026</string>
     <!-- Button that copies the url to the log of a crashed application -->
-    <string name="aerr_copy">Copy crash log URL</string>
-    <string name="url_copy_success">URL copied successfully</string>
-    <string name="url_copy_failed">An error occured while uploading the log to Memochō</string>
+    <string name="aerr_copy">Скопіювати посилання логу збою</string>
+    <string name="url_copy_success">Посилання вдало скопійовано</string>
+    <string name="url_copy_failed">Під час завантаження логу на сервіс dogbin відбулася помилка</string>
 </resources>

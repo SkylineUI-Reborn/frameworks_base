@@ -55,4 +55,12 @@
     <string name="combined_status_bar_signal_icons_title">結合電波アイコン</string>
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">データ SIM の変更</string>
+    <string name="qs_data_switch_toast_0">現在 SIM カードは挿入されていません</string>
+    <string name="qs_data_switch_toast_1">現在1枚のみ SIM カードが挿入されています</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">SIM 1 をデータ通信に使用します</string>
+    <string name="qs_data_switch_changed_2">SIM 2 をデータ通信に使用します</string>
 </resources>
