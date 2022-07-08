@@ -2,27 +2,27 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Ambient display QS tile -->
-    <string name="quick_settings_ambient_display_label">Ambient display</string>
-    <string name="accessibility_quick_settings_ambient_display_off">Ambient display выключен.</string>
-    <string name="accessibility_quick_settings_ambient_display_on">Ambient display включен.</string>
-    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display выключен.</string>
-    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display включен.</string>
+    <string name="quick_settings_ambient_display_label">Активный экран</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Включить активный экран</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Выключить активный экран</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Активный экран выключен</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Активный экран включен</string>
     <!-- Anti flicker QS tile -->
     <string name="quick_settings_anti_flicker">Предотвращение мерцания</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">Always On Display</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD выкл.\n Экономия батареи</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD выкл.\nЭкономия батареи</string>
     <!-- Autobrightness tile -->
     <string name="quick_settings_autobrightness_label">Автоматическая яркость</string>
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Кофеин</string>
-    <string name="accessibility_quick_settings_caffeine_off">Кофеин отключен.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен.</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин отключен</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
-    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления отключены.</string>
-    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены.</string>
-    <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления выключены.</string>
+    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления отключены</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления выключены</string>
     <string name="accessibility_quick_settings_heads_up_changed_on">Всплывающие уведомления включены.</string>
     <!-- Reader mode QS tile -->
     <string name="quick_settings_reading_mode">Режим чтения</string>
@@ -56,11 +56,17 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
+    <string name="qs_data_switch_label">Сменить SIM-карту для передачи данных</string>
+    <string name="qs_data_switch_toast_0">В настоящее время SIM-карта не вставлена</string>
+    <string name="qs_data_switch_toast_1">В настоящее время вставлена только одна SIM-карта</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_changed_1">SIM-карта для передачи данных переключена на SIM 1</string>
+    <string name="qs_data_switch_changed_2">SIM-карта для передачи данных переключена на SIM 2</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">Использовано сегодня</string>
+    <string name="usage_data_default_suffix">Данные</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Старый стиль значка мобильной сети</string>
 </resources>

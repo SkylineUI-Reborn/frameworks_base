@@ -56,11 +56,17 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
+    <string name="qs_data_switch_label">Basculer de carte mémoire</string>
+    <string name="qs_data_switch_toast_0">Aucune carte SIM n\'est présente</string>
+    <string name="qs_data_switch_toast_1">Une seule carte SIM est présente</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_changed_1">Basculer les données sur la carte SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Basculer les données sur la carte SIM 2.</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">utilisé aujourd\'hui</string>
+    <string name="usage_data_default_suffix">Données</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Petite icône de type mobile</string>
 </resources>

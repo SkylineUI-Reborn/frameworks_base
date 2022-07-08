@@ -63,4 +63,10 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">Usando SIM 1 para datos móviles.</string>
     <string name="qs_data_switch_changed_2">Usando SIM 2 para datos móviles.</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">utilizado hoy</string>
+    <string name="usage_data_default_suffix">Datos</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Icono pequeño de tipo de red móvil</string>
 </resources>

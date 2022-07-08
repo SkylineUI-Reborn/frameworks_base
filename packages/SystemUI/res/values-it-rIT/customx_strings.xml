@@ -2,65 +2,71 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Ambient display QS tile -->
-    <string name="quick_settings_ambient_display_label">Ambient display</string>
-    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
-    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
-    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display turned off.</string>
-    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display turned on.</string>
+    <string name="quick_settings_ambient_display_label">Ambient Display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient Display spento.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient Display acceso.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient Display disattivato.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display attivato.</string>
     <!-- Anti flicker QS tile -->
-    <string name="quick_settings_anti_flicker">Anti flicker</string>
+    <string name="quick_settings_anti_flicker">Anti-sfarfallio</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">AOD</string>
-    <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD spento\nRisparmio Energetico</string>
     <!-- Autobrightness tile -->
-    <string name="quick_settings_autobrightness_label">Auto brightness</string>
+    <string name="quick_settings_autobrightness_label">Luminosità Automatica</string>
     <!-- Caffeine QS tile -->
-    <string name="quick_settings_caffeine_label">Caffeine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
+    <string name="quick_settings_caffeine_label">Caffeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeina spenta.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeina accesa.</string>
     <!-- Heads up QS tile -->
-    <string name="quick_settings_heads_up_label">Heads up</string>
-    <string name="accessibility_quick_settings_heads_up_off">Heads up off.</string>
-    <string name="accessibility_quick_settings_heads_up_on">Heads up on.</string>
-    <string name="accessibility_quick_settings_heads_up_changed_off">Heads up turned off.</string>
-    <string name="accessibility_quick_settings_heads_up_changed_on">Heads up turned on.</string>
+    <string name="quick_settings_heads_up_label">Notifiche Fluttuanti</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifiche Fluttuanti spente.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifiche Fluttuanti accese.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notifiche Fluttuanti disattivate.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notifiche Fluttuanti attivate.</string>
     <!-- Reader mode QS tile -->
-    <string name="quick_settings_reading_mode">Reading mode</string>
-    <string name="accessibility_quick_settings_reading_mode_on">Reading mode on.</string>
-    <string name="accessibility_quick_settings_reading_mode_off">Reading mode off.</string>
-    <string name="accessibility_quick_settings_reading_mode_changed_on">Reading mode turned on.</string>
-    <string name="accessibility_quick_settings_reading_mode_changed_off">Reading mode turned off.</string>
+    <string name="quick_settings_reading_mode">Modalità Lettura</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Modalità Lettura accesa.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Modalità Lettura spenta.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Modalità Lettura attivata.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Modalità Lettura disattivata.</string>
     <!-- Sync QS tile -->
-    <string name="quick_settings_sync_label">Sync</string>
-    <string name="accessibility_quick_settings_sync_off">Sync off.</string>
-    <string name="accessibility_quick_settings_sync_on">Sync on.</string>
-    <string name="accessibility_quick_settings_sync_changed_off">Sync turned off.</string>
-    <string name="accessibility_quick_settings_sync_changed_on">Sync turned on.</string>
+    <string name="quick_settings_sync_label">Sincronizzazione</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronizzazione spenta.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronizzazione accesa.</string>
+    <string name="accessibility_quick_settings_sync_changed_off">Sincronizzazione disattivata.</string>
+    <string name="accessibility_quick_settings_sync_changed_on">Sincronizzazione attivata.</string>
     <!-- USB tethering QS tile -->
-    <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <string name="quick_settings_usb_tether_label">Tethering USB</string>
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
-    <string name="screenshot_delete_label">Delete</string>
+    <string name="screenshot_delete_label">Elimina</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
-    <string name="screenshot_delete_description">Delete screenshot</string>
+    <string name="screenshot_delete_description">Elimina Screenshot</string>
     <!-- Power Menu -->
-    <string name="global_action_reboot">Restart</string>
-    <string name="global_action_reboot_more">Advanced</string>
-    <string name="global_action_reboot_sub">System</string>
+    <string name="global_action_reboot">Riavvia</string>
+    <string name="global_action_reboot_more">Avanzate</string>
+    <string name="global_action_reboot_sub">Sistema</string>
     <string name="global_action_reboot_recovery">Recovery</string>
     <string name="global_action_reboot_bootloader">Bootloader</string>
     <string name="global_action_reboot_systemui">SystemUI</string>
-    <string name="global_action_settings">Settings</string>
+    <string name="global_action_settings">Impostazioni</string>
     <!-- Status bar network traffic monitor strings -->
     <!-- Combined signal icons in status bar -->
-    <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
+    <string name="combined_status_bar_signal_icons_title">Icone di segnale combinate</string>
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
+    <string name="qs_data_switch_label">Cambia scheda dati</string>
+    <string name="qs_data_switch_toast_0">Nessuna Scheda SIM inserita al momento</string>
+    <string name="qs_data_switch_toast_1">Al momento è stata rilevata una sola Scheda SIM</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_changed_1">Passa alla Scheda Dati SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Passa alla Scheda Dati SIM 2.</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">usati oggi</string>
+    <string name="usage_data_default_suffix">Dati</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Icona rete dati piccola</string>
 </resources>

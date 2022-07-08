@@ -63,4 +63,10 @@
     <string name="qs_data_switch_text_2">SIM 2</string>
     <string name="qs_data_switch_changed_1">SIM 1 をデータ通信に使用します</string>
     <string name="qs_data_switch_changed_2">SIM 2 をデータ通信に使用します</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">今日の使用</string>
+    <string name="usage_data_default_suffix">データ</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">小さな電波アイコン</string>
 </resources>

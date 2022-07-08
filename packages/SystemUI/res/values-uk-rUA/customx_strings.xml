@@ -56,11 +56,17 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
+    <string name="qs_data_switch_label">Змінити картку для передачі даних</string>
+    <string name="qs_data_switch_toast_0">Наразі не вставлено жодної SIM-картки</string>
+    <string name="qs_data_switch_toast_1">Виявлено лише одну SIM-картку</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_changed_1">Включіть передачу даних картки SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Включіть передачу даних картки SIM 2.</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">використано сьогодні</string>
+    <string name="usage_data_default_suffix">Дані</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Використовувати старий стиль значка мобільної мережі</string>
 </resources>
