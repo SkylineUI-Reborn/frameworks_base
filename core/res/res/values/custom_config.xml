@@ -231,18 +231,23 @@
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">true</bool>
 
-    <!-- Fingerprint from a certified device against current platform SPL level -->
-    <string name="config_certifiedFingerprint" translatable="false"></string>
+    <!-- Build properties from a GMS certified device against current platform SPL level -->
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+      <!-- 
+        <item>Build.DEVICE</item>
+        <item>Build.PRODUCT</item>
+        <item>Build.MODEL</item>
+        <item>Build.FINGERPRINT</item>
+      -->
+    </string-array>
 
-    <!-- Device name from a certified device-->
-    <string name="config_certifiedDevice" translatable="false"></string>
-
-    <!-- Model from a certified device  -->
-    <string name="config_certifiedModel" translatable="false"></string>
-
-    <!-- Fingerprint from stock ROM -->
+    <!-- Build fingerprint from stock ROM -->
     <string name="config_stockFingerprint" translatable="false"></string>
 
     <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
     <string name="config_netflixSpoofModel" translatable="false"></string>
+
+    <!-- Whether to spoof device as pixel for certain google apps, to
+         unlock pixel-exclusive features -->
+    <bool name="config_spoofGoogleApps">false</bool>
 </resources>

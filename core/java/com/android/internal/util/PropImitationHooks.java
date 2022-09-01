@@ -1,7 +1,5 @@
 /*
- * Copyright (C) 2022 The Pixel Experience Project
- *               2021-2022 crDroid Android Project
- *               2022 ReloadedOS
+ * Copyright (C) 2022 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.custom;
+package com.android.internal.util;
 
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Build;
-import android.os.Build.VERSION;
 import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.util.Log;
@@ -34,11 +31,33 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.Set;
 
-public class PixelPropsUtils {
+public class PropImitationHooks {
 
-    private static final String TAG = "PixelPropsUtils";
+    private static final String TAG = "PropImitationHooks";
     private static final boolean DEBUG = false;
-    private static final boolean DEBUG_PACKAGES = false;
+
+    private static final String[] sCertifiedProps =
+            Resources.getSystem().getStringArray(R.array.config_certifiedBuildProperties);
+
+    private static final String sStockFp =
+            Resources.getSystem().getString(R.string.config_stockFingerprint);
+
+    private static final String sNetflixModel =
+            Resources.getSystem().getString(R.string.config_netflixSpoofModel);
+
+    private static final boolean sSpoofGapps =
+            Resources.getSystem().getBoolean(R.bool.config_spoofGoogleApps);
+
+    private static final String PACKAGE_ARCORE = "com.google.ar.core";
+    private static final String PACKAGE_ASI = "com.google.android.as";
+    private static final String PACKAGE_FINSKY = "com.android.vending";
+    private static final String PACKAGE_GMS = "com.google.android.gms";
+    private static final String PACKAGE_GPHOTOS = "com.google.android.apps.photos";
+    private static final String PACKAGE_NETFLIX = "com.netflix.mediaclient";
+    private static final String PACKAGE_VELVET = "com.google.android.googlequicksearchbox";
+
+    private static final String PROCESS_GMS_PERSISTENT = PACKAGE_GMS + ".persistent";
+    private static final String PROCESS_GMS_UNSTABLE = PACKAGE_GMS + ".unstable";
 
     private static final Map<String, Object> sPixelProps = Map.of(
         "BRAND", "google",
@@ -58,22 +77,6 @@ public class PixelPropsUtils {
         "FINGERPRINT", "google/marlin/marlin:10/QP1A.191005.007.A3/5972272:user/release-keys"
     );
 
-    private static final Set<String> sExtraPackages = Set.of(
-        "com.android.chrome",
-        "com.android.vending"
-    );
-
-    private static final Set<String> sPackageWhitelist = Set.of(
-        "com.google.android.dialer",
-        "com.google.android.euicc",
-        "com.google.android.youtube",
-        "com.google.android.apps.youtube.kids",
-        "com.google.android.apps.youtube.music",
-        "com.google.android.apps.recorder",
-        "com.google.android.apps.wearables.maestro.companion",
-        "com.google.android.settings.intelligence"
-    );
-
     private static final Set<String> sFeatureBlacklist = Set.of(
         "PIXEL_2017_PRELOAD",
         "PIXEL_2018_PRELOAD",
@@ -85,29 +88,6 @@ public class PixelPropsUtils {
         "PIXEL_2021_MIDYEAR_EXPERIENCE"
     );
 
-    private static final String PACKAGE_PREFIX_GOOGLE = "com.google.android.";
-    private static final String PACKAGE_ARCORE = "com.google.ar.core";
-    private static final String PACKAGE_NETFLIX = "com.netflix.mediaclient";
-    private static final String PACKAGE_GPHOTOS = "com.google.android.apps.photos";
-    private static final String PACKAGE_FINSKY = "com.android.vending";
-    private static final String PACKAGE_GMS = "com.google.android.gms";
-    private static final String PROCESS_GMS_UNSTABLE = PACKAGE_GMS + ".unstable";
-
-    private static final String sCertifiedFp =
-            Resources.getSystem().getString(R.string.config_certifiedFingerprint);
-
-    private static final String sCertifiedDevice =
-            Resources.getSystem().getString(R.string.config_certifiedDevice);
-
-    private static final String sCertifiedModel =
-            Resources.getSystem().getString(R.string.config_certifiedModel);
-
-    private static final String sStockFp =
-            Resources.getSystem().getString(R.string.config_stockFingerprint);
-
-    private static final String sNetflixModel =
-            Resources.getSystem().getString(R.string.config_netflixSpoofModel);
-
     private static volatile boolean sIsGms = false;
     private static volatile boolean sIsFinsky = false;
     private static volatile boolean sIsPhotos = false;
@@ -116,40 +96,36 @@ public class PixelPropsUtils {
         final String packageName = context.getPackageName();
         final String processName = Application.getProcessName();
 
-        if (DEBUG_PACKAGES) {
-            Log.d(TAG, "setProps packageName=" + packageName + " processName=" + processName);
-        }
-
-        if (TextUtils.isEmpty(packageName) || processName == null
-                || sPackageWhitelist.contains(packageName)) {
+        if (TextUtils.isEmpty(packageName) || processName == null) {
+            dlog("Null package or process name");
             return;
         }
 
         sIsGms = packageName.equals(PACKAGE_GMS) && processName.equals(PROCESS_GMS_UNSTABLE);
         sIsFinsky = packageName.equals(PACKAGE_FINSKY);
-        sIsPhotos = packageName.equals(PACKAGE_GPHOTOS);
+        sIsPhotos = sSpoofGapps && packageName.equals(PACKAGE_GPHOTOS);
 
-        if (sIsGms && !sCertifiedFp.isEmpty()) {
+        if (sCertifiedProps.length == 4 && sIsGms) {
             dlog("Spoofing build for GMS");
-            setPropValue("FINGERPRINT", sCertifiedFp);
-            setPropValue("PRODUCT", sCertifiedDevice);
-            setPropValue("DEVICE", sCertifiedDevice);
-            setPropValue("MODEL", sCertifiedModel);
-            setVersionValue("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.N_MR1);
-        } else if (sIsPhotos) {
-            dlog("Spoofing Pixel XL for Google Photos");
-            sPixelXLProps.forEach(PixelPropsUtils::setPropValue);
+            setPropValue("DEVICE", sCertifiedProps[0]);
+            setPropValue("PRODUCT", sCertifiedProps[1]);
+            setPropValue("MODEL", sCertifiedProps[2]);
+            setPropValue("FINGERPRINT", sCertifiedProps[3]);
         } else if (!sStockFp.isEmpty() && packageName.equals(PACKAGE_ARCORE)) {
             dlog("Setting stock fingerprint for: " + packageName);
             setPropValue("FINGERPRINT", sStockFp);
+        } else if (sSpoofGapps && (packageName.equals(PACKAGE_VELVET)
+                || packageName.equals(PACKAGE_ASI)
+                || (packageName.equals(PACKAGE_GMS)
+                    && processName.equals(PROCESS_GMS_PERSISTENT)))) {
+            dlog("Spoofing Pixel 5 for: " + packageName + " process: " + processName);
+            sPixelProps.forEach(PropImitationHooks::setPropValue);
+        } else if (sIsPhotos) {
+            dlog("Spoofing Pixel XL for Google Photos");
+            sPixelXLProps.forEach((PropImitationHooks::setPropValue));
         } else if (!sNetflixModel.isEmpty() && packageName.equals(PACKAGE_NETFLIX)) {
             dlog("Setting model to " + sNetflixModel + " for Netflix");
             setPropValue("MODEL", sNetflixModel);
-        } else if ((packageName.startsWith(PACKAGE_PREFIX_GOOGLE)
-                && !packageName.toLowerCase().contains("camera"))
-                || sExtraPackages.contains(packageName)) {
-            dlog("Setting pixel props for: " + packageName + " process: " + processName);
-            sPixelProps.forEach(PixelPropsUtils::setPropValue);
         }
     }
 
@@ -162,17 +138,6 @@ public class PixelPropsUtils {
             field.setAccessible(false);
         } catch (NoSuchFieldException | IllegalAccessException e) {
             Log.e(TAG, "Failed to set prop " + key, e);
-        }
-    }
-
-    private static void setVersionValue(String key, Integer value) {
-        try {
-            Field field = Build.VERSION.class.getDeclaredField(key);
-            field.setAccessible(true);
-            field.set(null, value);
-            field.setAccessible(false);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            Log.e(TAG, "Failed to spoof Build." + key, e);
         }
     }
 
@@ -190,8 +155,7 @@ public class PixelPropsUtils {
     }
 
     public static boolean hasSystemFeature(String name, boolean def) {
-        if (sIsPhotos && def &&
-                sFeatureBlacklist.stream().anyMatch(name::contains)) {
+        if (sIsPhotos && def && sFeatureBlacklist.stream().anyMatch(name::contains)) {
             dlog("Blocked system feature " + name + " for Google Photos");
             return false;
         }

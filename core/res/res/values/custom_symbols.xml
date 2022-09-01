@@ -143,18 +143,9 @@
     <!-- Display color inversion availability -->
     <java-symbol type="bool" name="config_displayInversionAvailable" />
 
-    <!-- Fingerprint from a certified device against current platform SPL level -->
-    <java-symbol type="string" name="config_certifiedFingerprint" />
-
-    <!-- Device name from a certified device-->
-    <java-symbol type="string" name="config_certifiedDevice" />
-
-    <!-- Model from a certified device  -->
-    <java-symbol type="string" name="config_certifiedModel" />
-
-    <!-- Fingerprint from stock ROM -->
+    <!-- PropImitationHooks -->
+    <java-symbol type="bool" name="config_spoofGoogleApps" />
+    <java-symbol type="array" name="config_certifiedBuildProperties" />
     <java-symbol type="string" name="config_stockFingerprint" />
-
-    <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
     <java-symbol type="string" name="config_netflixSpoofModel" />
 </resources>
