@@ -49,6 +49,7 @@ import com.android.systemui.qs.tiles.FlashlightTile;
 import com.android.systemui.qs.tiles.HeadsUpTile;
 import com.android.systemui.qs.tiles.HotspotTile;
 import com.android.systemui.qs.tiles.InternetTile;
+import com.android.systemui.qs.tiles.LiveDisplayTile;
 import com.android.systemui.qs.tiles.LocationTile;
 import com.android.systemui.qs.tiles.MicrophoneToggleTile;
 import com.android.systemui.qs.tiles.NfcTile;
@@ -119,6 +120,7 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<CompassTile> mCompassTileProvider;
     private final Provider<SoundTile> mSoundTileProvider;
     private final Provider<AutoBrightnessTile> mAutoBrightnessTileProvider;
+    private final Provider<LiveDisplayTile> mLiveDisplayTileProvider;
 
     private final Lazy<QSHost> mQsHostLazy;
     private final Provider<CustomTile.Builder> mCustomTileBuilderProvider;
@@ -166,7 +168,8 @@ public class QSFactoryImpl implements QSFactory {
             Provider<DataSwitchTile> dataSwitchTileProvider,
             Provider<CompassTile> compassTileProvider,
             Provider<SoundTile> soundTileProvider,
-            Provider<AutoBrightnessTile> autoBrightnessTileProvider) {
+            Provider<AutoBrightnessTile> autoBrightnessTileProvider,
+            Provider<LiveDisplayTile> liveDisplayTileProvider) {
         mQsHostLazy = qsHostLazy;
         mCustomTileBuilderProvider = customTileBuilderProvider;
 
@@ -210,6 +213,7 @@ public class QSFactoryImpl implements QSFactory {
         mCompassTileProvider = compassTileProvider;
         mSoundTileProvider = soundTileProvider;
         mAutoBrightnessTileProvider = autoBrightnessTileProvider;
+        mLiveDisplayTileProvider = liveDisplayTileProvider;
     }
 
     /** Creates a tile with a type based on {@code tileSpec} */
@@ -306,6 +310,8 @@ public class QSFactoryImpl implements QSFactory {
                 return mSoundTileProvider.get();
             case "autobrightness":
                 return mAutoBrightnessTileProvider.get();
+            case "livedisplay":
+                return mLiveDisplayTileProvider.get();
         }
 
         // Custom tiles
