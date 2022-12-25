@@ -45,4 +45,8 @@
     <dimen name="tri_state_up_bottom_right_radius">0.0dip</dimen>
     <dimen name="tri_state_up_top_left_radius">24.0dip</dimen>
     <dimen name="tri_state_up_top_right_radius">24.0dip</dimen>
+
+    <!-- Auth ripple animation duration
+         AOSP default is 1533 -->
+    <item name="auth_ripple_animation_duration" format="float" type="dimen">766.5</item>
 </resources>
