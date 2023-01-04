@@ -22,6 +22,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Build;
+import android.os.Build.VERSION;
 import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.util.Log;
@@ -126,6 +127,7 @@ public class PixelPropsUtils {
             dlog("Spoofing build for GMS");
             setPropValue("FINGERPRINT", sCertifiedFp);
             setPropValue("MODEL", Build.MODEL + "\u200b");
+            setVersionValue("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.S);
         } else if (sIsPhotos) {
             dlog("Spoofing Pixel XL for Google Photos");
             sPixelXLProps.forEach(PixelPropsUtils::setPropValue);
@@ -152,6 +154,17 @@ public class PixelPropsUtils {
             field.setAccessible(false);
         } catch (NoSuchFieldException | IllegalAccessException e) {
             Log.e(TAG, "Failed to set prop " + key, e);
+        }
+    }
+
+    private static void setVersionValue(String key, Integer value) {
+        try {
+            Field field = Build.VERSION.class.getDeclaredField(key);
+            field.setAccessible(true);
+            field.set(null, value);
+            field.setAccessible(false);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            Log.e(TAG, "Failed to spoof Build." + key, e);
         }
     }
 
