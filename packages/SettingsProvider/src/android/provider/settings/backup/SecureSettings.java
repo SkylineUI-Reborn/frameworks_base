@@ -222,6 +222,7 @@ public class SecureSettings {
         Settings.Secure.SHOW_WIFI_STANDARD_ICON,
         Settings.Secure.IGNORE_AUTH_CONFIRMATION,
         Settings.Secure.POWER_MENU_HIDE_ON_SECURE,
+        Settings.Secure.DOZE_FOR_NOTIFICATIONS,
         Settings.Secure.DOZE_DOUBLE_TAP_GESTURE_AMBIENT,
         Settings.Secure.DOZE_TAP_GESTURE_AMBIENT,
         Settings.Secure.DOZE_PICK_UP_GESTURE_AMBIENT,
