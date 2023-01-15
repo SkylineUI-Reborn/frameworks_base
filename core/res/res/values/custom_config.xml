@@ -164,4 +164,8 @@
     <!-- Defines custom OEM sensor for pocket detection. -->
     <string name="config_pocketJudgeVendorSensorName"></string>
     <string name="config_pocketJudgeVendorProximitySensorName"></string>
+
+    <!-- Ignore post running notifications for selected apps -->
+    <string-array name="config_postNotificationIgnoredApps" translatable="false">
+    </string-array>
 </resources>

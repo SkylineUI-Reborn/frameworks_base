@@ -140,4 +140,7 @@
     <java-symbol type="string" name="poweroff_alarm_title" />
     <java-symbol type="string" name="poweroff_alarm_body" />
     <java-symbol type="drawable" name="ic_alarm_on" />
+
+    <!-- Ignore post running notifications for selected apps -->
+    <java-symbol type="array" name="config_postNotificationIgnoredApps" />
 </resources>
