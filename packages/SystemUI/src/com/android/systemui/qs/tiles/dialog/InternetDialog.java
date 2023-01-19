@@ -17,6 +17,7 @@ package com.android.systemui.qs.tiles.dialog;
 
 import static com.android.systemui.Prefs.Key.QS_HAS_TURNED_OFF_MOBILE_DATA;
 import static com.android.systemui.qs.tiles.dialog.InternetDialogController.MAX_WIFI_ENTRY_COUNT;
+import static com.android.systemui.util.PluralMessageFormaterKt.icuMessageFormat;
 
 import android.app.AlertDialog;
 import android.content.Context;
