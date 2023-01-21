@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Ícones da barra de status</string>
+    <!-- Bluetooth dialog -->
+    <string name="bluetooth_is_off">Bluetooth desativado</string>
+    <string name="tap_a_device_to_connect">Selecione um dispositivo para conectar</string>
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Tela Ambiente</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Tela ambiente desativada.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Tela ambiente ativada.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">AOD</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD desligado\nEconomia de bateria</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeína desligado.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeína ligada.</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Trocar SIM de dados</string>
+    <string name="qs_data_switch_toast_0">Atualmente nenhum cartão SIM está inserido</string>
+    <string name="qs_data_switch_toast_1">Atualmente apenas um cartão SIM está inserido</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Usando o SIM 1 para dados móveis.</string>
+    <string name="qs_data_switch_changed_2">Usando o SIM 2 para dados móveis.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificações flutuantes</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificações flutuantes desativadas.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificações flutuantes ativadas.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sincronização</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronização desativada.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronização ativada.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Compartilhamento por USB</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">Conectar-se a\u2026</string>
+    <string name="vpn_credentials_hint">Por favor, insira as suas credenciais para conectar-se a <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_username">Nome de Usuário</string>
+    <string name="vpn_credentials_password">Senha</string>
+    <string name="vpn_credentials_dialog_connect">Conectar</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Compartilhar Bateria</string>
+    <string name="quick_settings_powershare_off_powersave_label">Compartilhamento de bateria desativado\nEconomia de bateria</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Compartilhamento de bateria desativado\nBateria muito fraca</string>
+    <string name="quick_settings_powershare_enabled_label">Compartilhamento de bateria ativado</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Reiniciar</string>
+    <string name="global_action_reboot_more">Avançado</string>
+    <string name="global_action_reboot_sub">Sistema</string>
+    <string name="global_action_reboot_recovery">Recuperação</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_systemui">Interface do sistema</string>
+    <string name="global_action_settings">Configurações</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Brilho automático</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Reconhecendo rosto...</string>
+    <!-- Screen pinning dialog description. (for devices without navbar) -->
+    <string name="screen_pinning_description_no_navbar">Ela é mantida à vista até que seja liberada. Mantenha o botão Voltar pressionado para liberar.</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">Para liberar esta tela, mantenha o botão Voltar pressionado</string>
+    <!-- Screen pinning dialog description. (for devices without navbar and with gestures on fingerprint sensor) -->
+    <string name="screen_pinning_description_no_navbar_fpsensor">Ela é mantida à vista até que seja liberada. Toque e segure o sensor de impressão de digital para liberar.</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar and with gestures on fingerprint sensor)-->
+    <string name="screen_pinning_toast_no_navbar_fpsensor">Para liberar esta tela, toque e segure o sensor de impressão de digital</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Modo leitura</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Modo leitura ativado.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Modo leitura desativado.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">O Modo leitura foi ativado.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">O modo leitura foi desativado.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Modo anti cintilação</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Ícone padrão do Wi-Fi</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">usado hoje</string>
+    <string name="usage_data_default_suffix">Dados</string>
+    <string name="usage_wifi_default_suffix">WiFi</string>
+    <!-- Name of the network traffic indicator on status bar. -->
+    <string name="status_bar_network_traffic">Velocidade da internet em tempo real</string>
+</resources>

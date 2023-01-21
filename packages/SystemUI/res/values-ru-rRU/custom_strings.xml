@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Значки строки состояния</string>
+    <!-- Bluetooth dialog -->
+    <string name="bluetooth_is_off">Bluetooth выключен</string>
+    <string name="tap_a_device_to_connect">Нажмите на устройство, чтобы подключиться</string>
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient Display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient Display отключен</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient Display включен</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Всегда активный экран</string>
+    <string name="quick_settings_aod_off_powersave_label">Всегда активный экран: отключено\nЭкономия заряда батареи</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин отключен</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Переключить Sim-карту</string>
+    <string name="qs_data_switch_toast_0">В настоящее время SIM-карта не вставлена</string>
+    <string name="qs_data_switch_toast_1">В настоящее время вставлена только одна SIM-карта</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Переключить передачу данных на SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Переключить передачу данных на SIM 2.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
+    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления отключены</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Синхронизация</string>
+    <string name="accessibility_quick_settings_sync_off">Синхронизация отключена</string>
+    <string name="accessibility_quick_settings_sync_on">Синхронизация включена</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Режим USB-модема</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">Подключить к\u2026</string>
+    <string name="vpn_credentials_hint">Пожалуйста, введите свои учетные данные для подключения к <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_username">Имя пользователя</string>
+    <string name="vpn_credentials_password">Пароль</string>
+    <string name="vpn_credentials_dialog_connect">Подключиться</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Передача заряда батареи</string>
+    <string name="quick_settings_powershare_off_powersave_label">PowerShare выкл.\nЭкономия заряда батареи</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Режим энергосбережения выключен\nНизкий заряд батареи</string>
+    <string name="quick_settings_powershare_enabled_label">Режим энергосбережения включен</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Перезагрузка</string>
+    <string name="global_action_reboot_more">Дополнительно</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Режим восстановления</string>
+    <string name="global_action_reboot_bootloader">Загрузчик</string>
+    <string name="global_action_reboot_systemui">Интерфейс системы</string>
+    <string name="global_action_settings">Настройки</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Автоматическая яркость</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Распознавание лица...</string>
+    <!-- Screen pinning dialog description. (for devices without navbar) -->
+    <string name="screen_pinning_description_no_navbar">Это позволяет держать его в поле зрения до тех пор, пока вы не открепите его. Коснитесь &amp; и удерживайте, чтобы открепить.</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">Чтобы отключить этот экран, нажмите &amp; и удерживайте кнопку \"Назад\"</string>
+    <!-- Screen pinning dialog description. (for devices without navbar and with gestures on fingerprint sensor) -->
+    <string name="screen_pinning_description_no_navbar_fpsensor">Экран будет закреплён пока вы его не открепите. Нажмите &amp; и удерживайте палец на сканере отпечатка пальцев, чтобы открепить экран.</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar and with gestures on fingerprint sensor)-->
+    <string name="screen_pinning_toast_no_navbar_fpsensor">Чтобы открепить этот экран, нажмите &amp; удерживайте палец на сканере отпечатков пальцев</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Режим чтения</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Включить режим чтения</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Выключить режим чтения</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Режим чтения включен</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Режим чтения выключен</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Предотвращение мерцания</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Показывать значок стандарта Wi-Fi</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">использовано сегодня</string>
+    <string name="usage_data_default_suffix">Мобильный интернет</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Name of the network traffic indicator on status bar. -->
+    <string name="status_bar_network_traffic">Скорость интернета в реальном времени</string>
+</resources>

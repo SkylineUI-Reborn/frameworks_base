@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Значки в рядку стану</string>
+    <!-- Bluetooth dialog -->
+    <string name="bluetooth_is_off">Bluetooth вимкнено</string>
+    <string name="tap_a_device_to_connect">Виберіть пристрій для підключення</string>
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Активний дисплей</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Активний дисплей вимкнено.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Активний дисплей ввімкнено.</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Екран сповіщень</string>
+    <string name="quick_settings_aod_off_powersave_label">Екран сповіщень вимкн.\nЕнергозбереження</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Заборона сну</string>
+    <string name="accessibility_quick_settings_caffeine_off">Заборона сну вимкнуто.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Заборона сну увімкнено.</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Змінити SIM-карту для передачі даних</string>
+    <string name="qs_data_switch_toast_0">Зараз не вставлено жодної SIM картки</string>
+    <string name="qs_data_switch_toast_1">Зараз вставлена лише одна SIM-картка</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Змінено картку даних на SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Змінено картку даних на SIM 2.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Сповіщення що спливають</string>
+    <string name="accessibility_quick_settings_heads_up_off">Сповіщення що спливають вимкнено.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Сповіщення що спливають увімкнуті.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Синхронізація</string>
+    <string name="accessibility_quick_settings_sync_off">Синхронізацію вимкнено.</string>
+    <string name="accessibility_quick_settings_sync_on">Синхронізація увімкнена.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB-модем</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">Мережа VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">Підключ. до\u2026</string>
+    <string name="vpn_credentials_hint">Будь ласка, введіть свої облікові дані для підключення до <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_username">Ім\'я користувача</string>
+    <string name="vpn_credentials_password">Пароль</string>
+    <string name="vpn_credentials_dialog_connect">Під’єднатися</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Спільне використання батареї</string>
+    <string name="quick_settings_powershare_off_powersave_label">Battery Share вимкнено\nРежим енергозбереження</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Battery Share вимкнено\nБатарея розряджена</string>
+    <string name="quick_settings_powershare_enabled_label">Battery Share увімкнено</string>
+    <!-- Power Menu -->
+    <string name="global_action_reboot">Перезавантажити</string>
+    <string name="global_action_reboot_more">Розширені</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Режим відновлення</string>
+    <string name="global_action_reboot_bootloader">Режим bootloader</string>
+    <string name="global_action_reboot_systemui">Інтерфейс системи</string>
+    <string name="global_action_settings">Налаштування</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Автояскравість</string>
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Розпізнавання обличчя...</string>
+    <!-- Screen pinning dialog description. (for devices without navbar) -->
+    <string name="screen_pinning_description_no_navbar">Додаток залишається активним, поки ви не скасуєте блокування, натиснувши &amp; утримуючи кнопку \"Назад\".</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">Щоб відкріпити цей екран, натисніть &amp; утримуйте кнопку \"Назад\"</string>
+    <!-- Screen pinning dialog description. (for devices without navbar and with gestures on fingerprint sensor) -->
+    <string name="screen_pinning_description_no_navbar_fpsensor">Додаток залишається активним, до тих пір, поки ви не скасуєте блокування. Натисніть &amp; утримуйте палець на сканері відбитків, щоб розблокувати.</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar and with gestures on fingerprint sensor)-->
+    <string name="screen_pinning_toast_no_navbar_fpsensor">Щоб розблокувати екран, торкніться &amp; утримуйте палець на сканері відбитків пальців</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Режим читання</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Режим читання увімкнено.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Режим читання вимкнено.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Режим читання активовано.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Режим читання деактивовано.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Усунення мерехтіння</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Показувати стандартну піктограму Wi-Fi</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">використано сьогодні</string>
+    <string name="usage_data_default_suffix">Дані</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Name of the network traffic indicator on status bar. -->
+    <string name="status_bar_network_traffic">Індикатор з\'єднання в реальному часі</string>
+</resources>
