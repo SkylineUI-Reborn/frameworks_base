@@ -96,6 +96,12 @@ public class PixelPropsUtils {
     private static final String sCertifiedFp =
             Resources.getSystem().getString(R.string.config_certifiedFingerprint);
 
+    private static final String sCertifiedDevice =
+            Resources.getSystem().getString(R.string.config_certifiedDevice);
+
+    private static final String sCertifiedModel =
+            Resources.getSystem().getString(R.string.config_certifiedModel);
+
     private static final String sStockFp =
             Resources.getSystem().getString(R.string.config_stockFingerprint);
 
@@ -126,8 +132,10 @@ public class PixelPropsUtils {
         if (sIsGms && !sCertifiedFp.isEmpty()) {
             dlog("Spoofing build for GMS");
             setPropValue("FINGERPRINT", sCertifiedFp);
-            setPropValue("MODEL", Build.MODEL + "\u200b");
-            setVersionValue("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.S);
+            setPropValue("PRODUCT", sCertifiedDevice);
+            setPropValue("DEVICE", sCertifiedDevice);
+            setPropValue("MODEL", sCertifiedModel);
+            setVersionValue("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.N_MR1);
         } else if (sIsPhotos) {
             dlog("Spoofing Pixel XL for Google Photos");
             sPixelXLProps.forEach(PixelPropsUtils::setPropValue);

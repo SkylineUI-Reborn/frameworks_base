@@ -146,6 +146,12 @@
     <!-- Fingerprint from a certified device against current platform SPL level -->
     <java-symbol type="string" name="config_certifiedFingerprint" />
 
+    <!-- Device name from a certified device-->
+    <java-symbol type="string" name="config_certifiedDevice" />
+
+    <!-- Model from a certified device  -->
+    <java-symbol type="string" name="config_certifiedModel" />
+
     <!-- Fingerprint from stock ROM -->
     <java-symbol type="string" name="config_stockFingerprint" />
 

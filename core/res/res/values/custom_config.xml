@@ -234,6 +234,12 @@
     <!-- Fingerprint from a certified device against current platform SPL level -->
     <string name="config_certifiedFingerprint" translatable="false"></string>
 
+    <!-- Device name from a certified device-->
+    <string name="config_certifiedDevice" translatable="false"></string>
+
+    <!-- Model from a certified device  -->
+    <string name="config_certifiedModel" translatable="false"></string>
+
     <!-- Fingerprint from stock ROM -->
     <string name="config_stockFingerprint" translatable="false"></string>
 
