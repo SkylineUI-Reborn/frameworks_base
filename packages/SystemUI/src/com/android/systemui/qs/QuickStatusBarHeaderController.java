@@ -33,7 +33,6 @@ import com.android.systemui.statusbar.phone.StatusBarIconController;
 import com.android.systemui.statusbar.phone.StatusBarLocation;
 import com.android.systemui.statusbar.phone.StatusIconContainer;
 import com.android.systemui.statusbar.policy.Clock;
-import com.android.systemui.statusbar.policy.NetworkTraffic;
 import com.android.systemui.statusbar.policy.VariableDateViewController;
 import com.android.systemui.util.ViewController;
 
@@ -51,7 +50,6 @@ class QuickStatusBarHeaderController extends ViewController<QuickStatusBarHeader
     private final QSCarrierGroupController mQSCarrierGroupController;
     private final QuickQSPanelController mQuickQSPanelController;
     private final Clock mClockView;
-    private final NetworkTraffic mTrafficView;
     private final StatusBarIconController mStatusBarIconController;
     private final DemoModeController mDemoModeController;
     private final StatusIconContainer mIconContainer;
@@ -99,7 +97,6 @@ class QuickStatusBarHeaderController extends ViewController<QuickStatusBarHeader
                 .setQSCarrierGroup(mView.findViewById(R.id.carrier_group))
                 .build();
         mClockView = mView.findViewById(R.id.clock);
-        mTrafficView = mView.findViewById(R.id.networkTraffic);
         mIconContainer = mView.findViewById(R.id.statusIcons);
         mVariableDateViewControllerDateView = variableDateViewControllerFactory.create(
                 mView.requireViewById(R.id.date)
@@ -114,7 +111,6 @@ class QuickStatusBarHeaderController extends ViewController<QuickStatusBarHeader
         mOnColorsChangedListener = (extractor, which) -> {
             final boolean lightTheme = mColorExtractor.getNeutralColors().supportsDarkText();
             mClockView.onColorsChanged(lightTheme);
-            mTrafficView.onColorsChanged(lightTheme);
         };
         mColorExtractor.addOnColorsChangedListener(mOnColorsChangedListener);
 

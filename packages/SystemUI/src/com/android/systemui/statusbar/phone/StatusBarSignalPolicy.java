@@ -31,7 +31,6 @@ import com.android.systemui.statusbar.connectivity.MobileDataIndicators;
 import com.android.systemui.statusbar.connectivity.NetworkController;
 import com.android.systemui.statusbar.connectivity.SignalCallback;
 import com.android.systemui.statusbar.connectivity.WifiIndicators;
-import com.android.systemui.statusbar.policy.NetworkTraffic;
 import com.android.systemui.statusbar.policy.SecurityController;
 import com.android.systemui.tuner.TunerService;
 import com.android.systemui.tuner.TunerService.Tunable;
@@ -162,19 +161,16 @@ public class StatusBarSignalPolicy implements SignalCallback,
         boolean hideEthernet = hideList.contains(mSlotEthernet);
         boolean hideVpn = hideList.contains(mSlotVpn);
         boolean hideRoaming = hideList.contains(mSlotRoaming);
-        boolean activityEnabled = !hideList.contains(NetworkTraffic.SLOT);
 
         if (hideAirplane != mHideAirplane || hideMobile != mHideMobile
                 || hideEthernet != mHideEthernet || hideWifi != mHideWifi
-                || hideVpn != mHideVpn || hideRoaming != mHideRoaming
-                || activityEnabled != mActivityEnabled) {
+                || hideVpn != mHideVpn || hideRoaming != mHideRoaming) {
             mHideAirplane = hideAirplane;
             mHideMobile = hideMobile;
             mHideEthernet = hideEthernet;
             mHideWifi = hideWifi;
             mHideVpn = hideVpn;
             mHideRoaming = hideRoaming;
-            mActivityEnabled = activityEnabled;
             // Re-register to get new callbacks.
             mNetworkController.removeCallback(this);
             mNetworkController.addCallback(this);
@@ -204,7 +200,6 @@ public class StatusBarSignalPolicy implements SignalCallback,
         } else {
             newState.visible = visible;
             newState.resId = indicators.statusIcon.icon;
-            newState.activityEnabled = mActivityEnabled;
             newState.activityIn = in;
             newState.activityOut = out;
             newState.contentDescription = indicators.statusIcon.contentDescription;
@@ -281,9 +276,8 @@ public class StatusBarSignalPolicy implements SignalCallback,
         state.typeContentDescription = indicators.typeContentDescription;
         state.showTriangle = indicators.showTriangle;
         state.roaming = indicators.roaming && !mHideRoaming;
-        state.activityEnabled = mActivityEnabled;
-        state.activityIn = indicators.activityIn;
-        state.activityOut = indicators.activityOut;
+        state.activityIn = indicators.activityIn && mActivityEnabled;
+        state.activityOut = indicators.activityOut && mActivityEnabled;
         state.typeSpacerVisible = mMobileStates.size() > 1
                && mMobileStates.get(1).subId == state.subId
                && state.typeId != 0;
@@ -488,7 +482,6 @@ public class StatusBarSignalPolicy implements SignalCallback,
 
     private static abstract class SignalIconState {
         public boolean visible;
-        public boolean activityEnabled;
         public boolean activityOut;
         public boolean activityIn;
         public String slot;
@@ -502,7 +495,6 @@ public class StatusBarSignalPolicy implements SignalCallback,
             }
             SignalIconState that = (SignalIconState) o;
             return visible == that.visible &&
-                    activityEnabled == that.activityEnabled &&
                     activityOut == that.activityOut &&
                     activityIn == that.activityIn &&
                     Objects.equals(contentDescription, that.contentDescription) &&
@@ -511,12 +503,11 @@ public class StatusBarSignalPolicy implements SignalCallback,
 
         @Override
         public int hashCode() {
-            return Objects.hash(visible, activityEnabled, activityIn, activityOut, slot);
+            return Objects.hash(visible, activityOut, slot);
         }
 
         protected void copyTo(SignalIconState other) {
             other.visible = visible;
-            other.activityEnabled = activityEnabled;
             other.activityIn = activityIn;
             other.activityOut = activityOut;
             other.slot = slot;
