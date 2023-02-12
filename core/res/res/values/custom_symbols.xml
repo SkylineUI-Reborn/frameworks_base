@@ -47,6 +47,9 @@
     <!-- Location indicator -->
     <java-symbol type="drawable" name="stat_sys_location" />
 
+    <!-- Boost Framework -->
+    <java-symbol type="bool" name="config_supportsBoostFramework" />
+
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <java-symbol type="string" name="config_oemFastChargerStatusPath" />
 
