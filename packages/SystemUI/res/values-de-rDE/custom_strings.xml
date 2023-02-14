@@ -96,6 +96,5 @@
     <string name="usage_data">Heute verbraucht</string>
     <string name="usage_data_default_suffix">Daten</string>
     <string name="usage_wifi_default_suffix">WLAN</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Echtzeit-Internetgeschwindigkeit</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

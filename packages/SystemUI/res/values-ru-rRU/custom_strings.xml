@@ -23,15 +23,15 @@
     <!-- Custom QS tiles -->
     <!-- Ambient display QS tile -->
     <string name="quick_settings_ambient_display_label">Ambient Display</string>
-    <string name="accessibility_quick_settings_ambient_display_off">Ambient Display отключен</string>
-    <string name="accessibility_quick_settings_ambient_display_on">Ambient Display включен</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient Display отключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient Display включен.</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">Всегда активный экран</string>
     <string name="quick_settings_aod_off_powersave_label">Всегда активный экран: отключено\nЭкономия заряда батареи</string>
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Кофеин</string>
-    <string name="accessibility_quick_settings_caffeine_off">Кофеин отключен</string>
-    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин отключен.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен.</string>
     <!-- DataSwitch Tile -->
     <string name="qs_data_switch_label">Переключить Sim-карту</string>
     <string name="qs_data_switch_toast_0">В настоящее время SIM-карта не вставлена</string>
@@ -43,11 +43,11 @@
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
     <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления отключены</string>
-    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены.</string>
     <!-- Sync QS tile -->
     <string name="quick_settings_sync_label">Синхронизация</string>
-    <string name="accessibility_quick_settings_sync_off">Синхронизация отключена</string>
-    <string name="accessibility_quick_settings_sync_on">Синхронизация включена</string>
+    <string name="accessibility_quick_settings_sync_off">Синхронизация отключена.</string>
+    <string name="accessibility_quick_settings_sync_on">Синхронизация включена.</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Режим USB-модема</string>
     <!-- VPN QS tile -->
@@ -84,10 +84,10 @@
     <string name="screen_pinning_toast_no_navbar_fpsensor">Чтобы открепить этот экран, нажмите &amp; удерживайте палец на сканере отпечатков пальцев</string>
     <!-- Reader mode QS tile -->
     <string name="quick_settings_reading_mode">Режим чтения</string>
-    <string name="accessibility_quick_settings_reading_mode_on">Включить режим чтения</string>
-    <string name="accessibility_quick_settings_reading_mode_off">Выключить режим чтения</string>
-    <string name="accessibility_quick_settings_reading_mode_changed_on">Режим чтения включен</string>
-    <string name="accessibility_quick_settings_reading_mode_changed_off">Режим чтения выключен</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Включить режим чтения.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Выключить режим чтения.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Режим чтения включен.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Режим чтения выключен.</string>
     <!-- Anti flicker QS tile -->
     <string name="quick_settings_anti_flicker">Предотвращение мерцания</string>
     <!-- Wi-Fi Standard icon -->
@@ -96,6 +96,5 @@
     <string name="usage_data">использовано сегодня</string>
     <string name="usage_data_default_suffix">Мобильный интернет</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Скорость интернета в реальном времени</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

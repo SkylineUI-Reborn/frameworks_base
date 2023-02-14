@@ -33,13 +33,13 @@
     <string name="accessibility_quick_settings_caffeine_off">熒幕常亮 關閉。</string>
     <string name="accessibility_quick_settings_caffeine_on">熒幕常亮 開啟。</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
-    <string name="qs_data_switch_text_1">SIM 1</string>
-    <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_label">切換行動數據使用的 SIM 卡</string>
+    <string name="qs_data_switch_toast_0">目前未插入 SIM 卡</string>
+    <string name="qs_data_switch_toast_1">目前僅插入一張 SIM 卡</string>
+    <string name="qs_data_switch_text_1">SIM 卡 1</string>
+    <string name="qs_data_switch_text_2">SIM 卡 2</string>
+    <string name="qs_data_switch_changed_1">將行動數據切換至 SIM 卡 1</string>
+    <string name="qs_data_switch_changed_2">將行動數據切換至 SIM 卡 2</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">彈出通知</string>
     <string name="accessibility_quick_settings_heads_up_off">彈出通知 關閉。</string>
@@ -58,10 +58,10 @@
     <string name="vpn_credentials_password">密碼</string>
     <string name="vpn_credentials_dialog_connect">連接</string>
     <!-- PowerShare QS tile -->
-    <string name="quick_settings_powershare_label">Battery Share</string>
-    <string name="quick_settings_powershare_off_powersave_label">Battery Share off\nBattery saver</string>
-    <string name="quick_settings_powershare_off_low_battery_label">Battery Share off\nBattery too low</string>
-    <string name="quick_settings_powershare_enabled_label">Battery Share is enabled</string>
+    <string name="quick_settings_powershare_label">電力分享</string>
+    <string name="quick_settings_powershare_off_powersave_label">電力分享關閉\n省電模式</string>
+    <string name="quick_settings_powershare_off_low_battery_label">電力分享關閉\n電池電量過低</string>
+    <string name="quick_settings_powershare_enabled_label">電力分享已開啟</string>
     <!-- Power Menu -->
     <string name="global_action_reboot">重新啟動</string>
     <string name="global_action_reboot_more">進階選項</string>
@@ -73,15 +73,15 @@
     <!-- Autobrightness tile -->
     <string name="quick_settings_autobrightness_label">自動調整亮度</string>
     <!-- Face Unlock -->
-    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <string name="face_unlock_recognizing">臉部辨識中...</string>
     <!-- Screen pinning dialog description. (for devices without navbar) -->
-    <string name="screen_pinning_description_no_navbar">This keeps it in view until you unpin. Touch &amp; hold Back to unpin.</string>
+    <string name="screen_pinning_description_no_navbar">這會讓目前的螢幕畫面保持顯示狀態，直到取消固定為止。按住&amp;返回按紐即可取消固定。</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <string name="screen_pinning_toast_no_navbar">To unpin this screen, touch &amp; hold Back button</string>
+    <string name="screen_pinning_toast_no_navbar">要取消固定這個畫面，請按住&amp;返回按鈕。</string>
     <!-- Screen pinning dialog description. (for devices without navbar and with gestures on fingerprint sensor) -->
-    <string name="screen_pinning_description_no_navbar_fpsensor">This keeps it in view until you unpin. Touch &amp; hold fingerprint sensor to unpin.</string>
+    <string name="screen_pinning_description_no_navbar_fpsensor">這會讓目前的螢幕畫面保持顯示狀態，直到取消固定為止。按住&amp;指紋感應器即可取消固定。</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar and with gestures on fingerprint sensor)-->
-    <string name="screen_pinning_toast_no_navbar_fpsensor">To unpin this screen, touch &amp; hold fingerprint sensor</string>
+    <string name="screen_pinning_toast_no_navbar_fpsensor">要取消固定這個畫面，請按住&amp;指紋感應器。</string>
     <!-- Reader mode QS tile -->
     <string name="quick_settings_reading_mode">閱讀模式</string>
     <string name="accessibility_quick_settings_reading_mode_on">閱讀模式開啟。</string>
@@ -91,11 +91,10 @@
     <!-- Anti flicker QS tile -->
     <string name="quick_settings_anti_flicker">防閃爍</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Wi-Fi Standard icon</string>
+    <string name="show_wifi_standard_icon_title">標準 Wi-Fi 圖示</string>
     <!-- Data usage info in QS footer -->
-    <string name="usage_data">used today</string>
-    <string name="usage_data_default_suffix">Data</string>
+    <string name="usage_data">今天已使用</string>
+    <string name="usage_data_default_suffix">行動數據</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Real-time internet speed</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

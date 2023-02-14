@@ -33,13 +33,13 @@
     <string name="accessibility_quick_settings_caffeine_off">Tắt caffeine</string>
     <string name="accessibility_quick_settings_caffeine_on">Đã bật Cafein.</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
+    <string name="qs_data_switch_label">Chuyển SIM dữ liệu</string>
+    <string name="qs_data_switch_toast_0">Hiện tại không có thẻ SIM nào được lắp vào</string>
+    <string name="qs_data_switch_toast_1">Hiện tại chỉ có một thẻ SIM được lắp vào</string>
     <string name="qs_data_switch_text_1">SIM 1</string>
     <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_changed_1">Đã chuyển sang SIM 1 cho dữ liệu.</string>
+    <string name="qs_data_switch_changed_2">Đã chuyển sang SIM 2 cho dữ liệu.</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Thông báo nhanh</string>
     <string name="accessibility_quick_settings_heads_up_off">Tắt thông báo nhanh.</string>
@@ -58,10 +58,10 @@
     <string name="vpn_credentials_password">Mật khẩu</string>
     <string name="vpn_credentials_dialog_connect">Kết nối</string>
     <!-- PowerShare QS tile -->
-    <string name="quick_settings_powershare_label">Battery Share</string>
-    <string name="quick_settings_powershare_off_powersave_label">Battery Share off\nBattery saver</string>
-    <string name="quick_settings_powershare_off_low_battery_label">Battery Share off\nBattery too low</string>
-    <string name="quick_settings_powershare_enabled_label">Battery Share is enabled</string>
+    <string name="quick_settings_powershare_label">Chia Sẻ Pin</string>
+    <string name="quick_settings_powershare_off_powersave_label">Tắt Chia Sẻ Pin\nTrình tiết kiệm pin</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Tắt Chia Sẻ Pin\nPin quá thấp</string>
+    <string name="quick_settings_powershare_enabled_label">Chia sẻ Pin được bật</string>
     <!-- Power Menu -->
     <string name="global_action_reboot">Khởi động lại</string>
     <string name="global_action_reboot_more">Nâng cao</string>
@@ -75,13 +75,13 @@
     <!-- Face Unlock -->
     <string name="face_unlock_recognizing">Đang nhận diện khuôn mặt...</string>
     <!-- Screen pinning dialog description. (for devices without navbar) -->
-    <string name="screen_pinning_description_no_navbar">This keeps it in view until you unpin. Touch &amp; hold Back to unpin.</string>
+    <string name="screen_pinning_description_no_navbar">Thao tác này sẽ duy trì hiển thị màn hình cho đến khi bạn bỏ ghim. Chạm &amp; giữ Quay lại để bỏ ghim.</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <string name="screen_pinning_toast_no_navbar">To unpin this screen, touch &amp; hold Back button</string>
+    <string name="screen_pinning_toast_no_navbar">Để bỏ ghim màn hình này, chạm &amp; giữ nút Quay lại</string>
     <!-- Screen pinning dialog description. (for devices without navbar and with gestures on fingerprint sensor) -->
-    <string name="screen_pinning_description_no_navbar_fpsensor">This keeps it in view until you unpin. Touch &amp; hold fingerprint sensor to unpin.</string>
+    <string name="screen_pinning_description_no_navbar_fpsensor">Thao tác này sẽ duy trì hiển thị màn hình cho đến khi bạn bỏ ghim. Chạm &amp; giữ cảm biến vân tay để bỏ ghim.</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar and with gestures on fingerprint sensor)-->
-    <string name="screen_pinning_toast_no_navbar_fpsensor">To unpin this screen, touch &amp; hold fingerprint sensor</string>
+    <string name="screen_pinning_toast_no_navbar_fpsensor">Để bỏ ghim màn hình này, chạm &amp; giữ cảm biến vân tay</string>
     <!-- Reader mode QS tile -->
     <string name="quick_settings_reading_mode">Chế độ đọc sách</string>
     <string name="accessibility_quick_settings_reading_mode_on">Chế độ đọc sách bật.</string>
@@ -93,9 +93,8 @@
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Hiển thị biểu tượng Wi-Fi Chuẩn</string>
     <!-- Data usage info in QS footer -->
-    <string name="usage_data">used today</string>
-    <string name="usage_data_default_suffix">Data</string>
+    <string name="usage_data">Đã sử dụng hôm nay</string>
+    <string name="usage_data_default_suffix">Dữ liệu</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Real-time internet speed</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

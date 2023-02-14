@@ -16,20 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
-    <string name="reboot_to_bootloader_title">Reboot bootloader</string>
-    <string name="reboot_to_bootloader_message">Rebooting to bootloader\u2026</string>
-    <string name="reboot_to_recovery_title">Reboot recovery</string>
-    <string name="reboot_to_recovery_message">Rebooting to recovery\u2026</string>
-    <string name="reboot_system_title">Restart system</string>
-    <string name="reboot_system_message">Restarting system\u2026</string>
+    <string name="reboot_to_bootloader_title">Επανεκκίνηση στον εκκινητή</string>
+    <string name="reboot_to_bootloader_message">Γίνεται επανεκκίνηση στον εκκινητή\u2026</string>
+    <string name="reboot_to_recovery_title">Επανεκκίνηση στην ανάκτηση</string>
+    <string name="reboot_to_recovery_message">Γίνεται επανεκκίνηση σε λειτουργία αποκατάστασης\u2026</string>
+    <string name="reboot_system_title">Επανεκκίνηση συστήματος</string>
+    <string name="reboot_system_message">Γίνεται επανεκκίνηση συστήματος\u2026</string>
     <!-- Face unlock -->
-    <string name="face_unlock_disabled_idle">Face unlock disabled due to inactivity</string>
+    <string name="face_unlock_disabled_idle">Το ξεκλείδωμα προσώπου έχει απενεργοποιηθεί λόγω αδράνειας</string>
     <!-- Pocket Lock -->
-    <string name="pocket_lock_message_long_press">Press and hold power button to unlock</string>
-    <string name="pocket_view_title">Pocket mode is on</string>
-    <string name="pocket_view_title_cancel">To use your phone:</string>
-    <string name="pocket_view_top_tag_cancel">Check if the blue area of your phone is clear of any obstructions, and clean off any dirt or dust.</string>
-    <string name="pocket_view_top_tag_cancel2">Long press the power button to force quit pocket mode.</string>
+    <string name="pocket_lock_message_long_press">Πατήστε και κρατήστε το κουμπί λειτουργίας για να ξεκλειδώσετε</string>
+    <string name="pocket_view_title">Η λειτουργία τσέπης είναι ενεργοποιημένη</string>
+    <string name="pocket_view_title_cancel">Για να χρησιμοποιήσετε το τηλέφωνο σας:</string>
+    <string name="pocket_view_top_tag_cancel">Ελέγξτε εάν η μπλε περιοχή του τηλεφώνου σας είναι ελεύθερη από τυχόν εμπόδια, και καθαρίστε τυχόν βρωμιά ή σκόνη.</string>
+    <string name="pocket_view_top_tag_cancel2">Πατήστε παρατεταμένα το κουμπί λειτουργίας για να απενεργοποιήσετε τη λειτουργία τσέπης.</string>
     <string name="pocket_view_top_tag_number1">1.\u0020</string>
     <string name="pocket_view_top_tag_number2">2.\u0020</string>
 </resources>

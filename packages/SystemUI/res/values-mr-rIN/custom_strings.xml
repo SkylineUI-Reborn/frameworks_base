@@ -16,30 +16,30 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title of statusbar tuner -->
-    <string name="status_bar_icons">Status bar icons</string>
+    <string name="status_bar_icons">स्टेटस बार चिन्ह</string>
     <!-- Bluetooth dialog -->
-    <string name="bluetooth_is_off">Bluetooth is off</string>
-    <string name="tap_a_device_to_connect">Tap a device to connect</string>
+    <string name="bluetooth_is_off">ब्लूटूथ बंद आहे</string>
+    <string name="tap_a_device_to_connect">कनेक्ट करण्यासाठी डिव्हाइसवर टॅप करा</string>
     <!-- Custom QS tiles -->
     <!-- Ambient display QS tile -->
-    <string name="quick_settings_ambient_display_label">Ambient display</string>
-    <string name="accessibility_quick_settings_ambient_display_off">Ambient display off.</string>
-    <string name="accessibility_quick_settings_ambient_display_on">Ambient display on.</string>
+    <string name="quick_settings_ambient_display_label">अँबियंट डिस्प्ले</string>
+    <string name="accessibility_quick_settings_ambient_display_off">अँबियंट डिस्प्ले बंद.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">अँबियंट डिस्प्ले चालु.</string>
     <!-- AOD QS tile -->
     <string name="quick_settings_aod_label">AOD</string>
     <string name="quick_settings_aod_off_powersave_label">AOD off\nBattery saver</string>
     <!-- Caffeine QS tile -->
-    <string name="quick_settings_caffeine_label">Caffeine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
+    <string name="quick_settings_caffeine_label">कॅफिन</string>
+    <string name="accessibility_quick_settings_caffeine_off">कॅफिन बंद.</string>
+    <string name="accessibility_quick_settings_caffeine_on">कॅफिन चालू.</string>
     <!-- DataSwitch Tile -->
-    <string name="qs_data_switch_label">Switch data card</string>
-    <string name="qs_data_switch_toast_0">Currently no SIM card is inserted</string>
-    <string name="qs_data_switch_toast_1">Currently only one SIM card is inserted</string>
-    <string name="qs_data_switch_text_1">SIM 1</string>
-    <string name="qs_data_switch_text_2">SIM 2</string>
-    <string name="qs_data_switch_changed_1">Switched data card to SIM 1.</string>
-    <string name="qs_data_switch_changed_2">Switched data card to SIM 2.</string>
+    <string name="qs_data_switch_label">डेटा कार्ड स्विच करा</string>
+    <string name="qs_data_switch_toast_0">सध्या कोणतेही सिम कार्ड घातलेले नाही</string>
+    <string name="qs_data_switch_toast_1">सध्या फक्त एक सिम कार्ड टाकले आहे</string>
+    <string name="qs_data_switch_text_1">सिम १</string>
+    <string name="qs_data_switch_text_2">सिम २</string>
+    <string name="qs_data_switch_changed_1">डेटा कार्ड सिम 1 वर स्विच केले.</string>
+    <string name="qs_data_switch_changed_2">डेटा कार्ड सिम 2 वर स्विच केले.</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Heads up</string>
     <string name="accessibility_quick_settings_heads_up_off">Heads up off.</string>
@@ -96,6 +96,5 @@
     <string name="usage_data">used today</string>
     <string name="usage_data_default_suffix">Data</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Real-time internet speed</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

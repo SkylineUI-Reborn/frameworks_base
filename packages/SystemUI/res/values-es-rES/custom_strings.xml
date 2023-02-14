@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title of statusbar tuner -->
-    <string name="status_bar_icons">Íconos de la barra de estado</string>
+    <string name="status_bar_icons">Iconos de la barra de estado</string>
     <!-- Bluetooth dialog -->
     <string name="bluetooth_is_off">Bluetooth desactivado</string>
     <string name="tap_a_device_to_connect">Selecciona un dispositivo para conectarte</string>
@@ -31,7 +31,7 @@
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Modo cafeína</string>
     <string name="accessibility_quick_settings_caffeine_off">Modo Cafeína desactivado.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Modo Cafeína Activado.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Modo Cafeína activado.</string>
     <!-- DataSwitch Tile -->
     <string name="qs_data_switch_label">Cambiar SIM para datos</string>
     <string name="qs_data_switch_toast_0">No se ha insertado ninguna tarjeta SIM</string>
@@ -67,7 +67,7 @@
     <string name="global_action_reboot_more">Avanzado</string>
     <string name="global_action_reboot_sub">Sistema</string>
     <string name="global_action_reboot_recovery">Recuperación</string>
-    <string name="global_action_reboot_bootloader">Gestor de arranque</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
     <string name="global_action_reboot_systemui">UI del Sistema</string>
     <string name="global_action_settings">Ajustes</string>
     <!-- Autobrightness tile -->
@@ -96,6 +96,5 @@
     <string name="usage_data">utilizado hoy</string>
     <string name="usage_data_default_suffix">Datos</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Velocidad de internet en tiempo real</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

@@ -96,6 +96,5 @@
     <string name="usage_data">আজই ব্যবহৃত হয়েছে</string>
     <string name="usage_data_default_suffix">ডেটা</string>
     <string name="usage_wifi_default_suffix">ওয়াই-ফাই</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">রিয়েল-টাইম ইন্টারনেট গতি</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

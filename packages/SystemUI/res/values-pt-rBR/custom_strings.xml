@@ -96,6 +96,5 @@
     <string name="usage_data">usado hoje</string>
     <string name="usage_data_default_suffix">Dados</string>
     <string name="usage_wifi_default_suffix">WiFi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Velocidade da internet em tempo real</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

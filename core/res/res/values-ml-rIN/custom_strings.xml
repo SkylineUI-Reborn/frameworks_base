@@ -16,20 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
-    <string name="reboot_to_bootloader_title">Reboot bootloader</string>
-    <string name="reboot_to_bootloader_message">Rebooting to bootloader\u2026</string>
-    <string name="reboot_to_recovery_title">Reboot recovery</string>
-    <string name="reboot_to_recovery_message">Rebooting to recovery\u2026</string>
-    <string name="reboot_system_title">Restart system</string>
-    <string name="reboot_system_message">Restarting system\u2026</string>
+    <string name="reboot_to_bootloader_title">റീബൂട്ട് ബൂട്ട്ലോഡർ</string>
+    <string name="reboot_to_bootloader_message">ബൂട്ട്ലോഡറിലേക്ക് റീബൂട്ട് ചെയ്യുന്നു \u2026</string>
+    <string name="reboot_to_recovery_title">റിക്കവയിലേക്കു റീബൂട്ട് ചെയ്യുക</string>
+    <string name="reboot_to_recovery_message">റികവറിയിലേക് റീബൂട്ട് ചെയ്യുന്നു\u2026</string>
+    <string name="reboot_system_title">സിസ്റ്റം പുനരാരംഭിക്കുക</string>
+    <string name="reboot_system_message">സിസ്റ്റം പുനരാരംഭിക്കുന്നു\u2026</string>
     <!-- Face unlock -->
-    <string name="face_unlock_disabled_idle">Face unlock disabled due to inactivity</string>
+    <string name="face_unlock_disabled_idle">നിഷ്‌ക്രിയത്വം കാരണം ഫെയ്‌സ് അൺലോക്ക് പ്രവർത്തനരഹിതമാക്കി</string>
     <!-- Pocket Lock -->
-    <string name="pocket_lock_message_long_press">Press and hold power button to unlock</string>
-    <string name="pocket_view_title">Pocket mode is on</string>
-    <string name="pocket_view_title_cancel">To use your phone:</string>
-    <string name="pocket_view_top_tag_cancel">Check if the blue area of your phone is clear of any obstructions, and clean off any dirt or dust.</string>
-    <string name="pocket_view_top_tag_cancel2">Long press the power button to force quit pocket mode.</string>
+    <string name="pocket_lock_message_long_press">അൺലോക്കുചെയ്യാൻ പവർ ബട്ടൺ അമർത്തിപ്പിടിക്കുക</string>
+    <string name="pocket_view_title">പോക്കറ്റ് മോഡ് ഓണാണ്</string>
+    <string name="pocket_view_title_cancel">നിങ്ങളുടെ ഫോൺ ഉപയോഗിക്കാൻ:</string>
+    <string name="pocket_view_top_tag_cancel">നിങ്ങളുടെ ഫോണിന്റെ നീലനിറത്തിലുള്ള ഭാഗത്ത് എന്തെങ്കിലും തടസ്സങ്ങളുണ്ടോയെന്ന് പരിശോധിക്കുക, അഴുക്കും പൊടിയും നീക്കം ചെയ്യുക.</string>
+    <string name="pocket_view_top_tag_cancel2">പോക്കറ്റ് മോഡ് നിർത്താൻ പവർ ബട്ടൺ ദീർഘനേരം അമർത്തുക.</string>
     <string name="pocket_view_top_tag_number1">1.\u0020</string>
     <string name="pocket_view_top_tag_number2">2.\u0020</string>
 </resources>

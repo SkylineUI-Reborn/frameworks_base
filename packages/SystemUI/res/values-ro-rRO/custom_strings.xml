@@ -19,7 +19,7 @@
     <string name="status_bar_icons">Pictograme bară de stare</string>
     <!-- Bluetooth dialog -->
     <string name="bluetooth_is_off">Bluetooth este dezactivat</string>
-    <string name="tap_a_device_to_connect">Atingeți un dispozitiv pentru conectare</string>
+    <string name="tap_a_device_to_connect">Atinge un dispozitiv pentru conectare</string>
     <!-- Custom QS tiles -->
     <!-- Ambient display QS tile -->
     <string name="quick_settings_ambient_display_label">Afișaj ambiental</string>
@@ -53,7 +53,7 @@
     <!-- VPN QS tile -->
     <string name="quick_settings_vpn_label">VPN</string>
     <string name="quick_settings_vpn_connect_dialog_title">Conectare la\u2026</string>
-    <string name="vpn_credentials_hint">Vă rugăm să introduceți datele de autentificare pentru conectarea la <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_hint">Te rugăm să introduci datele de autentificare pentru conectarea la <xliff:g id="name">%s</xliff:g></string>
     <string name="vpn_credentials_username">Nume de utilizator</string>
     <string name="vpn_credentials_password">Parolă</string>
     <string name="vpn_credentials_dialog_connect">Conectare</string>
@@ -75,13 +75,13 @@
     <!-- Face Unlock -->
     <string name="face_unlock_recognizing">Se recunoaște fața...</string>
     <!-- Screen pinning dialog description. (for devices without navbar) -->
-    <string name="screen_pinning_description_no_navbar">Ecranul este afișat până anulați fixarea. Atingeți lung opțiunea Înapoi pentru a anula fixarea.</string>
+    <string name="screen_pinning_description_no_navbar">Ecranul este afișat până anulați fixarea. Atinge lung opțiunea Înapoi pentru a anula fixarea.</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <string name="screen_pinning_toast_no_navbar">Pentru a anula fixarea acestui ecran, atingeți și țineți apăsat butonul Înapoi</string>
+    <string name="screen_pinning_toast_no_navbar">Pentru a anula fixarea acestui ecran, atinge și ține apăsat butonul Înapoi</string>
     <!-- Screen pinning dialog description. (for devices without navbar and with gestures on fingerprint sensor) -->
-    <string name="screen_pinning_description_no_navbar_fpsensor">Ecranul este afișat până anulați fixarea. Atingeți lung senzorul de amprentă pentru a anula fixarea.</string>
+    <string name="screen_pinning_description_no_navbar_fpsensor">Acest lucru îl ține în vedere până anulezi fixarea. Atinge și ține apăsat senzorul de amprentă pentru a debloca.</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar and with gestures on fingerprint sensor)-->
-    <string name="screen_pinning_toast_no_navbar_fpsensor">Pentru a anula fixarea acestui ecran, atingeți și țineți apăsat senzorul de amprentă</string>
+    <string name="screen_pinning_toast_no_navbar_fpsensor">Pentru a anula fixarea acestui ecran, atinge și ține apăsat senzorul de amprentă</string>
     <!-- Reader mode QS tile -->
     <string name="quick_settings_reading_mode">Mod lectură</string>
     <string name="accessibility_quick_settings_reading_mode_on">Mod lectură activat.</string>
@@ -93,9 +93,8 @@
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Pictogramă standard Wi-Fi</string>
     <!-- Data usage info in QS footer -->
-    <string name="usage_data">utilizat azi</string>
+    <string name="usage_data">utilizați astăzi</string>
     <string name="usage_data_default_suffix">Date</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
-    <!-- Name of the network traffic indicator on status bar. -->
-    <string name="status_bar_network_traffic">Viteză internet în timp real</string>
+    <!-- Status bar network traffic monitor strings -->
 </resources>

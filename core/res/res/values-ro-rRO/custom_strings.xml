@@ -16,20 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
-    <string name="reboot_to_bootloader_title">Reporniţi în modul bootloader</string>
+    <string name="reboot_to_bootloader_title">Repornire în bootloader</string>
     <string name="reboot_to_bootloader_message">Se repornește în modul bootloader</string>
-    <string name="reboot_to_recovery_title">Reporniţi în modul recuperare</string>
+    <string name="reboot_to_recovery_title">Repornire în recuperare</string>
     <string name="reboot_to_recovery_message">Se repornește în modul recuperare\u2026</string>
     <string name="reboot_system_title">Repornire sistem</string>
     <string name="reboot_system_message">Se repornește sistemul\u2026</string>
     <!-- Face unlock -->
     <string name="face_unlock_disabled_idle">Deblocarea facială a fost dezactivată din cauza inactivității</string>
     <!-- Pocket Lock -->
-    <string name="pocket_lock_message_long_press">Press and hold power button to unlock</string>
-    <string name="pocket_view_title">Pocket mode is on</string>
-    <string name="pocket_view_title_cancel">To use your phone:</string>
-    <string name="pocket_view_top_tag_cancel">Check if the blue area of your phone is clear of any obstructions, and clean off any dirt or dust.</string>
-    <string name="pocket_view_top_tag_cancel2">Long press the power button to force quit pocket mode.</string>
+    <string name="pocket_lock_message_long_press">Apasă și ține apăsat butonul de pornire pentru a debloca</string>
+    <string name="pocket_view_title">Modul buzunar este pornit</string>
+    <string name="pocket_view_title_cancel">Pentru a folosi telefonul:</string>
+    <string name="pocket_view_top_tag_cancel">Verifică dacă zona albastră a telefonului nu are nici un fel de obstrucții și șterge orice noroi sau praf.</string>
+    <string name="pocket_view_top_tag_cancel2">Apasă lung butonul de pornire pentru a forța ieșirea din modul buzunar.</string>
     <string name="pocket_view_top_tag_number1">1.\u0020</string>
     <string name="pocket_view_top_tag_number2">2.\u0020</string>
 </resources>
