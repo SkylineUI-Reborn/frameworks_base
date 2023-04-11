@@ -86,8 +86,26 @@
     <string name="usage_data_default_suffix">Data</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
 
-    <!-- Title of statusbar tuner -->
+    <!-- Statusbar tuner -->
     <string name="status_bar_icons">Status bar icons</string>
+
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+
+    <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Roaming indicator</string>
+
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">Data saver</string>
+
+    <!-- Name of the location status bar icon. -->
+    <string name="status_bar_location">Location</string>
+
+    <!-- Name of the microphone status bar icon. -->
+    <string name="status_bar_microphone">Microphone</string>
+
+    <!-- Name of the nfc status bar icon. -->
+    <string name="status_bar_nfc">NFC</string>
 
     <!-- Bluetooth dialog -->
     <string name="bluetooth_is_off">Bluetooth is off</string>
@@ -118,4 +136,12 @@
     <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare off\nBattery too low</string>
     <string name="quick_settings_powershare_enabled_label">Wireless PowerShare is enabled</string>
 
+    <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Delete</string>
+
+    <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Delete screenshot</string>
+
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
 </resources>

@@ -384,7 +384,7 @@ public class RecordingService extends Service implements ScreenMediaRecorderList
 
         Notification.Action deleteAction = new Notification.Action.Builder(
                 Icon.createWithResource(this, R.drawable.ic_screenrecord),
-                getResources().getString(R.string.screenrecord_delete_label),
+                getResources().getString(R.string.screenshot_delete_label),
                 PendingIntent.getService(
                         this,
                         REQUEST_CODE,
