@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">重启至 Bootloader</string>
+    <string name="reboot_to_bootloader_message">正在重启至 Bootloader\u2026</string>
+    <string name="reboot_to_recovery_title">重启至 Recovery</string>
+    <string name="reboot_to_recovery_message">正在重启至 Recovery\u2026</string>
+    <string name="reboot_system_title">重启系统</string>
+    <string name="reboot_system_message">正在重启系统\u2026</string>
+    <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">面部解锁因不活跃被禁用</string>
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">长按电源键以解锁</string>
+    <string name="pocket_view_title">口袋模式已开启</string>
+    <string name="pocket_view_title_cancel">如需使用您的手机：</string>
+    <string name="pocket_view_top_tag_cancel">不要覆盖您手机的蓝色区域，并保持清洁</string>
+    <string name="pocket_view_top_tag_cancel2">长按电源键强制退出口袋模式</string>
+    <string name="pocket_view_top_tag_number1">1.\u0020</string>
+    <string name="pocket_view_top_tag_number2">2.\u0020</string>
+</resources>
