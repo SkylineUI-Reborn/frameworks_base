@@ -53,6 +53,7 @@ public class PropImitationHooks {
     private static final String PACKAGE_GMS = "com.google.android.gms";
     private static final String PACKAGE_GPHOTOS = "com.google.android.apps.photos";
     private static final String PACKAGE_NETFLIX = "com.netflix.mediaclient";
+    private static final String PACKAGE_SNAPCHAT = "com.snapchat.android";
 
     private static final String PACKAGE_NEXUSLAUNCHER = "com.google.android.apps.nexuslauncher";
     private static final String PACKAGE_PIXELTHEMES = "com.google.android.apps.customization.pixel";
@@ -189,6 +190,7 @@ public class PropImitationHooks {
          * Set Pixel 8 Pro for Google, ASI and GMS device configurator
          * Set Pixel XL for Google Photos
          * Set custom model for Netflix
+         * Set Pixel XL for Snapchat
          */
 
         switch (processName) {
@@ -245,6 +247,10 @@ public class PropImitationHooks {
                     setPropValue("MODEL", sNetflixModel);
                 }
                 return;
+        } else if (packageName.equals(PACKAGE_SNAPCHAT)) {
+            dlog("Spoofing Pixel XL for: " + packageName);
+            sPixelXLProps.forEach((PropImitationHooks::setPropValue));
+
         }
     }
 
