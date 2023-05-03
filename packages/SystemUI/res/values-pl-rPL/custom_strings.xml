@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">Always-on display</string>
+    <string name="quick_settings_aod_label">Aktywny wyświetlacz</string>
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Kofeina</string>
     <string name="accessibility_quick_settings_caffeine_off">Kofeina wył.</string>
@@ -49,9 +49,9 @@
     <string name="qs_data_switch_changed_1">Przełączono kartę odpowiedzialną za dane na SIM 1.</string>
     <string name="qs_data_switch_changed_2">Przełączono kartę odpowiedzialną za dane na SIM 2.</string>
     <!-- Compass QS Tile -->
-    <string name="quick_settings_compass_label">Compass</string>
-    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
-    <string name="quick_settings_compass_init">Initializing\u2026</string>
+    <string name="quick_settings_compass_label">Kompas</string>
+    <string name="quick_settings_compass_value"><xliff:g id="stopnie">%1$.0f</xliff:g>\u00b0 <xliff:g id="kierunek">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Inicjowanie\u2026</string>
     <string name="quick_settings_compass_N">N</string>
     <string name="quick_settings_compass_NE">NE</string>
     <string name="quick_settings_compass_E">E</string>
@@ -61,15 +61,15 @@
     <string name="quick_settings_compass_W">W</string>
     <string name="quick_settings_compass_NW">NW</string>
     <!-- Sound QS Tile -->
-    <string name="quick_settings_sound_label">Sound</string>
-    <string name="quick_settings_sound_ring">Ring</string>
-    <string name="quick_settings_sound_vibrate">Vibrate</string>
-    <string name="quick_settings_sound_silent">Silent</string>
+    <string name="quick_settings_sound_label">Dźwięk</string>
+    <string name="quick_settings_sound_ring">Dzwonek</string>
+    <string name="quick_settings_sound_vibrate">Wibracje</string>
+    <string name="quick_settings_sound_silent">Wyciszony</string>
     <!-- Advanced Reboot -->
-    <string name="global_action_restart_advanced">Advanced</string>
-    <string name="global_action_restart_recovery">Recovery</string>
-    <string name="global_action_restart_bootloader">Bootloader</string>
-    <string name="global_action_restart_ui">SystemUI</string>
+    <string name="global_action_restart_advanced">Zaawansowane</string>
+    <string name="global_action_restart_recovery">Tryb recovery</string>
+    <string name="global_action_restart_bootloader">Tryb bootloader</string>
+    <string name="global_action_restart_ui">Zresetuj Interfejs</string>
     <!-- Data usage info in QS footer -->
     <string name="usage_data">użyto dziś</string>
     <string name="usage_data_default_suffix">Dane</string>
@@ -79,13 +79,13 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Ikona roamingu</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Oszczędzanie danych</string>
     <!-- Name of the location status bar icon. -->
-    <string name="status_bar_location">Location</string>
+    <string name="status_bar_location">Lokalizacja</string>
     <!-- Name of the microphone status bar icon. -->
-    <string name="status_bar_microphone">Microphone</string>
+    <string name="status_bar_microphone">Mikrofon</string>
     <!-- Name of the nfc status bar icon. -->
     <string name="status_bar_nfc">NFC</string>
     <!-- Bluetooth dialog -->
@@ -106,14 +106,14 @@
     <!-- Anti flicker QS tile -->
     <string name="quick_settings_anti_flicker">Redukcja migotania</string>
     <!-- PowerShare QS tile -->
-    <string name="quick_settings_powershare_label">Wireless PowerShare</string>
-    <string name="quick_settings_powershare_off_powersave_label">Wireless PowerShare off\nBattery saver</string>
-    <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare off\nBattery too low</string>
-    <string name="quick_settings_powershare_enabled_label">Wireless PowerShare is enabled</string>
+    <string name="quick_settings_powershare_label">Ładowanie bezprzewodowe PowerShare</string>
+    <string name="quick_settings_powershare_off_powersave_label">Bezprzewodowe PowerShare wyłączone \n Oszczędzanie baterii</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Ładowanie zwrotne PowerShare wyłączone\nNaładuj baterię</string>
+    <string name="quick_settings_powershare_enabled_label">Bezprzewodowe ładowanie PowerShare jest włączone</string>
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
-    <string name="screenshot_delete_label">Delete</string>
+    <string name="screenshot_delete_label">Usuń</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
-    <string name="screenshot_delete_description">Delete screenshot</string>
+    <string name="screenshot_delete_description">Usuń zrzut ekranu</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
-    <string name="screenrecord_delete_description">Screen recording deleted</string>
+    <string name="screenrecord_delete_description">Usunięto nagranie ekranu</string>
 </resources>

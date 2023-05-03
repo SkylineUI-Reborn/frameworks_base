@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">Always-on display</string>
+    <string name="quick_settings_aod_label">Màn hình luôn bật</string>
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Caffeine</string>
     <string name="accessibility_quick_settings_caffeine_off">Tắt caffeine</string>
@@ -49,27 +49,27 @@
     <string name="qs_data_switch_changed_1">Đã chuyển sang SIM 1 cho dữ liệu.</string>
     <string name="qs_data_switch_changed_2">Đã chuyển sang SIM 2 cho dữ liệu.</string>
     <!-- Compass QS Tile -->
-    <string name="quick_settings_compass_label">Compass</string>
-    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
-    <string name="quick_settings_compass_init">Initializing\u2026</string>
-    <string name="quick_settings_compass_N">N</string>
-    <string name="quick_settings_compass_NE">NE</string>
-    <string name="quick_settings_compass_E">E</string>
-    <string name="quick_settings_compass_SE">SE</string>
-    <string name="quick_settings_compass_S">S</string>
-    <string name="quick_settings_compass_SW">SW</string>
-    <string name="quick_settings_compass_W">W</string>
-    <string name="quick_settings_compass_NW">NW</string>
+    <string name="quick_settings_compass_label">La bàn</string>
+    <string name="quick_settings_compass_value"><xliff:g id="độ">%1$.0f</xliff:g>\u00b0 <xliff:g id="hướng">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Đang khởi tạo\u2026</string>
+    <string name="quick_settings_compass_N">Bắc</string>
+    <string name="quick_settings_compass_NE">Đông Bắc</string>
+    <string name="quick_settings_compass_E">Đông</string>
+    <string name="quick_settings_compass_SE">Đông Nam</string>
+    <string name="quick_settings_compass_S">Nam</string>
+    <string name="quick_settings_compass_SW">Tây Nam</string>
+    <string name="quick_settings_compass_W">Tây</string>
+    <string name="quick_settings_compass_NW">Tây Bắc</string>
     <!-- Sound QS Tile -->
-    <string name="quick_settings_sound_label">Sound</string>
-    <string name="quick_settings_sound_ring">Ring</string>
-    <string name="quick_settings_sound_vibrate">Vibrate</string>
-    <string name="quick_settings_sound_silent">Silent</string>
+    <string name="quick_settings_sound_label">Âm thanh</string>
+    <string name="quick_settings_sound_ring">Chuông</string>
+    <string name="quick_settings_sound_vibrate">Rung</string>
+    <string name="quick_settings_sound_silent">Im lặng</string>
     <!-- Advanced Reboot -->
-    <string name="global_action_restart_advanced">Advanced</string>
-    <string name="global_action_restart_recovery">Recovery</string>
-    <string name="global_action_restart_bootloader">Bootloader</string>
-    <string name="global_action_restart_ui">SystemUI</string>
+    <string name="global_action_restart_advanced">Nâng cao</string>
+    <string name="global_action_restart_recovery">Chế độ khôi phục</string>
+    <string name="global_action_restart_bootloader">Trình nạp khởi động</string>
+    <string name="global_action_restart_ui">Giao diện hệ thống</string>
     <!-- Data usage info in QS footer -->
     <string name="usage_data">Đã sử dụng hôm nay</string>
     <string name="usage_data_default_suffix">Dữ liệu</string>
@@ -79,13 +79,13 @@
     <!-- Name of the VPN status bar icon. -->
     <string name="status_bar_vpn">VPN</string>
     <!-- Name of the roaming status bar icon. -->
-    <string name="status_bar_roaming">Roaming indicator</string>
+    <string name="status_bar_roaming">Chỉ báo chuyển vùng</string>
     <!-- Name of the data saver status bar icon. -->
-    <string name="status_bar_data_saver">Data saver</string>
+    <string name="status_bar_data_saver">Tiết kiệm dữ liệu</string>
     <!-- Name of the location status bar icon. -->
-    <string name="status_bar_location">Location</string>
+    <string name="status_bar_location">Vị trí</string>
     <!-- Name of the microphone status bar icon. -->
-    <string name="status_bar_microphone">Microphone</string>
+    <string name="status_bar_microphone">Micrô</string>
     <!-- Name of the nfc status bar icon. -->
     <string name="status_bar_nfc">NFC</string>
     <!-- Bluetooth dialog -->
@@ -106,14 +106,14 @@
     <!-- Anti flicker QS tile -->
     <string name="quick_settings_anti_flicker">Chống nháy màn hình</string>
     <!-- PowerShare QS tile -->
-    <string name="quick_settings_powershare_label">Wireless PowerShare</string>
-    <string name="quick_settings_powershare_off_powersave_label">Wireless PowerShare off\nBattery saver</string>
-    <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare off\nBattery too low</string>
-    <string name="quick_settings_powershare_enabled_label">Wireless PowerShare is enabled</string>
+    <string name="quick_settings_powershare_label">Chia Sẻ Năng Lượng Không Dây</string>
+    <string name="quick_settings_powershare_off_powersave_label">Chia sẻ nguồn điện không dây đã tắt\n Trình tiết kiệm pin</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Chia sẻ nguồn điện tắt\nPin quá yếu</string>
+    <string name="quick_settings_powershare_enabled_label">Kích hoạt Chia Sẻ Năng Lượng Không Dây</string>
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
-    <string name="screenshot_delete_label">Delete</string>
+    <string name="screenshot_delete_label">Xoá</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
-    <string name="screenshot_delete_description">Delete screenshot</string>
+    <string name="screenshot_delete_description">Xoá ảnh chụp màn hình</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
-    <string name="screenrecord_delete_description">Screen recording deleted</string>
+    <string name="screenrecord_delete_description">Đã xóa ghi màn hình</string>
 </resources>

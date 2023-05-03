@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">Always-on display</string>
+    <string name="quick_settings_aod_label">Οθόνη πάντα ενεργή</string>
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Καφεΐνη</string>
     <string name="accessibility_quick_settings_caffeine_off">Καφεΐνη ανενεργή.</string>
@@ -69,7 +69,7 @@
     <string name="global_action_restart_advanced">Για προχωρημένους</string>
     <string name="global_action_restart_recovery">Λειτουργία αποκατάστασης</string>
     <string name="global_action_restart_bootloader">Εκκινητής</string>
-    <string name="global_action_restart_ui">SystemUI</string>
+    <string name="global_action_restart_ui">ΣύστημαUI</string>
     <!-- Data usage info in QS footer -->
     <string name="usage_data">χρησιμοποιήθηκε σήμερα</string>
     <string name="usage_data_default_suffix">Δεδομένα</string>
