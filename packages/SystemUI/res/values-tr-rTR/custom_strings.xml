@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2020-2023 PixelOS
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Her zaman açık ekran</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Kafein</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kafein kapalı.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kafein açık.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Bildirimler</string>
+    <string name="accessibility_quick_settings_heads_up_off">Bildirimler kapalı.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Bildirimler açık.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Eşitle</string>
+    <string name="accessibility_quick_settings_sync_off">Eşitleme kapalı</string>
+    <string name="accessibility_quick_settings_sync_on">Eşitleme açık.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB internet paylaşımı</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">\u2026\'a bağlan</string>
+    <string name="vpn_credentials_hint">Lütfen <xliff:g id="name">%s</xliff:g>\'e bağlanmak için kimlik bilgilerinizi girin</string>
+    <string name="vpn_credentials_username">Kullanıcı Adı</string>
+    <string name="vpn_credentials_password">Şifre</string>
+    <string name="vpn_credentials_dialog_connect">Bağlan</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Veri kartını değiştir</string>
+    <string name="qs_data_switch_toast_0">Şu anda SIM kart takılı değil</string>
+    <string name="qs_data_switch_toast_1">Şuan sadece bir SIM kart takılı</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Veri kartı SIM 1 olarak değiştirildi.</string>
+    <string name="qs_data_switch_changed_2">Veri kartı SIM 2 olarak değiştirildi.</string>
+    <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">Pusula</string>
+    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Başlatılıyor\u2026</string>
+    <string name="quick_settings_compass_N">K</string>
+    <string name="quick_settings_compass_NE">KD</string>
+    <string name="quick_settings_compass_E">D</string>
+    <string name="quick_settings_compass_SE">GD</string>
+    <string name="quick_settings_compass_S">G</string>
+    <string name="quick_settings_compass_SW">GB</string>
+    <string name="quick_settings_compass_W">B</string>
+    <string name="quick_settings_compass_NW">KB</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Ses</string>
+    <string name="quick_settings_sound_ring">Zil sesi</string>
+    <string name="quick_settings_sound_vibrate">Titreşim</string>
+    <string name="quick_settings_sound_silent">Sessiz</string>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">Gelişmiş</string>
+    <string name="global_action_restart_recovery">Kurtarma</string>
+    <string name="global_action_restart_bootloader">Ön yükleyici</string>
+    <string name="global_action_restart_ui">Sistem arayüzü</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">bugün kullanılanlar</string>
+    <string name="usage_data_default_suffix">Veri</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Durum Çubuğu Simgeleri</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Standart Wi-Fi simgesini göster</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Okuma modu</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Okuma modu açık.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Okuma modu kapalı.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Okuma modu açıldı.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Okuma modu kapatıldı.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Titreme önleme</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Kablosuz Güç Paylaşımı</string>
+    <string name="quick_settings_powershare_off_powersave_label">Kablosuz Güç Paylaşımı kapalı\nPil tasarrufu</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Kablosuz Güç Paylaşımı\nPil seviyesi çok düşük</string>
+    <string name="quick_settings_powershare_enabled_label">Kablosuz Güç Paylaşımı etkin</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Otomatik parlaklık</string>
+    <!-- Bluetooth dialog -->
+    <string name="bluetooth_is_off">Bluetooth kapalı</string>
+    <string name="tap_a_device_to_connect">Bağlanmak için bir cihaza tıklayın</string>
+</resources>

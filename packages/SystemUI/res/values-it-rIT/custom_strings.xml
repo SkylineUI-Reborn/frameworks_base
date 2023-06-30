@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2020-2023 PixelOS
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">Always-on display</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Caffeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeina spenta.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeina accesa.</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notifiche Fluttuanti</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifiche Fluttuanti spente.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifiche Fluttuanti accese.</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">Sincronizzazione</string>
+    <string name="accessibility_quick_settings_sync_off">Sincronizzazione spenta.</string>
+    <string name="accessibility_quick_settings_sync_on">Sincronizzazione accesa.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering USB</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">Connettiti a\u2026</string>
+    <string name="vpn_credentials_hint">Inserisci le tue credenziali per la connessione a <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_username">Username</string>
+    <string name="vpn_credentials_password">Password</string>
+    <string name="vpn_credentials_dialog_connect">Connetti</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Cambia scheda dati</string>
+    <string name="qs_data_switch_toast_0">Nessuna Scheda SIM inserita al momento</string>
+    <string name="qs_data_switch_toast_1">Al momento è stata rilevata una sola Scheda SIM</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Passa alla Scheda Dati SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Passa alla Scheda Dati SIM 2.</string>
+    <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">Bussola</string>
+    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Inizializzazione\u2026</string>
+    <string name="quick_settings_compass_N">N</string>
+    <string name="quick_settings_compass_NE">NE</string>
+    <string name="quick_settings_compass_E">E</string>
+    <string name="quick_settings_compass_SE">SE</string>
+    <string name="quick_settings_compass_S">S</string>
+    <string name="quick_settings_compass_SW">SO</string>
+    <string name="quick_settings_compass_W">O</string>
+    <string name="quick_settings_compass_NW">NO</string>
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">Suono</string>
+    <string name="quick_settings_sound_ring">Suoneria</string>
+    <string name="quick_settings_sound_vibrate">Vibrazione</string>
+    <string name="quick_settings_sound_silent">Silenzioso</string>
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">Avanzato</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">SystemUI</string>
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">usati oggi</string>
+    <string name="usage_data_default_suffix">Dati</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Icone Barra di Stato</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Icona Standard Wi-Fi</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">Modalità Lettura</string>
+    <string name="accessibility_quick_settings_reading_mode_on">Modalità Lettura accesa.</string>
+    <string name="accessibility_quick_settings_reading_mode_off">Modalità Lettura spenta.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">Modalità Lettura attivata.</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">Modalità Lettura disattivata.</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">Anti-sfarfallio</string>
+    <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Wireless PowerShare</string>
+    <string name="quick_settings_powershare_off_powersave_label">Wireless PowerShare spento\nRisparmio Energetico</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Wireless PowerShare spento\nLivello batteria troppo basso</string>
+    <string name="quick_settings_powershare_enabled_label">Wireless PowerShare attivo</string>
+    <!-- Autobrightness tile -->
+    <string name="quick_settings_autobrightness_label">Luminosità Automatica</string>
+    <!-- Bluetooth dialog -->
+    <string name="bluetooth_is_off">Bluetooth disattivato</string>
+    <string name="tap_a_device_to_connect">Tocca un dispositivo per connetterti</string>
+</resources>
