@@ -48,26 +48,6 @@
     <string-array name="config_vendorPlatformSignatures">
     </string-array>
 
-    <!-- Build properties from a GMS certified device against current platform SPL level -->
-    <string-array name="config_certifiedBuildProperties" translatable="false">
-      <!-- 
-        <item>Build.DEVICE</item>
-        <item>Build.PRODUCT</item>
-        <item>Build.MODEL</item>
-        <item>Build.FINGERPRINT</item>
-      -->
-    </string-array>
-
-    <!-- Build fingerprint from the stock ROM -->
-    <string name="config_stockFingerprint" translatable="false"></string>
-
-    <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
-    <string name="config_netflixSpoofModel" translatable="false"></string>
-
-    <!-- Whether to spoof device as pixel for certain google apps, to
-         unlock pixel-exclusive features -->
-    <bool name="config_spoofGoogleApps">false</bool>
-
     <!-- The list of package IDs that are allowed to use aux cameras.
          NOTE: If this list is empty then all apps will be able to use aux cameras. -->
     <string-array name="config_cameraAuxPackageAllowList" translatable="false" />
