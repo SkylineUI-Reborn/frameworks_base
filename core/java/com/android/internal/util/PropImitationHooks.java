@@ -126,6 +126,9 @@ public class PropImitationHooks {
         final String packageName = context.getPackageName();
         final String processName = Application.getProcessName();
 
+        setPropValue("TYPE", "user");
+        setPropValue("TAGS", "release-keys");
+
         if (TextUtils.isEmpty(packageName) || TextUtils.isEmpty(processName)) {
             Log.e(TAG, "Null package or process name");
             return;
