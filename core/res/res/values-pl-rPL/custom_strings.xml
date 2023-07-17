@@ -18,8 +18,8 @@
     <!-- Advanced reboot -->
     <string name="reboot_to_recovery_title">Tryb Odzyskiwania</string>
     <string name="reboot_to_recovery_message">Ponowne uruchamianie w Trybie Odzyskiwania</string>
-    <string name="reboot_to_bootloader_title">Tryb Bootloader</string>
-    <string name="reboot_to_bootloader_message">Ponowne uruchamianie w Trybie Bootloader</string>
+    <string name="reboot_to_bootloader_title">Tryb Bootloader\'a</string>
+    <string name="reboot_to_bootloader_message">Ponowne uruchamianie w Trybie Bootloader\'a</string>
     <string name="reboot_title">Uruchom ponownie</string>
     <string name="reboot_message">Ponowne uruchamianie</string>
     <!-- Button that copies the url to the log of a crashed application -->
@@ -51,8 +51,8 @@
     <!-- Pocket Lock -->
     <string name="pocket_lock_message_long_press">Naciśnij i przytrzymaj przycisk zasilania, aby odblokować</string>
     <string name="pocket_view_title">Tryb kieszonkowy jest włączony</string>
-    <string name="pocket_view_title_cancel">To activate your phone:</string>
-    <string name="pocket_view_top_tag_cancel">Please do not cover the blue area of your phone and clear any dirt or dust off it.</string>
+    <string name="pocket_view_title_cancel">Aby włączyć ekran telefonu:</string>
+    <string name="pocket_view_top_tag_cancel">Nie zakrywaj niebieskiego obszaru Twojego telefonu, i usuń wszelkie zabrudzenia lub kurz.</string>
     <string name="pocket_view_top_tag_cancel2">Przytrzymaj przycisk zasilania, aby wymusić wyjście z trybu kieszonkowego.</string>
     <string name="pocket_view_top_tag_number1">1.\u0020</string>
     <string name="pocket_view_top_tag_number2">2.\u0020</string>

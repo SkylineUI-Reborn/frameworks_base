@@ -37,7 +37,7 @@
     <string name="live_display_night_summary">Gunakan tetapan malam sahaja</string>
     <string name="live_display_outdoor">Ruangan luar (matahari cerah)</string>
     <string name="live_display_outdoor_summary">Gunakan tetapan ruangan luar sahaja</string>
-    <string name="live_display_hint">LiveDisplay boleh membantu mengurangkan sakit mata dan membantu anda tidur pada waktu malam. Klik di sini untuk mencubanya!</string>
+    <string name="live_display_hint">LiveDisplay boleh membantu mengurangkan kelesuan mata dan membantu anda tidur pada waktu malam. Klik di sini untuk mencubanya!</string>
     <string name="accessibility_quick_settings_live_display_off">LiveDisplay dimatikan.</string>
     <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mod auto.</string>
     <string name="accessibility_quick_settings_live_display_day">LiveDisplay: mod siang.</string>

@@ -51,8 +51,8 @@
     <!-- Pocket Lock -->
     <string name="pocket_lock_message_long_press">Tartsa lenyomva a bekapcsoló gombot a feloldáshoz</string>
     <string name="pocket_view_title">A Zsebmód bekapcsolva</string>
-    <string name="pocket_view_title_cancel">To activate your phone:</string>
-    <string name="pocket_view_top_tag_cancel">Please do not cover the blue area of your phone and clear any dirt or dust off it.</string>
+    <string name="pocket_view_title_cancel">A telefonja aktiválásához:</string>
+    <string name="pocket_view_top_tag_cancel">Kérjük, ne takarja le a kék területet, tartsa tisztán, por és koszmentesen.</string>
     <string name="pocket_view_top_tag_cancel2">A Bekapcsológomb hosszan nyomása azonnal kikapcsolja a zsebmódot</string>
     <string name="pocket_view_top_tag_number1">1.\u0020</string>
     <string name="pocket_view_top_tag_number2">2.\u0020</string>

@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- AOD QS tile -->
-    <string name="quick_settings_aod_label">Paparan selalu hidup</string>
+    <string name="quick_settings_aod_label">Paparan selalu aktif</string>
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Kafein</string>
     <string name="accessibility_quick_settings_caffeine_off">Kafein dimatikan.</string>

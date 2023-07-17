@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Advanced reboot -->
-    <string name="reboot_to_recovery_title">Recovery</string>
+    <string name="reboot_to_recovery_title">Pagbawi</string>
     <string name="reboot_to_recovery_message">Rebooting to recovery</string>
-    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_title">Ang Bootloader</string>
     <string name="reboot_to_bootloader_message">Rebooting to bootloader</string>
     <string name="reboot_title">Reboot</string>
     <string name="reboot_message">Rebooting system</string>
@@ -31,9 +31,9 @@
     <string name="live_display_auto_summary">Automatically adjust color temperature of screen after sunset and sunrise</string>
     <string name="live_display_off">Off</string>
     <string name="live_display_off_summary">Disable all adjustments</string>
-    <string name="live_display_day">Day</string>
+    <string name="live_display_day">Araw</string>
     <string name="live_display_day_summary">Use day settings only</string>
-    <string name="live_display_night">Night</string>
+    <string name="live_display_night">Gabi</string>
     <string name="live_display_night_summary">Use night settings only</string>
     <string name="live_display_outdoor">Outdoor (bright sun)</string>
     <string name="live_display_outdoor_summary">Use outdoor settings only</string>
