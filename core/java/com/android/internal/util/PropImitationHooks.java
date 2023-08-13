@@ -42,8 +42,8 @@ public class PropImitationHooks {
     private static final String TAG = "PropImitationHooks";
     private static final boolean DEBUG = false;
 
-    private static final String sCertifiedFp =
-            Resources.getSystem().getString(R.string.config_certifiedFingerprint);
+    private static final String[] sCertifiedProps =
+            Resources.getSystem().getStringArray(R.array.config_certifiedBuildProperties);
 
     private static final String sStockFp =
             Resources.getSystem().getString(R.string.config_stockFingerprint);
@@ -148,7 +148,7 @@ public class PropImitationHooks {
          * Set custom model for Netflix
          */
         if (sIsGms) {
-            setCertifiedFpForGms();
+            setCertifiedPropsForGms();
         } else if (!sStockFp.isEmpty() && packageName.equals(PACKAGE_ARCORE)) {
             dlog("Setting stock fingerprint for: " + packageName);
             setPropValue("FINGERPRINT", sStockFp);
@@ -185,7 +185,12 @@ public class PropImitationHooks {
         }
     }
 
-    private static void setCertifiedFpForGms() {
+    private static void setCertifiedPropsForGms() {
+        if (sCertifiedProps.length != 4) {
+            Log.e(TAG, "Insufficient array size for certified props: "
+                    + sCertifiedProps.length + ", required 4");
+            return;
+        }
         final boolean was = isGmsAddAccountActivityOnTop();
         final TaskStackListener taskStackListener = new TaskStackListener() {
             @Override
@@ -200,7 +205,10 @@ public class PropImitationHooks {
         };
         if (!was) {
             dlog("Spoofing build for GMS");
-            setPropValue("FINGERPRINT", sCertifiedFp);
+            setPropValue("DEVICE", sCertifiedProps[0]);
+            setPropValue("PRODUCT", sCertifiedProps[1]);
+            setPropValue("MODEL", sCertifiedProps[2]);
+            setPropValue("FINGERPRINT", sCertifiedProps[3]);
         } else {
             dlog("Skip spoofing build for GMS, because GmsAddAccountActivityOnTop");
         }
