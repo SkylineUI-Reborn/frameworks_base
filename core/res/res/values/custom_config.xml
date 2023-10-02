@@ -174,4 +174,9 @@
 
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false"></string>
+
+    <!-- Default values for status bar DT2S gesture -->
+    <bool name="config_dt2sGestureAvailable">true</bool>
+    <bool name="config_dt2sGestureEnabledByDefault">true</bool>
+
 </resources>
