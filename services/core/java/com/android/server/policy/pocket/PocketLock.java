@@ -53,7 +53,7 @@ public class PocketLock {
         mWindowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
         mLayoutParams = getLayoutParams();
         mView = LayoutInflater.from(mContext).inflate(
-                com.android.internal.R.layout.pocket_lock_view, null);
+                com.android.internal.R.layout.pocket_lock_view_layout, null);
     }
 
     public void show(final boolean animate) {
