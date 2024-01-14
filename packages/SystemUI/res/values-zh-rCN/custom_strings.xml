@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2023 PixelOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">高级重启</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">系统界面</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">正在识别人脸...</string>
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">环境显示</string>
+    <string name="accessibility_quick_settings_ambient_display_off">环境显示关闭。</string>
+    <string name="accessibility_quick_settings_ambient_display_on">环境显示开启。</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">息屏显示</string>
+    <string name="quick_settings_aod_off_powersave_label">息屏显示关闭\n节省电量</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">咖啡因</string>
+    <string name="accessibility_quick_settings_caffeine_off">咖啡因 关闭。</string>
+    <string name="accessibility_quick_settings_caffeine_on">咖啡因 开启。</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">悬浮通知</string>
+    <string name="accessibility_quick_settings_heads_up_off">浮动通知 关闭。</string>
+    <string name="accessibility_quick_settings_heads_up_on">浮动通知 开启。</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">自动同步</string>
+    <string name="accessibility_quick_settings_sync_off">自动同步 关闭。</string>
+    <string name="accessibility_quick_settings_sync_on">自动同步 开启。</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 网络共享</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">VPN</string>
+    <string name="quick_settings_vpn_connect_dialog_title">连接到\u2026</string>
+    <string name="vpn_credentials_hint">请输入您的凭据以连接 <xliff:g id="name">%s</xliff:g></string>
+    <string name="vpn_credentials_username">用户名</string>
+    <string name="vpn_credentials_password">密码</string>
+    <string name="vpn_credentials_dialog_connect">连接</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">切换数据卡</string>
+    <string name="qs_data_switch_toast_0">当前无 SIM 卡插入</string>
+    <string name="qs_data_switch_toast_1">当前仅插入了一张 SIM 卡</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">切换数据卡到 SIM 卡 1</string>
+    <string name="qs_data_switch_changed_2">切换数据卡到 SIM 卡 2</string>
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">状态栏图标</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">流量节省程序</string>
+    <!-- Name of the location status bar icon. -->
+    <string name="status_bar_location">位置信息</string>
+    <!-- Name of the microphone status bar icon. -->
+    <string name="status_bar_microphone">麦克风</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">阅读模式</string>
+    <string name="accessibility_quick_settings_reading_mode_on">开启阅读模式。</string>
+    <string name="accessibility_quick_settings_reading_mode_off">关闭阅读模式。</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">阅读模式已开启。</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">阅读模式已关闭。</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">防闪烁</string>
+    <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">启用蓝牙</string>
+    <string name="bluetooth_is_off">蓝牙已关闭</string>
+    <string name="tap_a_device_to_connect">点击以连接或断开设备</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="other">已连接 %d 台设备</item>
+    </plurals>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">删除</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">录屏文件已删除</string>
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">显示停止圆点</string>
+    <string name="screenrecord_stopdot_summary">长按以移动它</string>
+    <string name="screenrecord_lowquality_label">低画质</string>
+    <string name="screenrecord_lowquality_summary">来减少文件大小</string>
+    <string name="screenrecord_longer_timeout_switch_label">大文件大小限制</string>
+    <string name="screenrecord_longer_timeout_switch_summary">限制录屏文件大小为 15 GB</string>
+    <string name="screenrecord_skip_time_label">跳过倒计时</string>
+    <string name="screenrecord_skip_time_summary">跳过 3 秒倒计时</string>
+    <string name="screenrecord_hevc_switch_label">启用 HEVC 编码</string>
+</resources>

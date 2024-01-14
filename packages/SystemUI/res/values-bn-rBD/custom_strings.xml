@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2023 PixelOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Advanced Reboot -->
+    <string name="global_action_restart_advanced">বিস্তারিত</string>
+    <string name="global_action_restart_recovery">পুনরুদ্ধার</string>
+    <string name="global_action_restart_bootloader">বুটলোডার</string>
+    <string name="global_action_restart_ui">সিস্টেম UI</string>
+    <!-- Text while recognizing face -->
+    <string name="face_unlock_recognizing">Recognizing face...</string>
+    <!-- Custom QS tiles -->
+    <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">অ্যাম্বিয়েন্ট ডিসপ্লে</string>
+    <string name="accessibility_quick_settings_ambient_display_off">আম্বিয়েন্ট ডিসপ্লে বন্ধ।</string>
+    <string name="accessibility_quick_settings_ambient_display_on">এম্বায়েন্ট ডিসপ্লে চালু।</string>
+    <!-- AOD QS tile -->
+    <string name="quick_settings_aod_label">সবসময় চালু থাকা ডিস্প্লে (AOD)</string>
+    <string name="quick_settings_aod_off_powersave_label">AOD বন্ধ\nব্যাটারি সেভার</string>
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">ক্যাফেইন</string>
+    <string name="accessibility_quick_settings_caffeine_off">ক্যাফেইন বন্ধ।</string>
+    <string name="accessibility_quick_settings_caffeine_on">ক্যাফেইন চালু।</string>
+    <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">হেডস আপ</string>
+    <string name="accessibility_quick_settings_heads_up_off">হেডস আপ বন্ধ</string>
+    <string name="accessibility_quick_settings_heads_up_on">হেডস আপ চালু</string>
+    <!-- Sync QS tile -->
+    <string name="quick_settings_sync_label">সিঙ্ক</string>
+    <string name="accessibility_quick_settings_sync_off">সিঙ্ক বন্ধ।</string>
+    <string name="accessibility_quick_settings_sync_on">সিঙ্ক চালু।</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">ইউএসবি টেথারিং</string>
+    <!-- VPN QS tile -->
+    <string name="quick_settings_vpn_label">ভিপিএন</string>
+    <string name="quick_settings_vpn_connect_dialog_title">\u2026 এর সাথে সংযোগ করুন</string>
+    <string name="vpn_credentials_hint"><xliff:g id="name">%s</xliff:g> এর সাথে সংযুক্ত হতে আপনার ক্রেডেনটিয়ালস দিন</string>
+    <string name="vpn_credentials_username">ব্যবহারকারীর নাম</string>
+    <string name="vpn_credentials_password">পাসওয়ার্ড</string>
+    <string name="vpn_credentials_dialog_connect">সংযোগ করুন</string>
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">ডাটা কার্ড পরিবর্তন</string>
+    <string name="qs_data_switch_toast_0">বর্তমানে ফোনে কোন সিম কার্ড নেই</string>
+    <string name="qs_data_switch_toast_1">বর্তমানে ফোনে একটি সিম কার্ড প্রবেশ করানো আছে</string>
+    <string name="qs_data_switch_text_1">সিম ১</string>
+    <string name="qs_data_switch_text_2">সিম ২</string>
+    <string name="qs_data_switch_changed_1">ডেটা কার্ড সিম ১ এ পরিবর্তন করুন</string>
+    <string name="qs_data_switch_changed_2">ডেটা কার্ড সিম ২ এ পরিবর্তন করুন</string>
+    <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">স্ট্যাটাস বার আইকন</string>
+    <!-- Name of the VPN status bar icon. -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- Name of the data saver status bar icon. -->
+    <string name="status_bar_data_saver">ডেটা সেভার</string>
+    <!-- Name of the location status bar icon. -->
+    <string name="status_bar_location">অবস্থান</string>
+    <!-- Name of the microphone status bar icon. -->
+    <string name="status_bar_microphone">মাইক্রোফোন</string>
+    <!-- Reader mode QS tile -->
+    <string name="quick_settings_reading_mode">রিডিং মোড</string>
+    <string name="accessibility_quick_settings_reading_mode_on">রিডিং মোড চালু</string>
+    <string name="accessibility_quick_settings_reading_mode_off">পঠন মোড বন্ধ করুন।</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_on">রিডিং মোড চালু করা হয়েছে</string>
+    <string name="accessibility_quick_settings_reading_mode_changed_off">রিডিং মোড বন্ধ করা হয়েছে</string>
+    <!-- Anti flicker QS tile -->
+    <string name="quick_settings_anti_flicker">অ্যান্টি ফ্লিকার</string>
+    <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">ব্লুটুথ ব্যবহার করুন</string>
+    <string name="bluetooth_is_off">ব্লুটুথ বন্ধ করা আছে</string>
+    <string name="tap_a_device_to_connect">Tap to connect or disconnect a device</string>
+    <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="one">%d device connected</item>
+        <item quantity="other">%d devices connected</item>
+    </plurals>
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">মুছুন</string>
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Screen recording deleted</string>
+    <!-- Screen record -->
+    <string name="screenrecord_stopdot_label">Show stop dot</string>
+    <string name="screenrecord_stopdot_summary">Longpress to move it</string>
+    <string name="screenrecord_lowquality_label">Lower quality</string>
+    <string name="screenrecord_lowquality_summary">For smaller file size</string>
+    <string name="screenrecord_longer_timeout_switch_label">Bigger file size limit</string>
+    <string name="screenrecord_longer_timeout_switch_summary">Limit recording size to 15 GB</string>
+    <string name="screenrecord_skip_time_label">Skip timer</string>
+    <string name="screenrecord_skip_time_summary">Remove 3 second wait</string>
+    <string name="screenrecord_hevc_switch_label">Enable HEVC</string>
+</resources>
