@@ -36,6 +36,7 @@ import android.media.MediaCodecInfo;
 import android.media.MediaFormat;
 import android.media.MediaMuxer;
 import android.media.MediaRecorder;
+import android.provider.Settings;
 import android.media.ThumbnailUtils;
 import android.media.projection.IMediaProjection;
 import android.media.projection.IMediaProjectionManager;
@@ -162,11 +163,14 @@ public class ScreenMediaRecorder extends MediaProjection.Callback {
         mMediaRecorder.setVideoEncodingProfileLevel(
                 MediaCodecInfo.CodecProfileLevel.AVCProfileMain,
                 getAvcProfileLevelCodeByName(mAvcProfileLevel));
+                boolean unlimit = Settings.System.getInt(
+                mContext.getContentResolver(),
+                Settings.System.UNLIMIT_SCREENRECORD, 0) != 0;
         mMediaRecorder.setVideoSize(width, height);
         mMediaRecorder.setVideoFrameRate(refreshRate);
         mMediaRecorder.setVideoEncodingBitRate(vidBitRate);
         mMediaRecorder.setMaxDuration(MAX_DURATION_MS);
-        mMediaRecorder.setMaxFileSize(MAX_FILESIZE_BYTES);
+        mMediaRecorder.setMaxFileSize(unlimit ? 0 : MAX_FILESIZE_BYTES);
 
         // Set up audio
         if (mAudioSource == MIC) {
