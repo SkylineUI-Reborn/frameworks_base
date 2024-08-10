@@ -247,10 +247,9 @@ public class PropImitationHooks {
                     setPropValue("MODEL", sNetflixModel);
                 }
                 return;
-        } else if (packageName.equals(PACKAGE_SNAPCHAT)) {
+                } if (packageName.equals(PACKAGE_SNAPCHAT)) {
             dlog("Spoofing Pixel XL for: " + packageName);
             sPixelXLProps.forEach((PropImitationHooks::setPropValue));
-
         }
     }
 
