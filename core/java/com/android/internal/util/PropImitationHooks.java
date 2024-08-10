@@ -156,6 +156,7 @@ public class PropImitationHooks {
 
     private static volatile String[] sCertifiedProps;
     private static volatile String sStockFp, sNetflixModel;
+    private static volatile boolean sSpoofPhotos;
 
     private static volatile String sProcessName;
     private static volatile boolean sIsGms, sIsFinsky, sIsPhotos, sIsTablet;
@@ -248,11 +249,11 @@ public class PropImitationHooks {
                 }
 
                 return;
-        } else if ((sSpoofPhotos && packageName.equals(PACKAGE_GPHOTOS))
+        }
+        if ((sSpoofPhotos && packageName.equals(PACKAGE_GPHOTOS))
                 || packageName.equals(PACKAGE_SNAPCHAT)) {
             dlog("Spoofing Pixel XL for: " + packageName);
             sPixelXLProps.forEach((PropImitationHooks::setPropValue));
-
         }
     }
 
