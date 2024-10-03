@@ -297,7 +297,7 @@ public final class AppRestrictionController {
     /**
      * Cache the package name and information about if it's a system module.
      */
-    @GuardedBy("mSystemModulesCache")
+    @GuardedBy("mLock")
     private final HashMap<String, Boolean> mSystemModulesCache = new HashMap<>();
 
     /**
@@ -1588,7 +1588,7 @@ public final class AppRestrictionController {
         if (moduleInfos == null) {
             return;
         }
-        synchronized (mSystemModulesCache) {
+        synchronized (mLock) {
             for (ModuleInfo info : moduleInfos) {
                 mSystemModulesCache.put(info.getPackageName(), Boolean.TRUE);
             }
@@ -1596,7 +1596,7 @@ public final class AppRestrictionController {
     }
 
     private boolean isSystemModule(String packageName) {
-        synchronized (mSystemModulesCache) {
+        synchronized (mLock) {
             final Boolean val = mSystemModulesCache.get(packageName);
             if (val != null) {
                 return val.booleanValue();
@@ -1624,7 +1624,7 @@ public final class AppRestrictionController {
             }
         }
         // Update the cache.
-        synchronized (mSystemModulesCache) {
+        synchronized (mLock) {
             mSystemModulesCache.put(packageName, isSystemModule);
         }
         return isSystemModule;

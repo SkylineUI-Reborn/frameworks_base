@@ -69,9 +69,7 @@ public class DozeService extends DreamService
             mPluginManager.removePluginListener(this);
         }
         super.onDestroy();
-        if (mDozeMachine != null) {
-            mDozeMachine.destroy();
-        }
+        mDozeMachine.destroy();
         mDozeMachine = null;
     }
 
@@ -92,9 +90,7 @@ public class DozeService extends DreamService
     @Override
     public void onDreamingStarted() {
         super.onDreamingStarted();
-        if (mDozeMachine != null) {
-            mDozeMachine.requestState(DozeMachine.State.INITIALIZED);
-        }
+        mDozeMachine.requestState(DozeMachine.State.INITIALIZED);
         startDozing();
         if (mDozePlugin != null) {
             mDozePlugin.onDreamingStarted();
@@ -104,9 +100,7 @@ public class DozeService extends DreamService
     @Override
     public void onDreamingStopped() {
         super.onDreamingStopped();
-        if (mDozeMachine != null) {
-            mDozeMachine.requestState(DozeMachine.State.FINISH);
-        }
+        mDozeMachine.requestState(DozeMachine.State.FINISH);
         if (mDozePlugin != null) {
             mDozePlugin.onDreamingStopped();
         }
