@@ -87,15 +87,15 @@ public class PropImitationHooks {
     private static final ComponentName GMS_ADD_ACCOUNT_ACTIVITY = ComponentName.unflattenFromString(
             "com.google.android.gms/.auth.uiflows.minutemaid.MinuteMaidActivity");
 
-    private static final Map<String, String> sPixelNineProps = Map.of(
-            "PRODUCT", "komodo",
-            "DEVICE", "komodo",
-            "HARDWARE", "komodo",
+    private static final Map<String, String> sPixelEightProps = Map.of(
+            "PRODUCT", "akita",
+            "DEVICE", "akita_beta",
+            "HARDWARE", "akita",
             "MANUFACTURER", "Google",
             "BRAND", "google",
-            "MODEL", "Pixel 9 Pro XL",
-            "ID", "AD1A.240530.047",
-            "FINGERPRINT", "google/komodo/komodo:14/AD1A.240530.047/12143574:user/release-keys"
+            "MODEL", "Pixel 8a",
+            "ID", "AP41.240925.009",
+            "FINGERPRINT", "google/akita_beta/akita:15/AP41.240925.009/12534705:user/release-keys"
     );
 
     private static final Map<String, String> sPixelFiveProps = Map.of(
@@ -196,7 +196,7 @@ public class PropImitationHooks {
 
         /* Set certified properties for GMSCore
          * Set stock fingerprint for ARCore
-         * Set Pixel 9 Pro XL / Pixel Tablet for Google, ASI and GMS device configurator
+         * Set Pixel 8a / Pixel Tablet for Google, ASI and GMS device configurator
          * Set Pixel XL for Google Photos
          * Set custom model for Netflix
          */
@@ -241,8 +241,8 @@ public class PropImitationHooks {
                     dlog("Spoofing Pixel Tablet for: " + packageName + " process: " + processName);
                     setProps(sPixelTabletProps);
                 } else {
-                    dlog("Spoofing Pixel 9 Pro XL for: " + packageName + " process: " + processName);
-                    setProps(sPixelNineProps);
+                    dlog("Spoofing Pixel 8a for: " + packageName + " process: " + processName);
+                    setProps(sPixelEightProps);
                 }
                 return;
             case PACKAGE_GPHOTOS:
